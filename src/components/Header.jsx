@@ -4,31 +4,58 @@ import { NavLink } from "react-router-dom";
 
 function Header () {
     return( 
-        <div className=" grid grid-cols-6 bg-white text-black p-8 shadow-md">
+        <div className=" mt-5 grid grid-cols-6">
       <div
         className="flex items-center w-fit col-span-3"
         onClick={() => (location.href = "/")}
         title="Home"
       >
-        <img className="w-20 h-20 " src={Logo} />
+        <img className="w-20 h-20 ml-8" src={Logo} />
       </div>
+      <div className="flex ml-100 items-center col-span-3">
+        <NavLink
+          to="/"
+          className={({ isActive }) => {
+            if (isActive) return "px-4 cursor-pointer truncate";
+            else "px-4 cursor-pointer truncate";
+          }}
+        >
+        </NavLink>
 
-        <div className="grid grid-cols-6">
-            <NavLink 
-            to="Home" 
-            className={({ isActive }) => {
-                if (isActive) return "px-4 cursor-pointer truncate text-blue-300";
-                else "px- cursor-pointer truncate";
-            }}
-            >
-                <div className="flex items-center cols-span-3 p-3">
-                    <i className="fa-solid fa-right-to-bracket"></i>
-                </div>{""}
-                <span className="hidden md:block">Home</span>
-            </NavLink>
-            
-        </div>
+        <a className="px-4 cursor-pointer truncate" href="About">
+          <div className="md:hidden">
+            <i className="fa-solid fa-address-card"></i>
+          </div>{" "}
+          <span className="hidden md:block"><b>ABOUT US</b></span>
+        </a>
+        <a className="px-4 cursor-pointer truncate" href="Locations">
+          <div className="md:hidden">
+            <i className="fa-solid fa-question"></i>
+          </div>{" "}
+          <span className="hidden md:block"><b>LOCATIONS</b></span>
+        </a>
+        <a className="px-4 cursor-pointer truncate" href="Events">
+          <div className="md:hidden">
+            <i className="fa-solid fa-question"></i>
+          </div>{" "}
+          <span className="hidden md:block"><b>EVENTS</b></span>
+        </a>
+        <a className="px-4 cursor-pointer truncate" href="Contact">
+          <div className="md:hidden">
+            <i className="fa-solid fa-question"></i>
+          </div>{" "}
+          <span className="hidden md:block"><b>CANTACT</b></span>
+        </a>
+        <a className="px-4 cursor-pointer truncate" href="Give">
+          <div className="md:hidden">
+            <i className="fa-solid fa-question"></i>
+          </div>{" "}
+          <span className="hidden md:block"><b>GIVE</b></span>
+        </a>
+        
+        
       </div>
+    </div>
     );
 
 }
