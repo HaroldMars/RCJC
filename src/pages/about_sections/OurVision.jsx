@@ -1,0 +1,14 @@
+import React from 'react'
+
+function OurVision() {
+  return (
+    <div>
+      <h1 className='font-bold text-blue-700'>RCJC VISION STATEMENT</h1>
+      <p className='text-blue-400'><b>1.</b>Each one brings one to Jesus.</p>
+      <p className='text-blue-400'><b>2.</b>Establish house fellowship in all locations.</p>
+      <p className='text-blue-400'><b>3.</b>Members must always obey the words of God.</p>
+    </div>
+  )
+}
+
+export default OurVision

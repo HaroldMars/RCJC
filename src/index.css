@@ -1,2 +1,38 @@
 @import "tailwindcss";
 
+.root {
+  height: 70vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.Header--container {
+  flex: 1;
+  background-color: green;
+}
+
+.Footer--container {
+  flex: 1;
+  background-color: red;
+}
+
+.Content--container {
+  flex: 5;
+  background-color: white;
+  overflow-y: scroll;
+}
+
+.ul-line {
+  color: black;
+  
+}
+
+.ul-text {
+  color: blue;
+}
+
+.h-fit {
+  height: fit-content;
+}

@@ -1,66 +1,112 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "../assets/Logo.png";
 import { NavLink } from "react-router-dom";
 
 function Header({ className }) {
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Close menu on route change or window resize
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) setMenuOpen(false);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  
+  const navLinks = [
+    {
+      to: "/About",
+      icon: "fa-address-card",
+      label: "ABOUT US",
+    },
+    {
+      to: "/Locations",
+      icon: "fa-map-marker-alt",
+      label: "LOCATIONS",
+    },
+    {
+      to: "/Events",
+      icon: "fa-calendar-alt",
+      label: "EVENTS",
+    },
+    {
+      to: "/Contact",
+      icon: "fa-envelope",
+      label: "CONTACT",
+    },
+    {
+      to: "/Give",
+      icon: "fa-hand-holding-heart",
+      label: "GIVE",
+    },
+  ];
+ 
+
   return (
-    <div className={`mt-5 grid grid-cols-6 ${className}`}>
+    <div
+      className={`Header mt-0 h-20 grid grid-cols-2 md:grid-cols-6 bg-green-500 items-center ${className} ${
+        scrolled ? "fixed top-0 left-0 w-full shadow-lg text-white z-50" : "text-white"
+      }`}
+    >
+      {/* Logo */}
       <div
-        className={"flex items-center w-fit col-span-3 cursor-pointer"}
+        className="flex items-center w-fit col-span-1 md:col-span-3 cursor-pointer flex-row gap-x-2 justify-evenly"
         onClick={() => (location.href = "/")}
         title="Home"
       >
-        <img className="w-20 h-20 ml-8" src={Logo} />
+        <img className="w-16 h-16 ml-4 md:w-20 md:h-20 md:ml-8" src={Logo} alt="Logo" />
       </div>
-      <div className="flex ml-100 items-center col-span-3">
-        <NavLink
-          to="/"
-          className={({ isActive }) => {
-            if (isActive) return "px-4 cursor-pointer truncate";
-            else "px-4 cursor-pointer truncate";
-          }}
-        ></NavLink>
 
-        <a className="px-4 cursor-pointer truncate" href="About">
-          <div className="md:hidden">
-            <i className="fa-solid fa-address-card"></i>
-          </div>{" "}
-          <span className="hidden md:block">
-            <b>ABOUT US</b>
-          </span>
-        </a>
-        <a className="px-4 cursor-pointer truncate" href="Locations">
-          <div className="md:hidden">
-            <i className="fa-solid fa-question"></i>
-          </div>{" "}
-          <span className="hidden md:block">
-            <b>LOCATIONS</b>
-          </span>
-        </a>
-        <a className="px-4 cursor-pointer truncate" href="Events">
-          <div className="md:hidden">
-            <i className="fa-solid fa-question"></i>
-          </div>{" "}
-          <span className="hidden md:block">
-            <b>EVENTS</b>
-          </span>
-        </a>
-        <a className="px-4 cursor-pointer truncate" href="Contact">
-          <div className="md:hidden">
-            <i className="fa-solid fa-question"></i>
-          </div>{" "}
-          <span className="hidden md:block">
-            <b>CANTACT</b>
-          </span>
-        </a>
-        <a className="px-4 cursor-pointer truncate" href="Give">
-          <div className="md:hidden">
-            <i className="fa-solid fa-question"></i>
-          </div>{" "}
-          <span className="hidden md:block">
-            <b>GIVE</b>
-          </span>
-        </a>
+      {/* Hamburger menu for mobile */}
+      <div className="flex justify-end items-center md:hidden col-span-1">
+        <button
+          className="p-2 focus:outline-none"
+          onClick={() => setMenuOpen((prev) => !prev)}
+          aria-label="Toggle navigation"
+        >
+          <i className={`fa-solid ${menuOpen ? "fa-xmark" : "fa-bars"} text-2xl`}></i>
+        </button>
+      </div>
+
+      {/* Navigation Links */}
+      <div
+        className={`
+          ${menuOpen ? "block" : "hidden"}
+          absolute top-20 left-0 w-full bg-green-500 shadow-md z-40
+          md:static md:block md:bg-transparent md:shadow-none md:col-span-3
+        `}
+      >
+        <nav className="flex flex-col md:flex-row md:items-center md:justify-end">
+          {navLinks.map((link) => (
+            <NavLink
+              key={link.to}
+              to={link.to}
+              className={({ isActive }) =>
+                `px-4 py-3 md:py-0 cursor-pointer truncate flex items-center text-white ${
+                  isActive ? "font-bold" : ""
+                }`
+              }
+              onClick={() => setMenuOpen(false)}
+            >
+              <span className="md:hidden mr-2">
+                <i className={`fa-solid ${link.icon}`}></i>
+              </span>
+              <span className=" md:block">
+                <b>{link.label}</b>
+              </span>
+            </NavLink>
+          ))}
+        </nav>
       </div>
     </div>
   );
