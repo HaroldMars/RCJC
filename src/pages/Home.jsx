@@ -9,12 +9,13 @@ export default function Home() {
       <Header className={"text-white"} />
 
       {/* Hero Section with Video Background */}
-      <div className="relative w-full min-h-[60vh] flex items-center justify-center overflow-hidden">
+      <div className="relative w-full min-h-[60vh] flex items-center justify-center overflow-hidden select-none">
         <video
           className="absolute inset-0 w-full h-full object-cover z-0"
           autoPlay
           loop
           muted
+          controls={false}
           type="video/mp4"
           src={videoBanner}
         />
