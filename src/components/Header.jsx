@@ -22,7 +22,7 @@ function Header({ className }) {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-  
+
   const navLinks = [
     {
       to: "/About",
@@ -50,12 +50,13 @@ function Header({ className }) {
       label: "GIVE",
     },
   ];
- 
 
   return (
     <div
       className={`Header mt-0 h-20 grid grid-cols-2 md:grid-cols-6 bg-green-500 items-center ${className} ${
-        scrolled ? "fixed top-0 left-0 w-full shadow-lg text-white z-50" : "text-white"
+        scrolled
+          ? "fixed top-0 left-0 w-full shadow-lg text-white z-50"
+          : "text-white"
       }`}
     >
       {/* Logo */}
@@ -64,17 +65,25 @@ function Header({ className }) {
         onClick={() => (location.href = "/")}
         title="Home"
       >
-        <img className="w-16 h-16 ml-4 md:w-20 md:h-20 md:ml-8" src={Logo} alt="Logo" />
+        <img
+          className="w-16 h-16 ml-4 md:w-20 md:h-20 md:ml-8"
+          src={Logo}
+          alt="Logo"
+        />
       </div>
 
       {/* Hamburger menu for mobile */}
       <div className="flex justify-end items-center md:hidden col-span-1">
         <button
-          className="p-2 focus:outline-none"
+          className="p-2 focus:outline-none cursor-pointer"
           onClick={() => setMenuOpen((prev) => !prev)}
           aria-label="Toggle navigation"
         >
-          <i className={`fa-solid ${menuOpen ? "fa-xmark" : "fa-bars"} text-2xl`}></i>
+          {menuOpen ? (
+            <i className={`fa-solid fa-xmark text-2xl pr-3`} />
+          ) : (
+            <i className={`fa-solid fa-bars text-2xl pr-3`} />
+          )}
         </button>
       </div>
 
