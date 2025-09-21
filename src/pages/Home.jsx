@@ -1,20 +1,23 @@
 import React from "react";
 import Header from "../components/Header";
 import Logo from "../assets/Logo.png";
+import { videoBanner } from "../utils/config";
 
 
 export default function Home() {
     return (
-        <div className="bg-white w-screen h-fit text- mb-0">
-          <Header />
+        <div className="w-screen h-fit text- mb-0">
+          <Header className={"text-white"} />
           
-          <div className="bg-white w-screen h-fit text-black p-70">
-             <div></div>
-            <div className="dmSans text-[500%] font-bold mt-10px font text-center font-sans">Welcome Home</div>
+          <div className="w-screen h-fit text-black p-70">
+            <div className="absolute bg-black w-[100%] h-[100%] left-0 top-0 overflow-hidden z-[-999]">
+              <video className="absolute w-full h-[100%] bg-gray-200 object-cover" autoPlay loop muted type="video/mp4" src={videoBanner} />
+            </div>
+            <div className="text-white dmSans text-[500%] font-bold mt-10px font text-center font-sans">Welcome Home</div>
             
           </div>
          
-          <div className="bg-white w-150% h-[100%] mt-32 text-black p-70 pb-150">
+          <div className="w-150% h-[100%] mt-32 text-black p-70 pb-150">
             <div className="dmSans text-[500%] font-bold mt-10px font text-center font-sans">Welcome To Family</div>
             <div className="dmSans text-[150%] mt-10px text-center"> <p>We're so glad you're here!<br />
 
@@ -48,8 +51,8 @@ Welcome home!</p></div>
               ></iframe>
             </div>
           </div>
-          <div className="bg-gray-700 w-screen y-100 text-black ">
-            <footer className="bg-gray-900 text-white py-6 mt-10">
+        <div className="bg-gray-700 w-screen y-100 text-black ">
+            <footer className="bg-pink-300 text-white py-6 mt-100">
               <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-4">
                 {/* Logo */}
                 <img src={Logo} alt="Church Logo" className="w-16 h-16" />
@@ -60,26 +63,7 @@ Welcome home!</p></div>
                 </p>
               </div>
             </footer>
-            <div className="bg-gray-700 w-screen h-30"> 
-              <div className="flex justify-center p-2 text-white">
-                <p className="text-center text-6xl pt-5 pr-400 p-">RCJC</p>
-                  
-              </div>
-
-              
             </div>
-            <footer className="bg-gray-500 text-white py-2">
-              <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-4">
-                {/* Text */}
-                <p className="text-center text-sm md:text-base"> Christ Commission Fellowship
-                  &copy; 2025
-                </p>
-                <p className="text-center text-sm md:text-base"> Terms and Conditions</p>
-                <p>┃</p>
-                <p className="text-center text-sm md:text-base"> Privacy Policy</p>
-              </div>
-            </footer>
-          </div>
         </div>
     );
 }
