@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import Logo from "../assets/Logo.png";
+import Logo from "../assets/logo.png";
 import { videoBanner } from "../utils/config";
 
 export default function Home() {
