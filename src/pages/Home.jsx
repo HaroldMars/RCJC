@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Logo from "../assets/newlogo.png";
 import { videoBanner } from "../utils/config";
+import Background from "../assets/bg.jpg";
 
 export default function Home() {
   return (
@@ -26,27 +27,34 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Welcome Section */}
-      <div className="w-full max-w-5xl mx-auto mt-16 px-4 py-12 text-black">
-        <div className="dmSans text-4xl md:text-6xl font-bold text-center font-sans mb-6 text-green-500">
-          Welcome To The Family
-        </div>
-        <div className="dmSans text-lg md:text-2xl text-center text-green-400">
-          <p>
-            We're so glad you're here!
-            <br />
-            Wherever life has brought you, know that God's love is reaching out
-            to you today.
-            <br />
-            You are treasured by Him, and there's a place for you in this
-            family.
-            <br />
-            Welcome home!
-          </p>
-        </div>
-      </div>
+      
+      <div
+  className="w-full max-w-5xl mx-auto mt-16 px-4 py-12 bg-cover bg-center object-cover relative bg-gray-500"
+  style={{ backgroundImage: `url(${Background})` }}
+>
+  
+  <div className="absolute inset-0  bg-opacity-50"></div>
 
-      {/* Message Section */}
+  
+  <div className="relative z-10 text-center ">
+    <div className="dmSans text-4xl md:text-6xl font-bold mb-6 text-blue-500">
+      Welcome To The Family
+    </div>
+    <div className="dmSans text-lg md:text-2xl text-blue-500">
+      <p>
+        We're so glad you're here!
+        <br />
+        Wherever life has brought you, know that God's love is reaching out to you today.
+        <br />
+        You are treasured by Him, and there's a place for you in this family.
+        <br />
+        Welcome home!
+      </p>
+    </div>
+  </div>
+</div>
+
+      
       <div className="bg-white w-full py-10 px-4">
         <div className="text-blue-300 text-center p-5 pb-2 font-sans text-base md:text-lg">
           LOOKING FOR ANSWER? THINK YOUR VISITING THIS SITE IS A COINCIDENCE?

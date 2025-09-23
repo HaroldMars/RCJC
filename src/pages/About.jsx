@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
-import Background from "../assets/bg.jpg";
+import Background from "../assets/footerpic.jpg";
 import ExpandableSection from "../components/ExpandableSection";
 import OurMission from "./about_sections/OurMission";
 import OurVision from "./about_sections/OurVision";
@@ -29,7 +29,7 @@ export default function About() {
   
   {/* Overlay with centered text */}
   <div className="absolute inset-0 flex items-center justify-center px-4">
-    <div className="text-white font-bold text-center 
+    <div className="text-green-500 font-bold text-center 
                     text-6xl md:text-5xl lg:text-9xl">
       About Us
     </div>
