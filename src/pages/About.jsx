@@ -19,7 +19,7 @@ export default function About() {
     setExpandSection({[section]: false})
   }
   return (
-    <div className="bg-white w-screen h-fit text-black">
+    <div className="bg-gray-100 w-screen h-fit text-black">
       <Header />
       <div className="sm:items-stretch md:items-center  ">
         {/* Background picture */}
@@ -41,10 +41,11 @@ export default function About() {
             </p>
           </div>
 
-          <hr className="ul-line mt-10"></hr>
+          
 
-          <div className="md:text-2xl sm:text-10px">
+          <div className="section md:text-2xl sm:text-10px ">
             <ul className="text-center  ">
+              <hr className="ul-line mt-10"></hr>
               <li onClick={()=> {
                 setExpandSection({stateMent: true})
               }} className="ul-text mt-3 mb-3 cursor-pointer">4S</li>
@@ -74,6 +75,12 @@ export default function About() {
               </ExpandableSection>
               <hr className="ul-line mt-3 mb-3"></hr>
             </ul>
+          </div>
+
+          {/* STAFF & AREA LEADERS */}
+
+          <div>
+            <image></image>
           </div>
         </div>
       </div>

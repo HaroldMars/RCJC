@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/newlogo.png";
 import { videoBanner } from "../utils/config";
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
           src={videoBanner}
         />
         <div className="relative z-10 flex flex-col items-center justify-center w-full h-50 bg-white/50">
-          <div className="text-green-700 dmSans text-4xl md:text-6xl font-bold mt-4 text-center font-sans">
+          <div className="text-green-700 dmSans text-6xl md:text-6xl font-bold mt-4 text-center font-sans">
             Welcome Home
           </div>
         </div>
@@ -48,7 +48,7 @@ export default function Home() {
 
       {/* Message Section */}
       <div className="bg-white w-full py-10 px-4">
-        <div className="text-black text-center p-5 pb-2 font-sans text-base md:text-lg text-blue-300">
+        <div className="text-blue-300 text-center p-5 pb-2 font-sans text-base md:text-lg">
           LOOKING FOR ANSWER? THINK YOUR VISITING THIS SITE IS A COINCIDENCE?
           <br />
           YOUR BEING HERE TODAY IS NO COINCIDENT!
@@ -74,15 +74,11 @@ export default function Home() {
 
       {/* Footer */}
       <div className="bg-gray-700 w-full text-black">
-        <footer className="bg-green-400 text-white py-6 mt-10 h-100">
+        <footer className="foot text-white py-6 mt-10 h-100">
           <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-4">
             {/* Logo */}
-            <img src={Logo} alt="Church Logo" className="w-16 h-16" />
-
-            {/* Text */}
-            <p className="text-center text-sm md:text-base">
-              Rise of Church of Jesus Christ Int&apos;l. Min. Inc.
-            </p>
+            <img src={Logo} alt="Church Logo" className="w-50 h-16 pl--10" />
+            
           </div>
         </footer>
       </div>

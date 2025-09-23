@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/newlogo.png";
 import { NavLink } from "react-router-dom";
 
 function Header({ className }) {
@@ -53,7 +53,7 @@ function Header({ className }) {
 
   return (
     <div
-      className={`Header mt-0 h-20 grid grid-cols-2 md:grid-cols-6 bg-green-500 items-center ${className} ${
+      className={`Header mt-0 h-20 grid grid-cols-2 md:grid-cols-6  items-center ${className} ${
         scrolled
           ? "fixed top-0 left-0 w-full shadow-lg text-white z-50"
           : "text-white"
@@ -66,7 +66,7 @@ function Header({ className }) {
         title="Home"
       >
         <img
-          className="w-16 h-16 ml-4 md:w-20 md:h-20 md:ml-8"
+          className="w-50 h-16 ml-4 sm:w-50  md:w-50 md:h-20 md:ml-5"
           src={Logo}
           alt="Logo"
         />
@@ -91,7 +91,7 @@ function Header({ className }) {
       <div
         className={`
           ${menuOpen ? "block" : "hidden"}
-          absolute top-20 left-0 w-full bg-green-500 shadow-md z-40
+          nav-linkk absolute top-20 left-0 w-full  shadow-md z-40
           md:static md:block md:bg-transparent md:shadow-none md:col-span-3
         `}
       >

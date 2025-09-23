@@ -7,6 +7,13 @@
   flex-direction: column;
   justify-content: stretch;
 }
+.Header {
+  background: linear-gradient(#ACF2AE, #3ED63F)
+}
+
+.nav-linkk {
+  background: linear-gradient( #3ED63F, #159911)
+}
 
 .Header--container {
   flex: 1;
@@ -36,3 +43,20 @@
 .h-fit {
   height: fit-content;
 }
+
+.foot {
+  background: linear-gradient(#93DBFA, #1D4554);
+}
+
+.section {
+  background: linear-gradient(#DAFAD9, #B7F5B5);
+}
+
+.box {
+  border-radius: 40%;
+  background-color: #C1F8BF;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+
