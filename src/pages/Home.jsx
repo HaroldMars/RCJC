@@ -33,14 +33,14 @@ export default function Home() {
   style={{ backgroundImage: `url(${Background})` }}
 >
   
-  <div className="absolute inset-0  bg-opacity-50"></div>
+  <div className="absolute inset-0  bg-opacity-50 bg-gray-500/50"></div>
 
   
   <div className="relative z-10 text-center ">
-    <div className="dmSans text-4xl md:text-6xl font-bold mb-6 text-blue-500">
+    <div className="dmSans text-4xl md:text-6xl font-bold mb-6 text-blue-900">
       Welcome To The Family
     </div>
-    <div className="dmSans text-lg md:text-2xl text-blue-500">
+    <div className="dmSans text-lg md:text-2xl text-blue-100">
       <p>
         We're so glad you're here!
         <br />
