@@ -22,9 +22,9 @@ export default function Locations() {
           </div>
         </div>
 
-        <div className="h-400">
+        <div className="h-400 ">
           <div className=" items-center">
-            <img src={Logo} alt="" className="w-30 ml-38 mt-5 mb-5" />
+            <center><img src={Logo} alt="" className="w-30 " /></center>
             <ul className="text-center">
               <h2 className="font-bold text-2xl mb-4">BOHOL</h2>
               <li className="pt-3">
