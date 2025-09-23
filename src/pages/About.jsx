@@ -23,9 +23,18 @@ export default function About() {
       <Header />
       <div className="sm:items-stretch md:items-center  ">
         {/* Background picture */}
-        <div className="">
-        <img className="h-200 w-screen object-cover" src={Background} alt="" />
-        </div>
+        <div className="relative w-screen h-[800px]">
+  {/* Background Image */}
+  <img className="w-full h-full object-cover" src={Background} alt="Background" />
+  
+  {/* Overlay with centered text */}
+  <div className="absolute inset-0 flex items-center justify-center px-4">
+    <div className="text-white font-bold text-center 
+                    text-6xl md:text-5xl lg:text-9xl">
+      About Us
+    </div>
+  </div>
+</div>
       </div>
       <div className="h-300">
         <div>
@@ -45,35 +54,35 @@ export default function About() {
 
           <div className="section md:text-2xl sm:text-10px ">
             <ul className="text-center  ">
-              <hr className="ul-line mt-10"></hr>
+              <hr className="hr ul-line mt-10"></hr>
               <li onClick={()=> {
                 setExpandSection({stateMent: true})
               }} className="ul-text mt-3 mb-3 cursor-pointer">4S</li>
               <ExpandableSection onClick={()=>{hideSection("stateMent")}} show={expandSection.stateMent}>
                 <StateMent />
               </ExpandableSection>
-               <hr className="ul-line mt-3 mb-3"></hr>
+               <hr className="hr ul-line mt-3 mb-3"></hr>
               <li onClick={()=> {
                 setExpandSection({ourMission: true})
               }} className="ul-text mt-3 mb-3 cursor-pointer">OUR MISSION</li>
               <ExpandableSection onClick={()=>{hideSection("ourMission")}} show={expandSection.ourMission}>
                 <OurMission />
               </ExpandableSection>
-              <hr className="ul-line mt-3 mb-3"></hr>
+              <hr className="hr ul-line mt-3 mb-3"></hr>
               <li onClick={()=> {
                 setExpandSection({ourVision: true})
               }} className="ul-text mt-3 mb-3 cursor-pointer">OUR VISION</li>
               <ExpandableSection onClick={()=>{hideSection("ourVision")}} show={expandSection.ourVision}>
                 <OurVision />
               </ExpandableSection>
-              <hr className="ul-line mt-3 mb-3"></hr>
+              <hr className="hr ul-line mt-3 mb-3"></hr>
               <li onClick={()=> {
                 setExpandSection({statementofFaith: true})
               }} className="ul-text mt-3 mb-3 cursor-pointer">STATEMENT OF FAITH</li>
               <ExpandableSection onClick={()=>{hideSection("statementofFaith")}} show={expandSection.statementofFaith}>
                 <StatementofFaith />
               </ExpandableSection>
-              <hr className="ul-line mt-3 mb-3"></hr>
+              <hr className="hr ul-line mt-3 mb-3"></hr>
             </ul>
           </div>
 

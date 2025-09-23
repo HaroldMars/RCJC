@@ -75,7 +75,7 @@ function Header({ className }) {
       {/* Hamburger menu for mobile */}
       <div className="flex justify-end items-center md:hidden col-span-1">
         <button
-          className="p-2 focus:outline-none cursor-pointer"
+          className="p-2 focus:outline-none cursor-pointer pr-5"
           onClick={() => setMenuOpen((prev) => !prev)}
           aria-label="Toggle navigation"
         >
