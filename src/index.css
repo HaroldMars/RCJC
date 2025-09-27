@@ -8,7 +8,7 @@
   justify-content: stretch;
 }
 .Header {
-  background-color: #3ED63F;
+  background-color: rgba(62, 214, 63, 0.3); /* 30% opacity */
 }
 
 
