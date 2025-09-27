@@ -23,7 +23,7 @@ export default function About() {
       <Header />
       <div className="sm:items-stretch md:items-center  ">
         {/* Background picture */}
-        <div className="relative w-screen h-[800px]">
+        <div className="relative w-screen h-220">
   {/* Background Image */}
   <img className="w-full h-full object-cover" src={Background} alt="Background" />
   

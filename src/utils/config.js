@@ -1,3 +1,3 @@
-import videoBanner from "../assets/home.mp4";
+import videoBanner from "../assets/home.mov";
 
 export {videoBanner}

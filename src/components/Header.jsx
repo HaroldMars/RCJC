@@ -66,7 +66,7 @@ function Header({ className }) {
         title="Home"
       >
         <img
-          className="w-50 h-16 ml-4 sm:w-50  md:w-50 md:h-20 md:ml-5"
+          className="w-50 h-16 ml-4 sm:w-50  md:w-60 md:h-20 md:ml-50"
           src={Logo}
           alt="Logo"
         />
@@ -91,23 +91,23 @@ function Header({ className }) {
       <div
         className={`
           ${menuOpen ? "block" : "hidden"}
-          nav-linkk absolute top-20 left-0 w-full  shadow-md z-40
+           nav-linkk absolute top-20 left-0 w-full  shadow-md z-40 
           md:static md:block md:bg-transparent md:shadow-none md:col-span-3
         `}
       >
-        <nav className="flex flex-col md:flex-row md:items-center md:justify-end">
+        <nav className="  flex flex-col md:flex-row md:items-center md:justify-end">
           {navLinks.map((link) => (
             <NavLink
               key={link.to}
               to={link.to}
               className={({ isActive }) =>
-                `px-4 py-3 md:py-0 cursor-pointer truncate flex items-center text-white ${
+                `  px-4 py-3 md:py-0 cursor-pointer truncate flex items-center text-white ${
                   isActive ? "font-bold" : ""
                 }`
               }
               onClick={() => setMenuOpen(false)}
             >
-              <span className="md:hidden mr-2">
+              <span className=" md:hidden mr-2">
                 <i className={`fa-solid ${link.icon}`}></i>
               </span>
               <span className=" md:block">

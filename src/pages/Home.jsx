@@ -10,7 +10,7 @@ export default function Home() {
       <Header className={"text-white"} />
 
       {/* Hero Section with Video Background */}
-      <div className="relative w-full min-h-[60vh] flex items-center justify-center overflow-hidden select-none">
+      <div className="relative h-220 w-full min-h-[60vh] flex items-center justify-center overflow-hidden select-none">
         <video
           className="absolute inset-0 w-full h-full object-cover z-0"
           autoPlay
@@ -61,7 +61,7 @@ export default function Home() {
           <br />
           YOUR BEING HERE TODAY IS NO COINCIDENT!
         </div>
-        <div className="text-black text-2xl md:text-4xl text-center p-5 pt-2 font-sans font-bold text-blue-700">
+        <div className=" text-2xl md:text-4xl text-center p-5 pt-2 font-sans font-bold text-blue-700">
           God Brought you here for His purpose.
         </div>
 

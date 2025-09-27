@@ -8,12 +8,14 @@
   justify-content: stretch;
 }
 .Header {
-  background: linear-gradient(#ACF2AE, #3ED63F)
+  background-color: #3ED63F;
 }
 
+
 .nav-linkk {
-  background: linear-gradient( #3ED63F, #159911)
+  background-color: #3ED63F;
 }
+
 
 .Header--container {
   flex: 1;
@@ -63,4 +65,10 @@
   color: blue;
 }
 
+.google {
+  height: 300px;
+  width: 300px;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+  align-items: center;
+}
 

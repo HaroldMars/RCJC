@@ -13,7 +13,7 @@ function StateMent() {
       </p>
 
       <h1 className=" pt-5 text-blue-700">
-        1. <b>Self-Progating</b>
+        1. <b>Self-Propagating</b>
       </h1>
       <p className="text-blue-400">
         &emsp;&emsp;The church's growth is accomplished by utilizing its very
