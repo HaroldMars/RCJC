@@ -6,7 +6,7 @@ import Background from "../assets/bg.jpg";
 
 export default function Home() {
   return (
-    <div className="back w-full min-h-screen text-black mb-0">
+    <div className=" w-full min-h-screen text-black mb-0">
       <Header className={"text-white"} />
 
       {/* Hero Section with Video Background */}
