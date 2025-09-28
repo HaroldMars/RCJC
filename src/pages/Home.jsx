@@ -29,11 +29,11 @@ export default function Home() {
 
       
       <div
-  className="w-full max-w-100px md:h-200 mx-auto mt-16 px-4 py-12 bg-cover h-100 bg-center object-cover relative bg-gray-500"
+  className="w-full max-w-100px md:h-200 mx-auto mt- px-4 py-12 bg-cover h-100 bg-center object-cover relative bg-gray-500"
   style={{ backgroundImage: `url(${Background})` }}
 >
   
-  <div className="absolute inset-0  bg-opacity-50 bg-gray-500/50"></div>
+  <div className=" absolute inset-0  bg-opacity-50 bg-gray-500/50"></div>
 
   
   <div className="relative z-10 text-center ">
