@@ -48,6 +48,7 @@
 
 .foot {
   background: linear-gradient(#93DBFA, #1D4554);
+  
 }
 
 .section {
@@ -70,5 +71,6 @@
   width: 300px;
   box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
   align-items: center;
+  border-radius: 10px 10px 10px 10px;
 }
 

@@ -25,6 +25,11 @@ function Header({ className }) {
 
   const navLinks = [
     {
+      to: "/",
+      icon: "fa-home",
+      label: "HOME",
+    },
+    {
       to: "/About",
       icon: "fa-address-card",
       label: "ABOUT US",
@@ -101,7 +106,7 @@ function Header({ className }) {
               key={link.to}
               to={link.to}
               className={({ isActive }) =>
-                `  px-4 py-3 md:py-0 cursor-pointer truncate flex items-center text-white ${
+                `  px-4 py-3 md:py-0 cursor-pointer truncate flex items-center text-black ${
                   isActive ? "font-bold" : ""
                 }`
               }

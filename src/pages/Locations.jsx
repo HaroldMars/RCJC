@@ -22,7 +22,7 @@ export default function Locations() {
           </div>
         </div>
 
-        <div className="h-400 bg-gray-300">
+        <div className="h-auto bg-gray-300">
           {/* Map Section - will appear after scrolling */}
           <div className="w-full flex justify-center px-4">
   {/* Container for map and text side by side */}
