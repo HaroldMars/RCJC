@@ -6,9 +6,9 @@ function StateMent() {
       <h1 className="font-bold text-blue-700 ">RCJCIM 4S</h1>
       <p className="text-blue-400">
         More than 20 solid years have passed since RCJCIM was established,
-        <br /> yet the church never resorted to financial support from other
+        yet the church never resorted to financial support from other
         countries in order to thrive.
-        <br /> Our support solely comes from God and the 4S principle we have
+         Our support solely comes from God and the 4S principle we have
         established:
       </p>
 
@@ -16,11 +16,11 @@ function StateMent() {
         1. <b>Self-Propagating</b>
       </h1>
       <p className="text-blue-400">
-        &emsp;&emsp;The church's growth is accomplished by utilizing its very
+        The church's growth is accomplished by utilizing its very
         own leaders and
-        <br /> members being sent by the Lord who are willing to commit and
+        members being sent by the Lord who are willing to commit and
         sacrifice
-        <br /> their lives in order to spread out God’s kingdom.
+        their lives in order to spread out God’s kingdom.
       </p>
 
       <h1 className="pt-5 text-blue-700">
@@ -28,7 +28,7 @@ function StateMent() {
       </h1>
       <p className="text-blue-400">
         The church gets its teachings from God,
-        <br />
+        
         not from man-made doctrines that contradict the Word of God.
       </p>
 
@@ -37,7 +37,7 @@ function StateMent() {
       </h1>
       <p className="text-blue-400">
         The church has endured and sustained all ministerial
-        <br />
+        
         needs through mutual support.
       </p>
       
