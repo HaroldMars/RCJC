@@ -58,9 +58,9 @@ function Header({ className }) {
 
   return (
     <div
-      className={` absolute w-screen z-1 mt-0 h-20 grid grid-cols-2 md:grid-cols-6  items-center ${className} ${
+      className={`navv absolute w-screen z-1 mt-0 h-20 grid grid-cols-2 md:grid-cols-6 items-center  ${className} ${
         scrolled
-          ? "fixed top-0 left-0 w-full shadow-lg text-white z-50"
+          ? "fixed top-0 left-0 w-full shadow-lg text-white z-50 "
           : "text-white"
       }`}
     >
@@ -78,16 +78,16 @@ function Header({ className }) {
       </div>
 
       {/* Hamburger menu for mobile */}
-      <div className="flex justify-end items-center md:hidden col-span-1">
+      <div className="flex justify-end items-center md:hidden col-span-1 pr-0">
         <button
-          className="p-2 focus:outline-none cursor-pointer pr-5 text-green-700"
+          className="p-2 focus:outline-none cursor-pointer  text-green-700"
           onClick={() => setMenuOpen((prev) => !prev)}
           aria-label="Toggle navigation"
         >
           {menuOpen ? (
-            <i className={`fa-solid fa-xmark text-2xl pr-3`} />
+            <i className={`fa-solid fa-xmark text-2xl pr-`} />
           ) : (
-            <i className={`fa-solid fa-bars text-2xl pr-3`} />
+            <i className={`fa-solid fa-bars text-2xl pr-`} />
           )}
         </button>
       </div>
