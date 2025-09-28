@@ -17,7 +17,7 @@ export default function Locations() {
           />
           <div className="absolute inset-0 bg-white/50 flex items-center justify-center">
             <div className="text-green-700 dmSans text-6xl md:text-6xl font-bold text-center font-sans">
-              LOCATION
+              Locations
             </div>
           </div>
         </div>

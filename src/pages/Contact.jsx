@@ -6,7 +6,7 @@ export default function Contact() {
     <div className="bg-white w-screen h-fit text-black">
       <Header />
       <div className="bg-white w-screen h-fit text-black text-center pt-30">
-        <div className="dmSans text-[500%] font-bold mt-10px font text-center">
+        <div className="dmSans text-6xl font-bold mt-10px font text-center">
           Contact
         </div>
       </div>

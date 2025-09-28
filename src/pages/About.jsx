@@ -36,7 +36,7 @@ export default function About() {
           alt="Background"
         />
         <div className="absolute inset-0 flex items-center justify-center px-4">
-          <div className="text-green-500 font-bold text-center text-6xl md:text-5xl lg:text-9xl">
+          <div className="text-green-500 font-bold text-center text-6xl ">
             About Us
           </div>
         </div>
@@ -81,7 +81,7 @@ export default function About() {
                   onClick={() => toggleSection(key)}
                   className="flex items-center justify-between cursor-pointer px-4 py-2 rounded hover:bg-green-300 transition duration-300"
                 >
-                  <span className="text-gray-700 font-medium">{title}</span>
+                  <span className="text-gray-700 font-medium ">{title}</span>
                   {/* Arrow indicator */}
                   <svg
                     className={`w-4 h-4 transition-transform duration-300 ${
@@ -101,7 +101,7 @@ export default function About() {
                 </li>
                 <ExpandableSection show={expandSection[key]}>
                   <div
-                    className="p-4 bg-gray-50 rounded-lg shadow-inner transition-max-height duration-500 overflow-hidden"
+                    className="p-4 bg-gray-50 rounded-lg text-left shadow-inner transition-max-height duration-500 overflow-hidden"
                     style={{
                       maxHeight: expandSection[key] ? "5000px" : "0",
                       transition: "max-height 0.5s ease",
