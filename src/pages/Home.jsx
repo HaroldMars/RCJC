@@ -38,7 +38,7 @@ export default function Home() {
   
   <div className="relative z-10 text-center ">
     <div className="dmSans text-4xl md:text-6xl font-bold mb-6 text-blue-900">
-      Welcome To The Family
+      Welcome to the Family
     </div>
     <div className="dmSans text-lg md:text-2xl text-blue-100">
       <p>

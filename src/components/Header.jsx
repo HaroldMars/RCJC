@@ -106,7 +106,7 @@ function Header({ className }) {
               key={link.to}
               to={link.to}
               className={({ isActive }) =>
-                `  px-4 py-3 md:py-0 cursor-pointer truncate flex items-center text-black ${
+                `  px-4 py-3 md:py-0 cursor-pointer truncate flex items-center text-blue-700 ${
                   isActive ? "font-bold" : ""
                 }`
               }
