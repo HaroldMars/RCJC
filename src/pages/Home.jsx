@@ -6,7 +6,7 @@ import Background from "../assets/bg.jpg";
 
 export default function Home() {
   return (
-    <div className="w-full min-h-screen text-black mb-0">
+    <div className="back w-full min-h-screen text-black mb-0">
       <Header className={"text-white"} />
 
       {/* Hero Section with Video Background */}
@@ -29,7 +29,7 @@ export default function Home() {
 
       
       <div
-  className="w-full max-w-5xl mx-auto mt-16 px-4 py-12 bg-cover bg-center object-cover relative bg-gray-500"
+  className="w-full max-w-100px md:h-200 mx-auto mt-16 px-4 py-12 bg-cover h-100 bg-center object-cover relative bg-gray-500"
   style={{ backgroundImage: `url(${Background})` }}
 >
   
