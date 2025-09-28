@@ -58,7 +58,7 @@ function Header({ className }) {
 
   return (
     <div
-      className={`bg-blue-100/50 absolute w-screen z-1 mt-0 h-20 grid grid-cols-2 md:grid-cols-6  items-center ${className} ${
+      className={` absolute w-screen z-1 mt-0 h-20 grid grid-cols-2 md:grid-cols-6  items-center ${className} ${
         scrolled
           ? "fixed top-0 left-0 w-full shadow-lg text-white z-50"
           : "text-white"
@@ -96,7 +96,7 @@ function Header({ className }) {
       <div
         className={`
           ${menuOpen ? "block" : "hidden"}
-           bg-blue-100/50 absolute top-20 left-0 w-full  shadow-md z-40 
+            absolute top-20 left-0 w-full  shadow-md z-40 
           md:static md:block md:bg-transparent md:shadow-none md:col-span-3
         `}
       >
