@@ -71,7 +71,7 @@ function Header({ className }) {
         title="Home"
       >
         <img
-          className="w-50 h-16 ml-4 sm:w-50  md:w-60 md:h-20 md:ml-50"
+          className="w-50 h-16 ml-4 sm:w-50  md:w-60 md:h-20 md:ml-10"
           src={Logo}
           alt="Logo"
         />

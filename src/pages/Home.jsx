@@ -55,7 +55,9 @@ export default function Home() {
 </div>
 
       
+      
       <div className="bg-white w-full py-10 px-4">
+        {/*
         <div className="text-blue-300 text-center p-5 pb-2 font-sans text-base md:text-lg">
           LOOKING FOR ANSWER? THINK YOUR VISITING THIS SITE IS A COINCIDENCE?
           <br />
@@ -63,7 +65,8 @@ export default function Home() {
         </div>
         <div className=" text-2xl md:text-4xl text-center p-5 pt-2 font-sans font-bold text-blue-700">
           God Brought you here for His purpose.
-        </div>
+        </div> 
+        */}
 
         {/* Responsive YouTube Video */}
         <div className="flex justify-center pt-10 pb-10 mb-10">
