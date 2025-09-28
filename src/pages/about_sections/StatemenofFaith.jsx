@@ -22,7 +22,7 @@ function StatementofFaith() {
       </p>
       <h1 className="text-blue-700 font-bold pt-5">Doctrine about Jesus Christ</h1>
       <p className="text-blue-400">We believe that our Lord Jesus Christ is both God and man. He is the second person of the Trinity. He is the ONLY BEGOTTEN SON of GOD, Savior of the whole world and Mediator between God and man.</p>
-      <h1 className="text-blue-700 pt-5">Doctrine about Deity of Jesus Christ</h1>
+      <h1 className="text-blue-700 font-bold pt-5">Doctrine about Deity of Jesus Christ</h1>
       <p className="text-blue-400">We believe in the Deity of the Lord Jesus Christ. He is God who became flesh. The Father, the Holy Spirit, the angels, the prophets, the apostles and other characters in the Bible witnessed His divine nature. </p>
 
       <h1 className="text-blue-700 font-bold pt-5">Doctrine about Trinity</h1>
