@@ -42,7 +42,7 @@ function StateMent() {
       </p>
       
       <h1 className="pt-5 text-blue-700">4. <b>Self-Supporting</b></h1>
-      <p className="text-blue-400">Member help and support each other.</p>
+      <p className="text-blue-400">Members help and support each other.</p>
     </div>
   );
 }
