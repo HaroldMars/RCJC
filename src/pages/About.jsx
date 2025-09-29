@@ -35,15 +35,15 @@ export default function About() {
           src={Background}
           alt="Background"
         />
-        <div className="absolute inset-0 flex items-center justify-center px-4">
-          <div className="text-green-500 font-bold text-center text-6xl ">
-            About Us
+        <div className="absolute inset-0 flex items-center justify-center bg-white/30 px-4">
+          <div className="text-green-500 font-bold text-center  text-6xl ">
+            CONNECT WITH US
           </div>
         </div>
       </div>
 
       {/* Placeholder Text */}
-      <div className="h-auto p-4">
+      <div className="h-auto p-4 ">
         <p className="text-center mt-10 md:text-2xl sm:text-10px text-green-500">
           This is a temporary text block designed to serve as a placeholder.{" "}
           <br />
