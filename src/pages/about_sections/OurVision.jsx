@@ -2,7 +2,7 @@ import React from 'react'
 
 function OurVision() {
   return (
-    <div>
+    <div className='font-DmSans'>
       <h1 className='font-bold text-blue-700'>RCJCIM Vision Statement</h1>
       <br />
       <p className='text-blue-400'><b>1.</b> Each one brings one to Jesus.</p>

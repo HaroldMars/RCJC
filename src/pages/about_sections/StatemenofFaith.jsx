@@ -2,7 +2,7 @@ import React from "react";
 
 function StatementofFaith() {
   return (
-    <div className="h-auto">
+    <div className="h-auto font-DmSans">
       <p className="pt-5 text-blue-400">
         RCJCIM is a Bible-centered church. All 66 books of the Old and New
         Testament are inspired by the Holy Spirit and are the sole basis of our

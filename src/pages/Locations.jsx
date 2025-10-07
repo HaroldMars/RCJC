@@ -6,7 +6,7 @@ import Logo from "../assets/logo.png";
 export default function Locations() {
   return (
     <>
-      <div className="bg-white w-screen h-fit text-black ">
+      <div className="bg-white w-screen font-DmSans h-fit text-black ">
         <Header />
 
         <div className="relative h-220 w-screen">
@@ -16,8 +16,8 @@ export default function Locations() {
             alt=""
           />
           <div className="absolute inset-0 bg-white/50 flex items-center justify-center">
-            <div className="text-green-700 dmSans text-6xl md:text-6xl font-bold text-center font-sans">
-              Locations
+            <div className="text-green-700 font-DmSans text-6xl md:text-6xl font-bold text-center">
+              Connect with us
             </div>
           </div>
         </div>

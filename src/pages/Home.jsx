@@ -6,7 +6,7 @@ import Background from "../assets/bg.jpg";
 
 export default function Home() {
   return (
-    <div className=" w-full min-h-screen text-black mb-0">
+    <div className=" w-full min-h-screen font-DmSans text-black mb-0">
       <Header className={"text-white"} />
 
       {/* Hero Section with Video Background */}
@@ -21,7 +21,7 @@ export default function Home() {
           src={videoBanner}
         />
         <div className="relative z-10 flex flex-col items-center justify-center w-full h-50 bg-white/50">
-          <div className="text-green-700 dmSans text-6xl md:text-6xl font-bold mt-4 text-center font-sans">
+          <div className="text-green-700 font-DmSans text-6xl md:text-6xl font-bold mt-4 text-center">
             Welcome Home
           </div>
         </div>

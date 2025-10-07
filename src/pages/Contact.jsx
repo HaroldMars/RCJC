@@ -14,7 +14,7 @@ export default function Contact() {
                   alt=""
                 />
                 <div className="absolute inset-0 bg-white/50 flex items-center justify-center">
-                  <div className="text-green-700 dmSans text-6xl md:text-6xl font-bold text-center font-sans">
+                  <div className="text-green-700 font-DmSans text-6xl md:text-6xl font-bold text-center ">
                     Contact us
                   </div>
                 </div>

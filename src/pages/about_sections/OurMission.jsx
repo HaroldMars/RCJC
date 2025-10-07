@@ -2,7 +2,7 @@ import React from 'react'
 
 function OurMission() {
   return (
-    <div>
+    <div className='font-DmSans'>
       <h1 className='text-blue-700 font-bold'>RCJCIM Mission Statement</h1>
       <p className='pt-5 text-blue-400'><b>1.</b> Proclaiming salvation and repentance through preaching, 
         teaching, and sharing God's message.</p>

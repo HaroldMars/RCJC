@@ -1,4 +1,13 @@
+@font-face {
+  font-family: DmSans;
+  src: url("../src/assets/fonts/DMSans-Regular.ttf");
+}
+
 @import "tailwindcss";
+
+@theme{
+  --font-DmSans: DmSans, "sans-serif";
+}
 
 .root {
   height: 70vh;
@@ -7,6 +16,7 @@
   flex-direction: column;
   justify-content: stretch;
 }
+
 .Header {
   background-color: rgba(62, 214, 63, 0.3); /* 30% opacity */
 }
@@ -78,3 +88,4 @@
 .navv {
   padding-right: 30px;
 }
+

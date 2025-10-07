@@ -2,7 +2,7 @@ import React from "react";
 
 function StateMent() {
   return (
-    <div className="text-justify">
+    <div className="text-justify font-DmSans">
       <h1 className="font-bold text-blue-700 ">RCJCIM 4S</h1>
       <p className="text-blue-400">
         More than 20 solid years have passed since RCJCIM was established,
