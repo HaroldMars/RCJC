@@ -25,18 +25,18 @@ export default function About() {
   };
 
   return (
-    <div className="bg-gray-100 w-screen font-DmSans h-fit text-black">
+    <div className="bg-gray-100 w-screen font-font-bold h-fit text-black">
       <Header />
 
       {/* Background Image Section */}
-      <div className="relative w-screen h-220">
+      <div className="relative w-screen font-DmSans-Bold h-220">
         <img
           className="w-full h-full object-cover"
           src={Background}
           alt="Background"
         />
-        <div className="absolute inset-0 flex items-center justify-center bg-white/30 px-4">
-          <div className="text-green-700 font-bold text-center font-DmSans text-6xl ">
+        <div className="absolute inset-0 flex items-center justify-center bg-white/50 px-4">
+          <div className="text-green-700 font-DmSans-Bold text-center  text-6xl ">
             About us
           </div>
         </div>

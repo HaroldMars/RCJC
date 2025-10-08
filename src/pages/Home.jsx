@@ -21,7 +21,7 @@ export default function Home() {
           src={videoBanner}
         />
         <div className="relative z-10 flex flex-col items-center justify-center w-full h-50 bg-white/50">
-          <div className="text-green-700 font-DmSans text-6xl md:text-6xl font-bold mt-4 text-center">
+          <div className="text-green-700 font-DmSans-Bold text-6xl md:text-6xl font-bold mt-4 text-center">
             Welcome Home
           </div>
         </div>

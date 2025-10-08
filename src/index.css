@@ -1,12 +1,15 @@
 @font-face {
   font-family: DmSans;
   src: url("../src/assets/fonts/DMSans-Regular.ttf");
+  font-family: DMsans-Bold;
+  src: url("../src/assets/fonts/DMSans-Bold.ttf");
 }
 
 @import "tailwindcss";
 
 @theme{
   --font-DmSans: DmSans, "sans-serif";
+  --font-DmSans-Bold: DMsans-Bold, "sans-serif";
 }
 
 .root {
