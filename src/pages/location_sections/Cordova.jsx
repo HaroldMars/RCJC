@@ -1,5 +1,5 @@
 import React from "react";
-import Pastor from "../../assets/jessa.jpg";
+import Pastor from "../../assets/Jessa.jpg";
 
 function Cordova() {
   return (
