@@ -1,5 +1,5 @@
 import React from "react";
-import Pastor from "../../assets/vilma.jpg";
+import Pastor from "../../assets/Vilma.jpg";
 
 function compostela() {
   return (
