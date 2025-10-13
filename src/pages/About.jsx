@@ -47,15 +47,20 @@ export default function About() {
 
       {/* Placeholder Text */}
       <div className="h-auto p-4 ">
-        <p className="text-center mt-10 md:text-2xl sm:text-10px text-green-500"  data-aos="fade-up" data-aos-delay="300">
-          This is a temporary text block designed to serve as a placeholder.{" "}
-          <br />
-          It is not meant to be used for any final content and
-          <br /> should be replaced once the actual information is ready.
-          <br />
-          The text here can help you visualize how your design <br />
-          will look once populated with real content.
-        </p>
+        <p
+  className="text-center mt-10 text-green-500 
+             text-sm md:text-xl sm:text-xs font-DmSans"
+  data-aos="fade-up"
+  data-aos-delay="300"
+>
+  At RCJCIM, we're truly a family—rooted in the Bible
+  <br />
+   and passionate about sharing the love of Jesus Christ <br />with everyone.
+   
+    Scroll down to discover our heart: the mission we<br /> live by, the vision that inspires us,
+    <br />
+     and the core faith that brings us all together.
+</p>
 
         {/* Expandable Sections */}
         <div className="max-w-2xl mx-auto bg-green-200 p-4 rounded-lg shadow-lg mb-8 mt-5" data-aos="fade-right" data-aos-delay="500">

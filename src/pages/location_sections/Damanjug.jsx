@@ -13,7 +13,7 @@ function Dumanjug() {
         Benedicto Zulueta
       </h1>
       <p className="pt-2 text-xl text-gray-700">
-        No Location yet
+        Tangil, Dumanjug, Cebu
       </p>
       {/*<a className="linkk" href=""> Press to locate via Google map</a>*/}
     </div>
