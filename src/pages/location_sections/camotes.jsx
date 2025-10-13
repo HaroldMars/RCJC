@@ -1,5 +1,5 @@
 import React from "react";
-import Pastor from "../../assets/pfp.jpg";
+import Pastor from "../../assets/Cherilyn.jpg";
 
 function camotes() {
   return (

@@ -24,6 +24,9 @@ import Palompon from "./location_sections/Palompon";
 import Tuno from "./location_sections/Tuno";
 import Bahbah from "./location_sections/Bahbah";
 import Biaknabato from "./location_sections/Biaknabato";
+import "aos/dist/aos.css";
+import AOS from "aos";
+AOS.init();
 
 export default function Locations() {
   const [expandSection, setExpandSection] = useState({});
@@ -174,7 +177,7 @@ export default function Locations() {
             alt=""
           />
           <div className="absolute inset-0 bg-white/50 flex items-center justify-center">
-            <div className="text-green-700 font-DmSans-Bold text-6xl md:text-6xl font-bold text-center">
+            <div className="text-green-700 font-DmSans-Bold text-6xl md:text-6xl font-bold text-center" data-aos="fade-up" data-aos-delay="500">
               Connect with us
             </div>
           </div>
@@ -182,7 +185,7 @@ export default function Locations() {
 
         {/* Main content */}
         <div className="h-auto bg-white">
-          <div className="text-center text-4xl font-DmSans-Bold mt-10">
+          <div className="text-center text-4xl font-DmSans-Bold mt-10" data-aos="fade-right" data-aos-delay="300">
             <img src={Logo} alt="Church Logo" className="w-16 h-16 mx-auto" />
             <h1 className="">IN BOHOL</h1>
             <ul className="mt-4 mb-4">
@@ -227,7 +230,7 @@ export default function Locations() {
               ))}
             </ul>
           </div>
-          <div className="text-center text-4xl font-DmSans-Bold mb-10">
+          <div className="text-center text-4xl font-DmSans-Bold mb-10" data-aos="fade-right" data-aos-delay="300">
             <h1>IN CEBU</h1>
             <ul className="mt-4 mb-4">
               {cebuSections.map(({ title, component, key }) => (
@@ -271,7 +274,7 @@ export default function Locations() {
               ))}
             </ul>
           </div>
-          <div className="text-center text-4xl font-DmSans-Bold mb-10">
+          <div className="text-center text-4xl font-DmSans-Bold mb-10" data-aos="fade-right" data-aos-delay="300">
             <h1>IN LEYTE</h1>
             <ul className="mt-4 mb-4">
               {leyteSections.map(({ title, component, key }) => (
@@ -315,7 +318,7 @@ export default function Locations() {
               ))}
             </ul>
           </div>
-          <div className="text-center text-4xl font-DmSans-Bold mb-10">
+          <div className="text-center text-4xl font-DmSans-Bold mb-10" data-aos="fade-right" data-aos-delay="300">
             <h1>IN MINDANAO</h1>
             <ul className="mt-4 mb-4">
               {mindanaoSections.map(({ title, component, key }) => (
@@ -359,7 +362,7 @@ export default function Locations() {
               ))}
             </ul>
           </div>
-          <div className="text-center text-4xl font-DmSans-Bold mb-10">
+          <div className="text-center text-4xl font-DmSans-Bold mb-10" data-aos="fade-right" data-aos-delay="300">
             <h1>IN NEGROS</h1>
             <ul className="mt-4 mb-4">
               {negrosSections.map(({ title, component, key }) => (
@@ -408,7 +411,7 @@ export default function Locations() {
         
 
         {/* Footer */}
-        <div className="bg-gray-700 w-full text-black">
+        <div className="bg-gray-700 w-full text-black" data-aos="fade-up" data-aos-delay="300">
           <footer className="foot text-white h-100">
             <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-4 py-4">
               {/* Logo */}

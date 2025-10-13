@@ -1,5 +1,5 @@
 import React from "react";
-import Pastor from "../../assets/Fatima.png";
+import Pastor from "../../assets/Fatima.jpg";
 
 function Bacagay() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import Pastor from "../../assets/Geronima.jpg";
+import Pastor from "../../assets/Genorima.jpg";
 
 function Mandaue() {
   return (

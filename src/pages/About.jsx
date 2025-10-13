@@ -7,6 +7,9 @@ import OurVision from "./about_sections/OurVision";
 import StateMent from "./about_sections/StateMent";
 import StatementofFaith from "./about_sections/StatemenofFaith";
 import Logo from "../assets/newlogo.png";
+import "aos/dist/aos.css";
+import AOS from "aos";
+AOS.init();
 
 export default function About() {
   const [expandSection, setExpandSection] = useState({
@@ -29,14 +32,14 @@ export default function About() {
       <Header />
 
       {/* Background Image Section */}
-      <div className="relative w-screen font-DmSans-Bold h-220">
+      <div className="relative w-screen font-DmSans-Bold h-220" data-aos="fade-in">
         <img
           className="w-full h-full object-cover"
           src={Background}
           alt="Background"
         />
-        <div className="absolute inset-0 flex items-center justify-center bg-white/50 px-4">
-          <div className="text-green-700 font-DmSans-Bold text-center  text-6xl ">
+        <div className="absolute inset-0 flex items-center justify-center bg-white/50 px-4" >
+          <div className="text-green-700 font-DmSans-Bold text-center  text-6xl " data-aos="fade-up" data-aos-delay="500">
             About us
           </div>
         </div>
@@ -44,7 +47,7 @@ export default function About() {
 
       {/* Placeholder Text */}
       <div className="h-auto p-4 ">
-        <p className="text-center mt-10 md:text-2xl sm:text-10px text-green-500">
+        <p className="text-center mt-10 md:text-2xl sm:text-10px text-green-500"  data-aos="fade-up" data-aos-delay="300">
           This is a temporary text block designed to serve as a placeholder.{" "}
           <br />
           It is not meant to be used for any final content and
@@ -55,7 +58,7 @@ export default function About() {
         </p>
 
         {/* Expandable Sections */}
-        <div className="max-w-2xl mx-auto bg-green-200 p-4 rounded-lg shadow-lg mb-8 mt-5">
+        <div className="max-w-2xl mx-auto bg-green-200 p-4 rounded-lg shadow-lg mb-8 mt-5" data-aos="fade-right" data-aos-delay="500">
           <ul className="space-y-4 ">
             {[
               { title: "4S", component: <StateMent />, key: "stateMent" },
@@ -119,8 +122,8 @@ export default function About() {
       {/* Staff & Area Leaders Section (optional placeholder) */}
       <div>
         <div className=" w-full text-black ">
-          <footer className="foot text-white h-auto  py-4">
-            <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-4 px-4">
+          <footer className="foot text-white h-auto  py-4" >
+            <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-4 px-4" >
               {/* Logo */}
               <img src={Logo} alt="Church Logo" className="w-50 " />
             </div>

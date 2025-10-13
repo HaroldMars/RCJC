@@ -2,6 +2,9 @@ import React from "react";
 import Header from "../components/Header";
 import Background from "../assets/contact.jpg";
 import Logo from "../assets/newlogo.png";
+import "aos/dist/aos.css";
+import AOS from "aos";
+AOS.init();
 
 export default function Contact() {
   return (
@@ -14,7 +17,7 @@ export default function Contact() {
                   alt=""
                 />
                 <div className="absolute inset-0 bg-white/50 flex items-center justify-center">
-                  <div className="text-green-700 font-DmSans-Bold text-6xl md:text-6xl font-bold text-center ">
+                  <div className="text-green-700 font-DmSans-Bold text-6xl md:text-6xl font-bold text-center " data-aos="fade-up" data-aos-delay="300">
                     Contact us
                   </div>
                 </div>

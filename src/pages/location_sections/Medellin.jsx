@@ -1,5 +1,5 @@
 import React from "react";
-import Pastor from "../../assets/Mario.png";
+import Pastor from "../../assets/Mario.jpg";
 
 function Medellin() {
   return (
