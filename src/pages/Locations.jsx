@@ -24,6 +24,10 @@ import Palompon from "./location_sections/Palompon";
 import Tuno from "./location_sections/Tuno";
 import Bahbah from "./location_sections/Bahbah";
 import Biaknabato from "./location_sections/Biaknabato";
+import Aligria from "./location_sections/Alegria";
+import Cambagang from "./location_sections/Cambagang";
+import Pasta from "./location_sections/Pasta";
+import Unidad from "./location_sections/Unidad";
 import "aos/dist/aos.css";
 import AOS from "aos";
 AOS.init();
@@ -149,9 +153,29 @@ export default function Locations() {
 
   const mindanaoSections = [
     {
+      title: "RCJCIM Alegria",
+      component: <Aligria />,
+      key: "alegria",
+    },
+    {
       title: "RCJCIM Bahbah",
       component: <Bahbah />,
       key: "bahbah",
+    },
+    {
+      title: "RCJCIM Cambagang",
+      component: <Cambagang />,
+      key: "cambagang",
+    },
+    {
+      title: "RCJCIM Pasta",
+      component: <Pasta />,
+      key: "pasta",
+    },
+    {
+      title: "RCJCIM Unidad",
+      component: <Unidad />,
+      key: "unidad",
     },
   ];
   

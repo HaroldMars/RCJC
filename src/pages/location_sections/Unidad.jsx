@@ -1,7 +1,7 @@
 import React from "react";
-import Pastor from "../../assets/Generosa.jpg";
+import Pastor from "../../assets/pfp.jpg";
 
-function Biaknabato() {
+function Unidad() {
   return (
     <div className="font-DmSans text-blue-400 max-w-md mx-auto p-4 bg-white rounded shadow-md">
       <img
@@ -10,14 +10,14 @@ function Biaknabato() {
         className="profile"
       />
       <h1 className="text-blue-700 font-bold text-3xl mt-2 mb-2">
-        Generosa Doroon
+        Jeashin Alabado
       </h1>
       <p className="pt-2 text-xl text-gray-700">
-        Proper Biak na Bato La Castellana Negros Occidental
+        Unidad, Barobo, Surigao del Sur
       </p>
       {/*<a className="linkk" href=""> Press to locate via Google map</a>*/}
     </div>
   );
 }
 
-export default Biaknabato;
+export default Unidad;
