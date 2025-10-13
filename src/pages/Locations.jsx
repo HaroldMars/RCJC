@@ -191,13 +191,13 @@ export default function Locations() {
             <ul className="mt-4 mb-4">
               {boholsections.map(({ title, component, key }) => (
                 <React.Fragment key={key}>
-                  <hr className="border-gray-300" />
+                  
                   {/* Title row */}
                   <li
                     onClick={() => toggleSection(key)}
                     className="expand flex justify-between items-center cursor-pointer hover:bg-gray-100"
                   >
-                    <span className="text-gray-700 pl-5 font-DmSans">{title}</span>
+                    <span className="text-gray-700 pl-5 text-xl font-DmSans">{title}</span>
                     {/* Arrow indicator */}
                     <svg
                       className={`w-4 h-4 transition-transform duration-300 ${
@@ -235,13 +235,13 @@ export default function Locations() {
             <ul className="mt-4 mb-4">
               {cebuSections.map(({ title, component, key }) => (
                 <React.Fragment key={key}>
-                  <hr className="border-gray-300" />
+                  
                   {/* Title row */}
                   <li
                     onClick={() => toggleSection(key)}
                     className="expand flex justify-between items-center cursor-pointer hover:bg-gray-100"
                   >
-                    <span className="text-gray-700 pl-5 font-DmSans">{title}</span>
+                    <span className="text-gray-700 pl-5 text-xl font-DmSans">{title}</span>
                     {/* Arrow indicator */}
                     <svg
                       className={`w-4 h-4 transition-transform duration-300 ${
@@ -279,13 +279,13 @@ export default function Locations() {
             <ul className="mt-4 mb-4">
               {leyteSections.map(({ title, component, key }) => (
                 <React.Fragment key={key}>
-                  <hr className="border-gray-300" />
+                  
                   {/* Title row */}
                   <li
                     onClick={() => toggleSection(key)}
                     className="expand flex justify-between items-center cursor-pointer hover:bg-gray-100"
                   >
-                    <span className="text-gray-700 pl-5 font-DmSans">{title}</span>
+                    <span className="text-gray-700 pl-5 text-xl font-DmSans">{title}</span>
                     {/* Arrow indicator */}
                     <svg
                       className={`w-4 h-4 transition-transform duration-300 ${
@@ -323,13 +323,13 @@ export default function Locations() {
             <ul className="mt-4 mb-4">
               {mindanaoSections.map(({ title, component, key }) => (
                 <React.Fragment key={key}>
-                  <hr className="border-gray-300" />
+                  
                   {/* Title row */}
                   <li
                     onClick={() => toggleSection(key)}
                     className="expand flex justify-between items-center cursor-pointer hover:bg-gray-100"
                   >
-                    <span className="text-gray-700 pl-5 font-DmSans">{title}</span>
+                    <span className="text-gray-700 pl-5 text-xl font-DmSans">{title}</span>
                     {/* Arrow indicator */}
                     <svg
                       className={`w-4 h-4 transition-transform duration-300 ${
@@ -367,13 +367,13 @@ export default function Locations() {
             <ul className="mt-4 mb-4">
               {negrosSections.map(({ title, component, key }) => (
                 <React.Fragment key={key}>
-                  <hr className="border-gray-300" />
+                  
                   {/* Title row */}
                   <li
                     onClick={() => toggleSection(key)}
                     className="expand flex justify-between items-center cursor-pointer hover:bg-gray-100"
                   >
-                    <span className="text-gray-700 pl-5 font-DmSans">{title}</span>
+                    <span className="text-gray-700 pl-5 text-xl font-DmSans">{title}</span>
                     {/* Arrow indicator */}
                     <svg
                       className={`w-4 h-4 transition-transform duration-300 ${
