@@ -186,7 +186,6 @@ export default function Locations() {
         {/* Main content */}
         <div className="h-auto bg-white">
           <div className="text-center text-4xl font-DmSans-Bold mt-10" data-aos="fade-right" data-aos-delay="300">
-            <img src={Logo} alt="Church Logo" className="w-16 h-16 mx-auto" />
             <h1 className="">IN BOHOL</h1>
             <ul className="mt-4 mb-4">
               {boholsections.map(({ title, component, key }) => (
