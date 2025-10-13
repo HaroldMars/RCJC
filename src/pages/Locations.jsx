@@ -187,7 +187,7 @@ export default function Locations() {
         <div className="h-auto bg-white">
           <div className="text-center text-4xl font-DmSans-Bold mt-10" data-aos="fade-right" data-aos-delay="300">
             <h1 className="">IN BOHOL</h1>
-            <ul className="mt-4 mb-4">
+            <ul className="mt-4 mb-10">
               {boholsections.map(({ title, component, key }) => (
                 <React.Fragment key={key}>
                   
@@ -231,7 +231,7 @@ export default function Locations() {
           </div>
           <div className="text-center text-4xl font-DmSans-Bold mb-10" data-aos="fade-right" data-aos-delay="300">
             <h1>IN CEBU</h1>
-            <ul className="mt-4 mb-4">
+            <ul className="mt-4 mb-10">
               {cebuSections.map(({ title, component, key }) => (
                 <React.Fragment key={key}>
                   
@@ -275,7 +275,7 @@ export default function Locations() {
           </div>
           <div className="text-center text-4xl font-DmSans-Bold mb-10" data-aos="fade-right" data-aos-delay="300">
             <h1>IN LEYTE</h1>
-            <ul className="mt-4 mb-4">
+            <ul className="mt-4 mb-10">
               {leyteSections.map(({ title, component, key }) => (
                 <React.Fragment key={key}>
                   
@@ -319,7 +319,7 @@ export default function Locations() {
           </div>
           <div className="text-center text-4xl font-DmSans-Bold mb-10" data-aos="fade-right" data-aos-delay="300">
             <h1>IN MINDANAO</h1>
-            <ul className="mt-4 mb-4">
+            <ul className="mt-4 mb-10">
               {mindanaoSections.map(({ title, component, key }) => (
                 <React.Fragment key={key}>
                   
