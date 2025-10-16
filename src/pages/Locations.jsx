@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Background from "../assets/locations.jpg";
+import Background from "../assets/Locations.jpg";
 import Header from "../components/Header";
 import Logo from "../assets/logo.png";
 import Bacagay from "./location_sections/Bacagay";
