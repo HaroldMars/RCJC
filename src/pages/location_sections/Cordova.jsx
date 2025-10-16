@@ -10,7 +10,7 @@ function Cordova() {
         className="profile"
       />
       <h1 className="text-blue-700 font-bold text-3xl mt-2 mb-2">
-        Jessa Daligdig
+        Pastor Jessa Daligdig
       </h1>
       <p className="pt-2 text-xl text-gray-700">
         Catarman 2 Cordova Cebu across Catarman Elementary School

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Background from "../assets/footerpic.jpg";
 import ExpandableSection from "../components/ExpandableSection";
@@ -18,6 +18,9 @@ export default function About() {
     ourVision: false,
     statementofFaith: false,
   });
+  
+  const [showHeader, setShowHeader] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   // Toggle a section and close others
   const toggleSection = (section) => {
@@ -27,12 +30,27 @@ export default function About() {
     }));
   };
 
+  useEffect(() => {
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+    if (currentScrollY > lastScrollY) {
+      setShowHeader(false);
+    } else {
+      setShowHeader(true);
+    }
+    setLastScrollY(currentScrollY);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, [lastScrollY]);
+
   return (
-    <div className="bg-gray-100 w-screen font-font-bold h-fit text-black">
-      <Header />
+    <div className="bg-gray-100 w-screen font-DmSans-Bold h-fit text-black">
+      {showHeader && <Header />}
 
       {/* Background Image Section */}
-      <div className="relative w-screen font-DmSans-Bold h-220" data-aos="fade-in">
+      <div className="relative w-screen font-DmSans-Bold h-220 " data-aos="fade-in">
         <img
           className="w-full h-full object-cover"
           src={Background}

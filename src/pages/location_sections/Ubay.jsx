@@ -10,7 +10,7 @@ function Ubay() {
         className="profile"
       />
       <h1 className="text-blue-700 font-bold text-3xl mt-2 mb-2">
-        Jocelyn Pogoy
+        Pastor Jocelyn Pogoy
       </h1>
       <p className="pt-2 text-xl text-gray-700">
         Purok 2 Poblacion Ubay Bohol

@@ -10,7 +10,7 @@ function Danao() {
         className="profile"
       />
       <h1 className="text-blue-700 font-bold text-3xl mt-2 mb-2">
-        Jinky Casiple
+        Pastor Jinky Casiple
       </h1>
       <p className="pt-2 text-xl text-gray-700">
         Looc, Danao Cebu (few meters away from Brgy Hall across Riders Pit Stop)

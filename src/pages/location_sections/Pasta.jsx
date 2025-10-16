@@ -10,7 +10,7 @@ function Pasta() {
         className="profile"
       />
       <h1 className="text-blue-700 font-bold text-3xl mt-2 mb-2">
-        Merciely Canete
+        Pastor Merciely Canete
       </h1>
       <p className="pt-2 text-xl text-gray-700">
         Brgy. Pasta Agusan del Sur

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Background from "../assets/locationpic.jpg";
+import React, { useState, useEffect } from "react";
+import Background from "../assets/locations.jpg";
 import Header from "../components/Header";
 import Logo from "../assets/logo.png";
 import Bacagay from "./location_sections/Bacagay";
@@ -41,6 +41,9 @@ export default function Locations() {
       [key]: !prev[key],
     }));
   };
+
+    const [showHeader, setShowHeader] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   const boholsections = [
     {
@@ -187,11 +190,26 @@ export default function Locations() {
     },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY) {
+        setShowHeader(false);
+      } else {
+        setShowHeader(true);
+      }
+      setLastScrollY(currentScrollY);
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
 
   return (
     <>
       <div className="bg-white w-screen font-DmSans-Bold h-fit text-black ">
-        <Header />
+        {showHeader && <Header />}
 
         {/* Background section */}
         <div className="relative h-220 w-screen">

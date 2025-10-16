@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div 
     data-aos="fade-in"
-    className=" w-full min-h-screen font-DmSans text-black mb-0">
+    className=" w-full min-h-screen font-DmSans-Bold text-black mb-0">
       <Header className={"text-white"} />
 
       {/* Hero Section with Video Background */}
