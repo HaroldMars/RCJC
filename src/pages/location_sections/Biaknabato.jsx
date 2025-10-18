@@ -12,7 +12,7 @@ function Biaknabato() {
       <h1 className="text-blue-700 font-bold text-3xl mt-2 mb-2">
         Pastor Generosa Doroon
       </h1>
-      <p className="pt-2 text-xl text-gray-700">
+      <p className="pt-2 text-xl homee">
         Proper Biak na Bato La Castellana Negros Occidental
       </p>
       {/*<a className="linkk" href=""> Press to locate via Google map</a>*/}

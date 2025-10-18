@@ -66,7 +66,7 @@ export default function About() {
       {/* Placeholder Text */}
       <div className="h-auto p-4 ">
         <p
-  className="text-center mt-10 text-green-500 
+  className="text-center mt-10 homee 
              text-sm md:text-xl sm:text-xs font-DmSans"
   data-aos="fade-up"
   data-aos-delay="300"
@@ -75,13 +75,19 @@ export default function About() {
   <br />
    and passionate about sharing the love of Jesus Christ <br />with everyone.
    
-    Scroll down to discover our heart: the mission we<br /> live by, the vision that inspires us,
+    Scroll down to discover our heart: the mission<br /> we live by, the vision that inspires us,
     <br />
      and the core faith that brings us all together.
+     <br />
+     <br />
+     Scroll down to discover our heart: the mission we live by,<br />
+the vision that inspires us,
+and the core faith that
+<br /> brings us all together.
 </p>
 
         {/* Expandable Sections */}
-        <div className="max-w-2xl mx-auto bg-green-200 p-4 rounded-lg shadow-lg mb-8 mt-5" data-aos="fade-right" data-aos-delay="500">
+        <div className="max-w-2xl mx-auto expand-box p-4 rounded-lg shadow-lg mb-8 mt-5" data-aos="fade-right" data-aos-delay="500">
           <ul className="space-y-4 ">
             {[
               { title: "4S", component: <StateMent />, key: "stateMent" },
@@ -107,7 +113,7 @@ export default function About() {
                   onClick={() => toggleSection(key)}
                   className="flex items-center justify-between cursor-pointer px-4 py-2 rounded hover:bg-green-300 transition duration-300"
                 >
-                  <span className="text-gray-700 font-medium ">{title}</span>
+                  <span className="homee font-medium ">{title}</span>
                   {/* Arrow indicator */}
                   <svg
                     className={`w-4 h-4 transition-transform duration-300 ${

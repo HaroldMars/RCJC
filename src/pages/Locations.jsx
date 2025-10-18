@@ -228,7 +228,7 @@ export default function Locations() {
         {/* Main content */}
         <div className="h-auto bg-white">
           <div className="text-center text-4xl font-DmSans-Bold mt-10" data-aos="fade-right" data-aos-delay="300">
-            <h1 className="">IN BOHOL</h1>
+            <h1 className="homee">IN BOHOL</h1>
             <ul className="mt-4 mb-10">
               {boholsections.map(({ title, component, key }) => (
                 <React.Fragment key={key}>
@@ -238,7 +238,7 @@ export default function Locations() {
                     onClick={() => toggleSection(key)}
                     className="expand flex justify-between items-center cursor-pointer hover:bg-gray-100"
                   >
-                    <span className="text-gray-700 pl-5 text-xl font-DmSans">{title}</span>
+                    <span className="homee pl-5 text-xl font-DmSans">{title}</span>
                     {/* Arrow indicator */}
                     <svg
                       className={`w-4 h-4 transition-transform duration-300 ${
@@ -272,7 +272,7 @@ export default function Locations() {
             </ul>
           </div>
           <div className="text-center text-4xl font-DmSans-Bold mb-10" data-aos="fade-right" data-aos-delay="300">
-            <h1>IN CEBU</h1>
+            <h1 className="homee">IN CEBU</h1>
             <ul className="mt-4 mb-10">
               {cebuSections.map(({ title, component, key }) => (
                 <React.Fragment key={key}>
@@ -282,7 +282,7 @@ export default function Locations() {
                     onClick={() => toggleSection(key)}
                     className="expand flex justify-between items-center cursor-pointer hover:bg-gray-100"
                   >
-                    <span className="text-gray-700 pl-5 text-xl font-DmSans">{title}</span>
+                    <span className="homee pl-5 text-xl font-DmSans">{title}</span>
                     {/* Arrow indicator */}
                     <svg
                       className={`w-4 h-4 transition-transform duration-300 ${
@@ -316,7 +316,7 @@ export default function Locations() {
             </ul>
           </div>
           <div className="text-center text-4xl font-DmSans-Bold mb-10" data-aos="fade-right" data-aos-delay="300">
-            <h1>IN LEYTE</h1>
+            <h1 className="homee">IN LEYTE</h1>
             <ul className="mt-4 mb-10">
               {leyteSections.map(({ title, component, key }) => (
                 <React.Fragment key={key}>
@@ -326,7 +326,7 @@ export default function Locations() {
                     onClick={() => toggleSection(key)}
                     className="expand flex justify-between items-center cursor-pointer hover:bg-gray-100"
                   >
-                    <span className="text-gray-700 pl-5 text-xl font-DmSans">{title}</span>
+                    <span className="homee pl-5 text-xl font-DmSans">{title}</span>
                     {/* Arrow indicator */}
                     <svg
                       className={`w-4 h-4 transition-transform duration-300 ${
@@ -360,7 +360,7 @@ export default function Locations() {
             </ul>
           </div>
           <div className="text-center text-4xl font-DmSans-Bold mb-10" data-aos="fade-right" data-aos-delay="300">
-            <h1>IN MINDANAO</h1>
+            <h1 className="homee">IN MINDANAO</h1>
             <ul className="mt-4 mb-10">
               {mindanaoSections.map(({ title, component, key }) => (
                 <React.Fragment key={key}>
@@ -370,7 +370,7 @@ export default function Locations() {
                     onClick={() => toggleSection(key)}
                     className="expand flex justify-between items-center cursor-pointer hover:bg-gray-100"
                   >
-                    <span className="text-gray-700 pl-5 text-xl font-DmSans">{title}</span>
+                    <span className="homee pl-5 text-xl font-DmSans">{title}</span>
                     {/* Arrow indicator */}
                     <svg
                       className={`w-4 h-4 transition-transform duration-300 ${
@@ -404,7 +404,7 @@ export default function Locations() {
             </ul>
           </div>
           <div className="text-center text-4xl font-DmSans-Bold mb-10" data-aos="fade-right" data-aos-delay="300">
-            <h1>IN NEGROS</h1>
+            <h1 className="homee">IN NEGROS</h1>
             <ul className="mt-4 mb-4">
               {negrosSections.map(({ title, component, key }) => (
                 <React.Fragment key={key}>
@@ -414,7 +414,7 @@ export default function Locations() {
                     onClick={() => toggleSection(key)}
                     className="expand flex justify-between items-center cursor-pointer hover:bg-gray-100"
                   >
-                    <span className="text-gray-700 pl-5 text-xl font-DmSans">{title}</span>
+                    <span className="homee pl-5 text-xl font-DmSans">{title}</span>
                     {/* Arrow indicator */}
                     <svg
                       className={`w-4 h-4 transition-transform duration-300 ${

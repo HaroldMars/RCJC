@@ -12,7 +12,7 @@ function Matagob() {
       <h1 className="text-blue-700 font-bold text-3xl mt-2 mb-2">
         Pastor Elvie Bulado
       </h1>
-      <p className="pt-2 text-xl text-gray-700">
+      <p className="pt-2 text-xl homee">
         P. Gomez St. Brgy. Riverside Matag-ob, Leyte
       </p>
       {/*<a className="linkk" href=""> Press to locate via Google map</a>*/}

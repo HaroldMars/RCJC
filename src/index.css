@@ -92,6 +92,18 @@
   padding-right: 30px;
 }
 
+.homee {
+  color: #2E4057;
+}
+
+.family {
+  color: #F7F4F0;
+}
+
+.expand-box {
+  background-color: #A9D0D8;
+}
+
 .expand {
   border-radius: 20px;
   width: 80%; 
@@ -123,8 +135,10 @@
 
 .linkk {
   font-size: large;
+  color: #F7F4F0;
   font-weight: bold;
-  border: 2px solid #3ED63F;
+  border: 2px solid #08549C;
+  background-color: #08549C;
   border-radius: 10px;
   padding: 5px 10px;
 }

@@ -12,7 +12,7 @@ function Tabok() {
       <h1 className="text-blue-700 font-bold text-3xl mt-2 mb-2">
         Pastor Janice Nunez
       </h1>
-      <p className="pt-2 text-xl text-gray-700">
+      <p className="pt-2 text-xl homee">
         Almers Compound entrance Suico St Tabok Mandaue City Cebu
       </p>
       {/*<a className="linkk" href=""> Press to locate via Google map</a>*/}
