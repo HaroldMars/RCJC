@@ -8,7 +8,7 @@ AOS.init();
 
 export default function Events() {
   return (
-    <div className="bg-white w-screen h-fit font-DmSans-Bold text-black">
+    <div className="nav-text bg-white w-screen h-fit font-Roboto text-black">
       <Header />
       <div className="relative h-220 w-screen">
                 <img
@@ -17,7 +17,7 @@ export default function Events() {
                   alt=""
                 />
                 <div className="absolute inset-0 bg-white/50 flex items-center justify-center">
-                  <div className="text-green-700 text-6xl md:text-6xl font-DmSans-Bold text-center " data-aos="fade-up" data-aos-delay="300">
+                  <div className="homee text-6xl md:text-6xl font-Roboto text-center " data-aos="fade-up" data-aos-delay="300">
                     Events
                   </div>
                 </div>

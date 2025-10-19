@@ -46,7 +46,7 @@ export default function About() {
 }, [lastScrollY]);
 
   return (
-    <div className="bg-gray-100 w-screen font-DmSans-Bold h-fit text-black">
+    <div className="navi bg-gray-100 w-screen font-Roboto h-fit text-black">
       {showHeader && <Header />}
 
       {/* Background Image Section */}
@@ -57,7 +57,7 @@ export default function About() {
           alt="Background"
         />
         <div className="absolute inset-0 flex items-center justify-center bg-white/50 px-4" >
-          <div className="text-green-700 font-DmSans-Bold text-center  text-6xl " data-aos="fade-up" data-aos-delay="500">
+          <div className="homee font-Roboto text-center  text-6xl " data-aos="fade-up" data-aos-delay="500">
             About us
           </div>
         </div>
@@ -67,7 +67,7 @@ export default function About() {
       <div className="h-auto p-4 ">
         <p
   className="text-center mt-10 homee 
-             text-sm md:text-xl sm:text-xs font-DmSans"
+             text-sm md:text-xl sm:text-xs font-Roboto"
   data-aos="fade-up"
   data-aos-delay="300"
 >
@@ -75,9 +75,7 @@ export default function About() {
   <br />
    and passionate about sharing the love of Jesus Christ <br />with everyone.
    
-    Scroll down to discover our heart: the mission<br /> we live by, the vision that inspires us,
-    <br />
-     and the core faith that brings us all together.
+    
      <br />
      <br />
      Scroll down to discover our heart: the mission we live by,<br />
@@ -111,9 +109,9 @@ and the core faith that
                 <hr className="border-gray-300" />
                 <li
                   onClick={() => toggleSection(key)}
-                  className="flex items-center justify-between cursor-pointer px-4 py-2 rounded hover:bg-green-300 transition duration-300"
+                  className="flex items-center justify-between cursor-pointer px-4 py-2 rounded box-4s transition duration-300"
                 >
-                  <span className="homee font-medium ">{title}</span>
+                  <span className="homee font-Roboto text-center ">{title}</span>
                   {/* Arrow indicator */}
                   <svg
                     className={`w-4 h-4 transition-transform duration-300 ${

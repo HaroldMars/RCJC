@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div 
     data-aos="fade-in"
-    className=" w-full min-h-screen font-DmSans-Bold text-black mb-0">
+    className="nav-text w-full min-h-screen font-Roboto  text-black mb-0">
       <Header className={"text-white"} />
 
       {/* Hero Section with Video Background */}
@@ -31,7 +31,7 @@ export default function Home() {
           src={videoBanner}
         />
         <div className="relative z-10 flex flex-col items-center justify-center w-full h-50 bg-white/50">
-          <div className="homee font-DmSans-Bold text-6xl md:text-6xl font-bold mt-4 text-center" data-aos="fade-up">
+          <div className="homee font-Roboto text-6xl md:text-6xl font-bold mt-4 text-center" data-aos="fade-up">
             Welcome Home
           </div>
         </div>
@@ -51,13 +51,13 @@ export default function Home() {
   
   <div className="relative z-10 text-center">
           <div
-            className="family dmSans text-4xl md:text-6xl font-bold mb-6 "
+            className="family font-Montserrat text-4xl md:text-6xl font-bold mb-6 "
             data-aos="fade-up"
             data-aos-delay="200"
           >
       Welcome to the Family
     </div>
-    <div className="family dmSans text-lg md:text-2xl " data-aos="fade-up" data-aos-delay="400">
+    <div className="family font-Roboto text-lg md:text-2xl " data-aos="fade-up" data-aos-delay="400">
       <p>
         We're so glad you're here!
         <br />

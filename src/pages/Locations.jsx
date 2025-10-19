@@ -208,7 +208,7 @@ export default function Locations() {
 
   return (
     <>
-      <div className="bg-white w-screen font-DmSans-Bold h-fit text-black ">
+      <div className="nav-text bg-white w-screen font-Roboto h-fit text-black ">
         {showHeader && <Header />}
 
         {/* Background section */}
@@ -219,7 +219,7 @@ export default function Locations() {
             alt=""
           />
           <div className="absolute inset-0 bg-white/50 flex items-center justify-center">
-            <div className="text-green-700 font-DmSans-Bold text-6xl md:text-6xl font-bold text-center" data-aos="fade-up" data-aos-delay="500">
+            <div className="homee font-Roboto text-6xl md:text-6xl font-bold text-center" data-aos="fade-up" data-aos-delay="500">
               Connect with us
             </div>
           </div>
