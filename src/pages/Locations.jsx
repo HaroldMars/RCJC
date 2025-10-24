@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import Background from "../assets/Locations.jpg";
 import Header from "../components/Header";
 import Logo from "../assets/logo.png";
-import Bacagay from "./location_sections/Bacagay";
-import Cabul_an from "./location_sections/Cabulan";
-import Ubay from "./location_sections/Ubay";
+// import Bacagay from "./location_sections/Bacagay";
+// import Cabul_an from "./location_sections/Cabulan";
+// import Ubay from "./location_sections/Ubay";
 import Bogo from "./location_sections/bogo";
 import Camotes from "./location_sections/camotes";
 import Compostela from "./location_sections/compostela";
@@ -28,12 +28,53 @@ import Aligria from "./location_sections/Alegria";
 import Cambagang from "./location_sections/Cambagang";
 import Pasta from "./location_sections/Pasta";
 import Unidad from "./location_sections/Unidad";
+import Fatima from "./location_sections/Fatima";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import fatima from "../assets/Fatima.jpg";
+import Jocelyn from "../assets/Jocelyn.jpg";
+import Pfp from "../assets/pfp.jpg";
 AOS.init();
 
 export default function Locations() {
   const [expandSection, setExpandSection] = useState({});
+  const [selectedLocation, setSelectedLocation] = useState("");
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+ const [expandedProfiles, setExpandedProfiles] = useState({
+    Fatima: false,
+    Allan: false,
+    Jocelyn: false,
+  });
+
+   const toggleProfile = (name) => {
+    setExpandedProfiles((prev) => ({
+      ...prev,
+      [name]: !prev[name], // toggle the specific profile
+    }));
+  };
+
+
+  const AreaOptions = [
+    { value: "", label: "Sellect Area" },
+    { value: "bohol", label: "Bohol" },
+    { value: "cebu", label: "Cebu" },
+    { value: "leyte", label: "Leyte" },
+    { value: "mindanao", label: "Mindanao" },
+    { value: "negros", label: "Negros" },
+  ];
+
+  // Optional: Close dropdown if clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest(".location-dropdown")) {
+        setIsDropdownOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const toggleSection = (key) => {
     setExpandSection((prev) => ({
@@ -42,26 +83,26 @@ export default function Locations() {
     }));
   };
 
-    const [showHeader, setShowHeader] = useState(true);
+  const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  const boholsections = [
-    {
-      title: "RCJCIM Bagacay",
-      component: <Bacagay />,
-      key: "bacagay",
-    },
-    {
-      title: "RCJCIM Cabul-an",
-      component: <Cabul_an />,
-      key: "cabulan",
-    },
-    {
-      title: "RCJCIM Ubay",
-      component: <Ubay />,
-      key: "ubay",
-    },
-  ];
+  // const boholsections = [
+  //   {
+  //     title: "RCJCIM Bagacay",
+  //     component: <Bacagay />,
+  //     key: "bacagay",
+  //   },
+  //   {
+  //     title: "RCJCIM Cabul-an",
+  //     component: <Cabul_an />,
+  //     key: "cabulan",
+  //   },
+  //   {
+  //     title: "RCJCIM Ubay",
+  //     component: <Ubay />,
+  //     key: "ubay",
+  //   },
+  // ];
 
   const cebuSections = [
     {
@@ -97,7 +138,7 @@ export default function Locations() {
     {
       title: "RCJCIM Harang",
       component: <Harang />,
-      key: "harang",  
+      key: "harang",
     },
     {
       title: "RCJCIM Kawit",
@@ -181,7 +222,7 @@ export default function Locations() {
       key: "unidad",
     },
   ];
-  
+
   const negrosSections = [
     {
       title: "RCJCIM Biak na Bato",
@@ -200,11 +241,10 @@ export default function Locations() {
       }
       setLastScrollY(currentScrollY);
     };
-  
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
-
 
   return (
     <>
@@ -219,28 +259,83 @@ export default function Locations() {
             alt=""
           />
           <div className="absolute inset-0 bg-white/50 flex items-center justify-center">
-            <div className="homee font-Roboto text-6xl md:text-6xl font-bold text-center" data-aos="fade-up" data-aos-delay="500">
+            <div
+              className="homee font-Roboto text-6xl md:text-6xl font-bold text-center"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
               Connect with us
             </div>
           </div>
         </div>
 
+        <div className="search location-dropdown">
+          {/* Select button */}
+          <button
+            className="w-full px-4 py-2 border search-bar bg-white text-left flex justify-between items-center"
+            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+            aria-haspopup="listbox"
+            aria-expanded={isDropdownOpen}
+          >
+            {selectedLocation
+              ? AreaOptions.find((opt) => opt.value === selectedLocation)?.label
+              : "Select Area..."}
+            {/* Arrow icon */}
+            <svg
+              className={`w-4 h-4 transition-transform duration-300 ${
+                isDropdownOpen ? "rotate-180" : ""
+              }`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+
+          {/* Dropdown options */}
+          {isDropdownOpen && (
+            <div className="absolute top-full search-bar-glass left-0 w-full bg-white border border-gray-300 rounded shadow-lg z-10 max-h-60 overflow-y-auto">
+              {AreaOptions.map((opt) => (
+                <div
+                  key={opt.value}
+                  className="px-4 py-2 hover:bg-green-100 rounded-2xl cursor-pointer"
+                  onClick={() => {
+                    setSelectedLocation(opt.value);
+                    setIsDropdownOpen(false);
+                  }}
+                  role="option"
+                  aria-selected={selectedLocation === opt.value}
+                >
+                  {opt.label}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+
         {/* Main content */}
-        <div className="h-auto bg-white">
-          <div className="text-center text-4xl font-DmSans-Bold mt-10" data-aos="fade-right" data-aos-delay="300">
+        <div className="h-auto bg-white mt-50">
+          {/*<div className="text-center text-4xl font-DmSans-Bold mt-10" data-aos="fade-right" data-aos-delay="300">
             <h1 className="homee">IN BOHOL</h1>
             <ul className="mt-4 mb-10">
               {boholsections.map(({ title, component, key }) => (
-                <React.Fragment key={key}>
-                  
-                  {/* Title row */}
-                  <li
+                <React.Fragment key={key}> */}
+
+          {/* Title row */}
+          {/* <li
                     onClick={() => toggleSection(key)}
                     className="expand flex justify-between items-center cursor-pointer hover:bg-gray-100"
                   >
-                    <span className="homee pl-5 text-xl font-DmSans">{title}</span>
-                    {/* Arrow indicator */}
-                    <svg
+                    <span className="homee pl-5 text-xl font-DmSans">{title}</span> */}
+          {/* Arrow indicator */}
+          {/* <svg
                       className={`w-4 h-4 transition-transform duration-300 ${
                         expandSection[key] ? "rotate-180" : ""
                       }`}
@@ -255,9 +350,9 @@ export default function Locations() {
                         d="M19 9l-7 7-7-7"
                       />
                     </svg>
-                  </li>
-                  {/* Expandable content */}
-                  <div
+                  </li> */}
+          {/* Expandable content */}
+          {/* <div
                     className="overflow-hidden transition-max-height duration-500"
                     style={{
                       maxHeight: expandSection[key] ? "1000px" : "0",
@@ -270,19 +365,80 @@ export default function Locations() {
                 </React.Fragment>
               ))}
             </ul>
+          </div> */}
+          <h1 className="text-center font-bold text-2xl">BOHOL</h1>
+          <div className="profile-image">
+            <div className="profilee">
+        <img
+          className="pic"
+          src={fatima}
+          alt="Fatima"
+          onClick={() => toggleProfile("Fatima")}
+          style={{ cursor: "pointer" }}
+        />
+        <hr className="mt-2" />
+        <h1>Fatima Banas</h1>
+        {expandedProfiles.Fatima && (
+          <div className="details p-4 bg-gray-100 mt-2 rounded-lg shadow-inner">
+            <p>Here are the details about Fatima...</p>
           </div>
-          <div className="text-center text-4xl font-DmSans-Bold mb-10" data-aos="fade-right" data-aos-delay="300">
+        )}
+      </div>
+
+      {/* Allan Profile */}
+      <div className="profilee">
+        <img
+          className="pic"
+          src={Pfp}
+          alt="Allan"
+          onClick={() => toggleProfile("Allan")}
+          style={{ cursor: "pointer" }}
+        />
+        <hr className="mt-2" />
+        <h1>Allan Cabiso</h1>
+        {expandedProfiles.Allan && (
+          <div className="details p-4 bg-gray-100 mt-2 rounded-lg shadow-inner">
+            <p>Details about Allan...</p>
+          </div>
+        )}
+      </div>
+
+      {/* Jocelyn Profile */}
+      <div className="profilee">
+        <img
+          className="pic"
+          src={Jocelyn}
+          alt="Jocelyn"
+          onClick={() => toggleProfile("Jocelyn")}
+          style={{ cursor: "pointer" }}
+        />
+        <hr className="mt-2" />
+        <h1>Jocelyn Pogoy</h1>
+        {expandedProfiles.Jocelyn && (
+          <div className="details p-4 bg-gray-100 mt-2 rounded-lg shadow-inner">
+            <p>Details about Jocelyn...</p>
+          </div>
+        )}
+      </div>
+      </div>
+
+          <div
+            className="text-center text-4xl font-DmSans-Bold mb-10"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <h1 className="homee">IN CEBU</h1>
             <ul className="mt-4 mb-10">
               {cebuSections.map(({ title, component, key }) => (
                 <React.Fragment key={key}>
-                  
                   {/* Title row */}
                   <li
                     onClick={() => toggleSection(key)}
                     className="expand flex justify-between items-center cursor-pointer hover:bg-gray-100"
                   >
-                    <span className="homee pl-5 text-xl font-DmSans">{title}</span>
+                    <span className="homee pl-5 text-xl font-DmSans">
+                      {title}
+                    </span>
                     {/* Arrow indicator */}
                     <svg
                       className={`w-4 h-4 transition-transform duration-300 ${
@@ -315,18 +471,23 @@ export default function Locations() {
               ))}
             </ul>
           </div>
-          <div className="text-center text-4xl font-DmSans-Bold mb-10" data-aos="fade-right" data-aos-delay="300">
+          <div
+            className="text-center text-4xl font-DmSans-Bold mb-10"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <h1 className="homee">IN LEYTE</h1>
             <ul className="mt-4 mb-10">
               {leyteSections.map(({ title, component, key }) => (
                 <React.Fragment key={key}>
-                  
                   {/* Title row */}
                   <li
                     onClick={() => toggleSection(key)}
                     className="expand flex justify-between items-center cursor-pointer hover:bg-gray-100"
                   >
-                    <span className="homee pl-5 text-xl font-DmSans">{title}</span>
+                    <span className="homee pl-5 text-xl font-DmSans">
+                      {title}
+                    </span>
                     {/* Arrow indicator */}
                     <svg
                       className={`w-4 h-4 transition-transform duration-300 ${
@@ -359,18 +520,23 @@ export default function Locations() {
               ))}
             </ul>
           </div>
-          <div className="text-center text-4xl font-DmSans-Bold mb-10" data-aos="fade-right" data-aos-delay="300">
+          <div
+            className="text-center text-4xl font-DmSans-Bold mb-10"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <h1 className="homee">IN MINDANAO</h1>
             <ul className="mt-4 mb-10">
               {mindanaoSections.map(({ title, component, key }) => (
                 <React.Fragment key={key}>
-                  
                   {/* Title row */}
                   <li
                     onClick={() => toggleSection(key)}
                     className="expand flex justify-between items-center cursor-pointer hover:bg-gray-100"
                   >
-                    <span className="homee pl-5 text-xl font-DmSans">{title}</span>
+                    <span className="homee pl-5 text-xl font-DmSans">
+                      {title}
+                    </span>
                     {/* Arrow indicator */}
                     <svg
                       className={`w-4 h-4 transition-transform duration-300 ${
@@ -403,18 +569,23 @@ export default function Locations() {
               ))}
             </ul>
           </div>
-          <div className="text-center text-4xl font-DmSans-Bold mb-10" data-aos="fade-right" data-aos-delay="300">
+          <div
+            className="text-center text-4xl font-DmSans-Bold mb-10"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <h1 className="homee">IN NEGROS</h1>
             <ul className="mt-4 mb-4">
               {negrosSections.map(({ title, component, key }) => (
                 <React.Fragment key={key}>
-                  
                   {/* Title row */}
                   <li
                     onClick={() => toggleSection(key)}
                     className="expand flex justify-between items-center cursor-pointer hover:bg-gray-100"
                   >
-                    <span className="homee pl-5 text-xl font-DmSans">{title}</span>
+                    <span className="homee pl-5 text-xl font-DmSans">
+                      {title}
+                    </span>
                     {/* Arrow indicator */}
                     <svg
                       className={`w-4 h-4 transition-transform duration-300 ${
@@ -449,10 +620,12 @@ export default function Locations() {
           </div>
         </div>
 
-        
-
         {/* Footer */}
-        <div className="bg-gray-700 w-full text-black" data-aos="fade-up" data-aos-delay="300">
+        <div
+          className="bg-gray-700 w-full text-black"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           <footer className="foot text-white h-100">
             <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-4 py-4">
               {/* Logo */}
