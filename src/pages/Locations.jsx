@@ -60,7 +60,7 @@ export default function Locations() {
   };
 
   const AreaOptions = [
-    { value: "", label: "Sellect Area" },
+    { value: "", label: "Select Area" },
     { value: "bohol", label: "Bohol" },
     { value: "cebu", label: "Cebu" },
     { value: "leyte", label: "Leyte" },
