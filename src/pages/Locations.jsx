@@ -40,19 +40,24 @@ export default function Locations() {
   const [expandSection, setExpandSection] = useState({});
   const [selectedLocation, setSelectedLocation] = useState("");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
- const [expandedProfiles, setExpandedProfiles] = useState({
+  const [expandedProfiles, setExpandedProfiles] = useState({
     Fatima: false,
     Allan: false,
     Jocelyn: false,
   });
 
-   const toggleProfile = (name) => {
+  const [arrowRotations, setArrowRotations] = useState({
+    Fatima: false,
+    Allan: false,
+    Jocelyn: false,
+  });
+
+  const toggleProfile = (name) => {
     setExpandedProfiles((prev) => ({
       ...prev,
       [name]: !prev[name], // toggle the specific profile
     }));
   };
-
 
   const AreaOptions = [
     { value: "", label: "Sellect Area" },
@@ -246,6 +251,13 @@ export default function Locations() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
+  const toggleArrow = (name) => {
+    setArrowRotations((prev) => ({
+      ...prev,
+      [name]: !prev[name],
+    }));
+  };
+
   return (
     <>
       <div className="nav-text bg-white w-screen font-Roboto h-fit text-black ">
@@ -366,61 +378,118 @@ export default function Locations() {
               ))}
             </ul>
           </div> */}
+          <div className="font-Roboto">
           <h1 className="text-center font-bold text-2xl">BOHOL</h1>
           <div className="profile-image">
+            {/* Fatima Profile */}
             <div className="profilee">
-        <img
-          className="pic"
-          src={fatima}
-          alt="Fatima"
-          onClick={() => toggleProfile("Fatima")}
-          style={{ cursor: "pointer" }}
-        />
-        <hr className="mt-2" />
-        <h1>Fatima Banas</h1>
-        {expandedProfiles.Fatima && (
-          <div className="details p-4 bg-gray-100 mt-2 rounded-lg shadow-inner">
-            <p>Here are the details about Fatima...</p>
-          </div>
-        )}
-      </div>
+              <img
+                className="pic"
+                src={fatima}
+                alt="Fatima"
+                onClick={() => {
+                  toggleProfile("Fatima");
+                  toggleArrow("Fatima");
+                }}
+                style={{ cursor: "pointer" }}
+              />
+              <hr className="mt-2" />
+              <h1
+                className="container"
+                onClick={() => {
+                  toggleProfile("Fatima");
+                  toggleArrow("Fatima");
+                }}
+                style={{ cursor: "pointer" }}
+              >
+                Pastor, Fatima Banas
+                <span
+                  className={`arrow-down ${
+                    arrowRotations.Fatima ? "rotated" : ""
+                  }`}
+                ></span>
+              </h1>
+              {expandedProfiles.Fatima && (
+                <div className="details p-4  mt-2 rounded-lg shadow-inner">
+                  <p> Purok 4 Bagacay Talibon Bohol</p>
+                </div>
+              )}
+              <hr className="mt-2" />
+            </div>
 
-      {/* Allan Profile */}
-      <div className="profilee">
-        <img
-          className="pic"
-          src={Pfp}
-          alt="Allan"
-          onClick={() => toggleProfile("Allan")}
-          style={{ cursor: "pointer" }}
-        />
-        <hr className="mt-2" />
-        <h1>Allan Cabiso</h1>
-        {expandedProfiles.Allan && (
-          <div className="details p-4 bg-gray-100 mt-2 rounded-lg shadow-inner">
-            <p>Details about Allan...</p>
-          </div>
-        )}
-      </div>
+            {/* Allan Profile */}
+            <div className="profilee">
+              <img
+                className="pic"
+                src={Pfp}
+                alt="Allan"
+                onClick={() => {
+                  toggleProfile("Allan");
+                  toggleArrow("Allan");
+                }}
+                style={{ cursor: "pointer" }}
+              />
+              <hr className="mt-2" />
+              <h1
+                className="container"
+                onClick={() => {
+                  toggleProfile("Allan");
+                  toggleArrow("Allan");
+                }}
+                style={{ cursor: "pointer" }}
+              >
+                Pastor, Allan Cabiso
+                <span
+                  className={`arrow-down ${
+                    arrowRotations.Allan ? "rotated" : ""
+                  }`}
+                ></span>
+              </h1>
+              {expandedProfiles.Allan && (
+                <div className="details p-4  mt-2  shadow-inner">
+                  <p>Purok 6 Eastern Cabul-an Buenavista Bohol</p>
+                </div>
+              )}
+              <hr className="mt-2" />
+            </div>
 
-      {/* Jocelyn Profile */}
-      <div className="profilee">
-        <img
-          className="pic"
-          src={Jocelyn}
-          alt="Jocelyn"
-          onClick={() => toggleProfile("Jocelyn")}
-          style={{ cursor: "pointer" }}
-        />
-        <hr className="mt-2" />
-        <h1>Jocelyn Pogoy</h1>
-        {expandedProfiles.Jocelyn && (
-          <div className="details p-4 bg-gray-100 mt-2 rounded-lg shadow-inner">
-            <p>Details about Jocelyn...</p>
+            {/* Jocelyn Profile */}
+            <div className="profilee">
+              <img
+                className="pic"
+                src={Jocelyn}
+                alt="Jocelyn"
+                onClick={() => {
+                  toggleProfile("Jocelyn");
+                  toggleArrow("Jocelyn");
+                }}
+                style={{ cursor: "pointer" }}
+              />
+              <hr className="mt-2" />
+              <h1
+                className="container"
+                onClick={() => {
+                  toggleProfile("Jocelyn");
+                  toggleArrow("Jocelyn");
+                }}
+                style={{ cursor: "pointer" }}
+              >
+                Pastor, Jocelyn Pogoy
+                <span
+                  className={`arrow-down ${
+                    arrowRotations.Jocelyn ? "rotated" : ""
+                  }`}
+                ></span>
+              </h1>
+              {expandedProfiles.Jocelyn && (
+                <div className="details p-4  mt-2  shadow-inner">
+                  <p>Purok 2 Poblacion Ubay Bohol</p>
+                </div>
+              )}
+              <hr className="mt-2" />
+            </div>
           </div>
-        )}
-      </div>
-      </div>
+          </div>
 
           <div
             className="text-center text-4xl font-DmSans-Bold mb-10"
