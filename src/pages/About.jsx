@@ -57,8 +57,8 @@ export default function About() {
           alt="Background"
         />
         <div className="absolute inset-0 flex items-center justify-center bg-white/50 px-4" >
-          <div className="homee font-Roboto text-center  text-6xl " data-aos="fade-up" data-aos-delay="500">
-            About us
+          <div className="  text-center " data-aos="fade-up" data-aos-delay="500">
+            <h1 className="homee text-6xl">About us</h1>
           </div>
         </div>
       </div>

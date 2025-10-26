@@ -17,8 +17,8 @@ export default function Events() {
                   alt=""
                 />
                 <div className="absolute inset-0 bg-white/50 flex items-center justify-center">
-                  <div className="homee text-6xl md:text-6xl font-Roboto text-center " data-aos="fade-up" data-aos-delay="300">
-                    Events
+                  <div className=" md:text-6xl font-Roboto text-center " data-aos="fade-up" data-aos-delay="300">
+                    <h1 className="homee text-7xl">Events</h1>
                   </div>
                 </div>
               </div>

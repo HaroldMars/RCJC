@@ -57,7 +57,7 @@ export default function Home() {
           >
       Welcome to the Family
     </div>
-    <div className="family font-Roboto text-lg md:text-2xl " data-aos="fade-up" data-aos-delay="400">
+    <div className="description font-Roboto text-lg md:text-2xl " data-aos="fade-up" data-aos-delay="400">
       <p>
         We're so glad you're here!
         <br />

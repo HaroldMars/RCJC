@@ -1,8 +1,11 @@
+@import "tailwindcss";
+
 @font-face {
   font-family: 'DmSans';
   src: url('../src/assets/fonts/DMSans-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -10,6 +13,7 @@
   src: url('../src/assets/fonts/DMSans-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -17,6 +21,7 @@
   src: url('../src/assets/fonts/Roboto-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -24,17 +29,15 @@
   src: url('../src/assets/fonts/Montserrat-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
-
-@import "tailwindcss";
-
-@theme{
- 
-  --font-DmSans: DmSans, "sans-serif";
-  --font-DmSans-Bold: DMsans-Bold, "sans-serif";
-  --font-Roboto: Roboto, "sans-serif";
-   --fonr-Montserrat: Montserrat, "sans-serif";
+/* Define CSS variables correctly */
+:root {
+  --font-DmSans: 'DmSans', sans-serif;
+  --font-DmSans-Bold: 'DmSans', sans-serif; /* for bold, keep the same font-family, control weight separately */
+  --font-Roboto: 'Roboto', sans-serif;
+  --font-Montserrat: 'Montserrat', sans-serif;
 }
 
 .root {
@@ -47,6 +50,7 @@
 
 .Header {
   background-color: rgba(62, 214, 63, 0.3); /* 30% opacity */
+  font-family: var(--font-Roboto);
 }
 
 
@@ -119,13 +123,19 @@
 
 .homee {
   color: #2E4057;
-  font-family: Roboto;
+  font-family: var(--font-Roboto);
 }
 
 
 
 .family {
   color: #F7F4F0;
+  font-family: var(--font-Montserrat);
+}
+
+.description{
+  font-family: var(--font-Roboto);
+  color: white;
 }
 
 .expand-box {
@@ -196,6 +206,7 @@
   max-width: 300px; /* Keep a max width for larger screens */
   left: 50%;
   transform: translateX(-50%); /* Center horizontally */
+  font-family: var(--font-Roboto);
 }
 
 .search-bar 
@@ -240,6 +251,7 @@
   border: black solid 5px hidden; /* Removed 'hidden' */
   box-sizing: border-box; /* Ensure padding/borders are included in width */
   margin: 1rem auto; /* Center and space */
+  font-family: var(--font-Roboto);
 }
 
 .profile-image {
@@ -282,6 +294,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: var(--font-Roboto);
 }
 
 .arrow-down {

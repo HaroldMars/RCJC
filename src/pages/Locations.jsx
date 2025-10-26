@@ -272,7 +272,7 @@ export default function Locations() {
           />
           <div className="absolute inset-0 bg-white/50 flex items-center justify-center">
             <div
-              className="homee font-Roboto text-6xl md:text-6xl font-bold text-center"
+              className="homee  text-6xl md:text-6xl font-bold text-center"
               data-aos="fade-up"
               data-aos-delay="500"
             >
@@ -281,13 +281,15 @@ export default function Locations() {
           </div>
         </div>
 
-        <div className="search location-dropdown">
+        <div className="search location-dropdown font-Roboto">
           {/* Select button */}
           <button
             className="w-full px-4 py-2 border search-bar bg-white text-left flex justify-between items-center"
             onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             aria-haspopup="listbox"
             aria-expanded={isDropdownOpen}
+            data-aos="fade-up"
+              data-aos-delay="500"
           >
             {selectedLocation
               ? AreaOptions.find((opt) => opt.value === selectedLocation)?.label
@@ -379,116 +381,142 @@ export default function Locations() {
             </ul>
           </div> */}
           <div className="font-Roboto">
-          <h1 className="text-center font-bold text-2xl">BOHOL</h1>
-          <div className="profile-image">
-            {/* Fatima Profile */}
-            <div className="profilee">
-              <img
-                className="pic"
-                src={fatima}
-                alt="Fatima"
-                onClick={() => {
-                  toggleProfile("Fatima");
-                  toggleArrow("Fatima");
-                }}
-                style={{ cursor: "pointer" }}
-              />
-              <hr className="mt-2" />
-              <h1
-                className="container"
-                onClick={() => {
-                  toggleProfile("Fatima");
-                  toggleArrow("Fatima");
-                }}
-                style={{ cursor: "pointer" }}
-              >
-                Pastor, Fatima Banas
-                <span
-                  className={`arrow-down ${
-                    arrowRotations.Fatima ? "rotated" : ""
-                  }`}
-                ></span>
-              </h1>
-              {expandedProfiles.Fatima && (
-                <div className="details p-4  mt-2 rounded-lg shadow-inner">
-                  <p> Purok 4 Bagacay Talibon Bohol</p>
-                </div>
-              )}
-              <hr className="mt-2" />
-            </div>
+            <h1 
+            data-aos="fade-up"
+              data-aos-delay="500"
+              className="text-center font-bold text-2xl">BOHOL</h1>
+            <div 
+            data-aos="fade-right"
+              data-aos-delay="500"
+              className="profile-image" >
+              {/* Fatima Profile */}
+              <div className="profilee">
+                <img
+                  className="pic"
+                  src={fatima}
+                  alt="Fatima"
+                  onClick={() => {
+                    toggleProfile("Fatima");
+                    toggleArrow("Fatima");
+                  }}
+                  style={{ cursor: "pointer" }}
+                />
+                <hr className="mt-2" />
+                <h1
+                  className="container"
+                  onClick={() => {
+                    toggleProfile("Fatima");
+                    toggleArrow("Fatima");
+                  }}
+                  style={{ cursor: "pointer" }}
+                >
+                  Pastor, Fatima Banas
+                  <span
+                    className={`arrow-down ${
+                      arrowRotations.Fatima ? "rotated" : ""
+                    }`}
+                  ></span>
+                </h1>
+                {expandedProfiles.Fatima && (
+                  <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
+                    <p> Purok 4 Bagacay Talibon Bohol</p>
+                    <hr className="text-gray-400" />
+                    <p className="mt-5">Sunday Service: 8:30 am -12:00 nn</p>
+                    <p className="mt-5">
+                      Wednesday Outpouring Service: 6:30 pm - 8:30 pm
+                    </p>
+                    <p className="mt-5">
+                      Friday Prayer Meeting: 6:30 pm - 8:30 pm
+                    </p>
+                  </div>
+                )}
+                <hr className="mt-2" />
+              </div>
 
-            {/* Allan Profile */}
-            <div className="profilee">
-              <img
-                className="pic"
-                src={Pfp}
-                alt="Allan"
-                onClick={() => {
-                  toggleProfile("Allan");
-                  toggleArrow("Allan");
-                }}
-                style={{ cursor: "pointer" }}
-              />
-              <hr className="mt-2" />
-              <h1
-                className="container"
-                onClick={() => {
-                  toggleProfile("Allan");
-                  toggleArrow("Allan");
-                }}
-                style={{ cursor: "pointer" }}
-              >
-                Pastor, Allan Cabiso
-                <span
-                  className={`arrow-down ${
-                    arrowRotations.Allan ? "rotated" : ""
-                  }`}
-                ></span>
-              </h1>
-              {expandedProfiles.Allan && (
-                <div className="details p-4  mt-2  shadow-inner">
-                  <p>Purok 6 Eastern Cabul-an Buenavista Bohol</p>
-                </div>
-              )}
-              <hr className="mt-2" />
-            </div>
+              {/* Allan Profile */}
+              <div className="profilee">
+                <img
+                  className="pic"
+                  src={Pfp}
+                  alt="Allan"
+                  onClick={() => {
+                    toggleProfile("Allan");
+                    toggleArrow("Allan");
+                  }}
+                  style={{ cursor: "pointer" }}
+                />
+                <hr className="mt-2" />
+                <h1
+                  className="container"
+                  onClick={() => {
+                    toggleProfile("Allan");
+                    toggleArrow("Allan");
+                  }}
+                  style={{ cursor: "pointer" }}
+                >
+                  Pastor, Allan Cabiso
+                  <span
+                    className={`arrow-down ${
+                      arrowRotations.Allan ? "rotated" : ""
+                    }`}
+                  ></span>
+                </h1>
+                {expandedProfiles.Allan && (
+                  <div className="details p-4 bg-gray-100 mt-2  shadow-inner">
+                    <p>Purok 6 Eastern Cabul-an Buenavista Bohol</p>
+                    <hr className="text-gray-400" />
+                    <p className="mt-5">Here's an early look at the current progress. Final details are pending your instructions, and I will update accordingly.</p>
+                  </div>
+                )}
+                <hr className="mt-2" />
+              </div>
 
-            {/* Jocelyn Profile */}
-            <div className="profilee">
-              <img
-                className="pic"
-                src={Jocelyn}
-                alt="Jocelyn"
-                onClick={() => {
-                  toggleProfile("Jocelyn");
-                  toggleArrow("Jocelyn");
-                }}
-                style={{ cursor: "pointer" }}
-              />
-              <hr className="mt-2" />
-              <h1
-                className="container"
-                onClick={() => {
-                  toggleProfile("Jocelyn");
-                  toggleArrow("Jocelyn");
-                }}
-                style={{ cursor: "pointer" }}
-              >
-                Pastor, Jocelyn Pogoy
-                <span
-                  className={`arrow-down ${
-                    arrowRotations.Jocelyn ? "rotated" : ""
-                  }`}
-                ></span>
-              </h1>
-              {expandedProfiles.Jocelyn && (
-                <div className="details p-4  mt-2  shadow-inner">
-                  <p>Purok 2 Poblacion Ubay Bohol</p>
-                </div>
-              )}
-              <hr className="mt-2" />
+              {/* Jocelyn Profile */}
+              <div className="profilee">
+                <img
+                  className="pic"
+                  src={Jocelyn}
+                  alt="Jocelyn"
+                  onClick={() => {
+                    toggleProfile("Jocelyn");
+                    toggleArrow("Jocelyn");
+                  }}
+                  style={{ cursor: "pointer" }}
+                />
+                <hr className="mt-2" />
+                <h1
+                  className="container"
+                  onClick={() => {
+                    toggleProfile("Jocelyn");
+                    toggleArrow("Jocelyn");
+                  }}
+                  style={{ cursor: "pointer" }}
+                >
+                  Pastor, Jocelyn Pogoy
+                  <span
+                    className={`arrow-down ${
+                      arrowRotations.Jocelyn ? "rotated" : ""
+                    }`}
+                  ></span>
+                </h1>
+                {expandedProfiles.Jocelyn && (
+                  <div className="details p-4  mt-2  shadow-inner">
+                    <p>Purok 2 Poblacion Ubay Bohol</p>
+                    <hr className="text-gray-400" />
+                    <p className="mt-5">
+                      Friday Prayer Meeting: 7:00 pm - 9:00 pm
+                    </p>
+                    <p className="mt-5">
+                      Wednesday Outpouring Service: 7:00 pm - 9:00 pm
+                    </p>
+                    <p className="mt-5">
+                      Friday Prayer Meeting: 7:00 pm - 9:00 pm
+                    </p>
+                  </div>
+                )}
+                <hr className="mt-2" />
+              </div>
             </div>
-          </div>
           </div>
 
           <div
