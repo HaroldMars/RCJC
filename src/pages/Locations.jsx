@@ -410,7 +410,7 @@ export default function Locations() {
                   }}
                   style={{ cursor: "pointer" }}
                 >
-                  Pastor, Fatima Banas
+                  Pastor Fatima Banas
                   <span
                     className={`arrow-down ${
                       arrowRotations.Fatima ? "rotated" : ""
@@ -454,7 +454,7 @@ export default function Locations() {
                   }}
                   style={{ cursor: "pointer" }}
                 >
-                  Pastor, Allan Cabiso
+                  Pastor Allan Cabiso
                   <span
                     className={`arrow-down ${
                       arrowRotations.Allan ? "rotated" : ""
@@ -492,7 +492,7 @@ export default function Locations() {
                   }}
                   style={{ cursor: "pointer" }}
                 >
-                  Pastor, Jocelyn Pogoy
+                  Pastor Jocelyn Pogoy
                   <span
                     className={`arrow-down ${
                       arrowRotations.Jocelyn ? "rotated" : ""
