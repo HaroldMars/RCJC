@@ -267,6 +267,10 @@
   height: auto;
 }
 
+.details {
+  font-family: var(--font-Roboto);
+}
+
 .expand-1 {
   margin-top: 0;
 }

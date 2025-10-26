@@ -500,7 +500,7 @@ export default function Locations() {
                   ></span>
                 </h1>
                 {expandedProfiles.Jocelyn && (
-                  <div className="details p-4  mt-2  shadow-inner">
+                  <div className="details p-4 bg-gray-100 mt-2  shadow-inner">
                     <p>Purok 2 Poblacion Ubay Bohol</p>
                     <hr className="text-gray-400" />
                     <p className="mt-5">
