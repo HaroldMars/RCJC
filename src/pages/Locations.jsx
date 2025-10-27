@@ -34,22 +34,33 @@ import AOS from "aos";
 import fatima from "../assets/Fatima.jpg";
 import Jocelyn from "../assets/Jocelyn.jpg";
 import Pfp from "../assets/pfp.jpg";
+import Cherilyn from "../assets/Cherilyn.jpg";
+import Vilma from "../assets/Vilma.jpg";
+import Jessa from "../assets/Jessa.jpg";
+import Jinky from "../assets/Jinky.jpg";
 AOS.init();
 
 export default function Locations() {
-  const [expandSection, setExpandSection] = useState({});
+  // const [expandSection, setExpandSection] = useState({});
   const [selectedLocation, setSelectedLocation] = useState("");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [expandedProfiles, setExpandedProfiles] = useState({
     Fatima: false,
     Allan: false,
     Jocelyn: false,
+    Lileth: false,
+    Vilma: false,
+    Jessa: false,
+    Jinky: false,
+    Bene: false,
   });
 
   const [arrowRotations, setArrowRotations] = useState({
     Fatima: false,
     Allan: false,
     Jocelyn: false,
+    Cherilyn: false,
+    Jessa: false,
   });
 
   const toggleProfile = (name) => {
@@ -81,12 +92,12 @@ export default function Locations() {
     };
   }, []);
 
-  const toggleSection = (key) => {
-    setExpandSection((prev) => ({
-      ...prev,
-      [key]: !prev[key],
-    }));
-  };
+  // const toggleSection = (key) => {
+  //   setExpandSection((prev) => ({
+  //     ...prev,
+  //     [key]: !prev[key],
+  //   }));
+  // };
 
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -109,132 +120,132 @@ export default function Locations() {
   //   },
   // ];
 
-  const cebuSections = [
-    {
-      title: "RCJCIM Bogo City",
-      component: <Bogo />,
-      key: "bogo",
-    },
-    {
-      title: "RCJCIM Camotes",
-      component: <Camotes />,
-      key: "camotes",
-    },
-    {
-      title: "RCJCIM Compostela",
-      component: <Compostela />,
-      key: "compostela",
-    },
-    {
-      title: "RCJCIM Cordova",
-      component: <Cordova />,
-      key: "cordova",
-    },
-    {
-      title: "RCJCIM Danao",
-      component: <Danao />,
-      key: "danao",
-    },
-    {
-      title: "RCJCIM Dumanjug",
-      component: <Dumanjug />,
-      key: "dumanjug",
-    },
-    {
-      title: "RCJCIM Harang",
-      component: <Harang />,
-      key: "harang",
-    },
-    {
-      title: "RCJCIM Kawit",
-      component: <Kawit />,
-      key: "kawit",
-    },
-    {
-      title: "RCJCIM Liloan",
-      component: <Liloan />,
-      key: "liloan",
-    },
-    {
-      title: "RCJCIM Mandaue",
-      component: <Mandaue />,
-      key: "mandaue",
-    },
-    {
-      title: "RCJCIM Medellin",
-      component: <Medellin />,
-      key: "medellin",
-    },
-    {
-      title: "RCJCIM Tabok",
-      component: <Tabok />,
-      key: "tabok",
-    },
-    {
-      title: "RCJCIM Talisay",
-      component: <Talisay />,
-      key: "talisay",
-    },
-    {
-      title: "RCJCIM Telecom",
-      component: <Telecom />,
-      key: "telecom",
-    },
-  ];
+  // const cebuSections = [
+  //   {
+  //     title: "RCJCIM Bogo City",
+  //     component: <Bogo />,
+  //     key: "bogo",
+  //   },
+  //   {
+  //     title: "RCJCIM Camotes",
+  //     component: <Camotes />,
+  //     key: "camotes",
+  //   },
+  //   {
+  //     title: "RCJCIM Compostela",
+  //     component: <Compostela />,
+  //     key: "compostela",
+  //   },
+  //   {
+  //     title: "RCJCIM Cordova",
+  //     component: <Cordova />,
+  //     key: "cordova",
+  //   },
+  //   {
+  //     title: "RCJCIM Danao",
+  //     component: <Danao />,
+  //     key: "danao",
+  //   },
+  //   {
+  //     title: "RCJCIM Dumanjug",
+  //     component: <Dumanjug />,
+  //     key: "dumanjug",
+  //   },
+  //   {
+  //     title: "RCJCIM Harang",
+  //     component: <Harang />,
+  //     key: "harang",
+  //   },
+  //   {
+  //     title: "RCJCIM Kawit",
+  //     component: <Kawit />,
+  //     key: "kawit",
+  //   },
+  //   {
+  //     title: "RCJCIM Liloan",
+  //     component: <Liloan />,
+  //     key: "liloan",
+  //   },
+  //   {
+  //     title: "RCJCIM Mandaue",
+  //     component: <Mandaue />,
+  //     key: "mandaue",
+  //   },
+  //   {
+  //     title: "RCJCIM Medellin",
+  //     component: <Medellin />,
+  //     key: "medellin",
+  //   },
+  //   {
+  //     title: "RCJCIM Tabok",
+  //     component: <Tabok />,
+  //     key: "tabok",
+  //   },
+  //   {
+  //     title: "RCJCIM Talisay",
+  //     component: <Talisay />,
+  //     key: "talisay",
+  //   },
+  //   {
+  //     title: "RCJCIM Telecom",
+  //     component: <Telecom />,
+  //     key: "telecom",
+  //   },
+  // ];
 
-  const leyteSections = [
-    {
-      title: "RCJCIM Matag-ob",
-      component: <Matagob />,
-      key: "matagob",
-    },
-    {
-      title: "RCJCIM Palompon",
-      component: <Palompon />,
-      key: "palompon",
-    },
-    {
-      title: "RCJCIM Tuno",
-      component: <Tuno />,
-      key: "tuno",
-    },
-  ];
+  // const leyteSections = [
+  //   {
+  //     title: "RCJCIM Matag-ob",
+  //     component: <Matagob />,
+  //     key: "matagob",
+  //   },
+  //   {
+  //     title: "RCJCIM Palompon",
+  //     component: <Palompon />,
+  //     key: "palompon",
+  //   },
+  //   {
+  //     title: "RCJCIM Tuno",
+  //     component: <Tuno />,
+  //     key: "tuno",
+  //   },
+  // ];
 
-  const mindanaoSections = [
-    {
-      title: "RCJCIM Alegria",
-      component: <Aligria />,
-      key: "alegria",
-    },
-    {
-      title: "RCJCIM Bahbah",
-      component: <Bahbah />,
-      key: "bahbah",
-    },
-    {
-      title: "RCJCIM Cambagang",
-      component: <Cambagang />,
-      key: "cambagang",
-    },
-    {
-      title: "RCJCIM Pasta",
-      component: <Pasta />,
-      key: "pasta",
-    },
-    {
-      title: "RCJCIM Unidad",
-      component: <Unidad />,
-      key: "unidad",
-    },
-  ];
+  // const mindanaoSections = [
+  //   {
+  //     title: "RCJCIM Alegria",
+  //     component: <Aligria />,
+  //     key: "alegria",
+  //   },
+  //   {
+  //     title: "RCJCIM Bahbah",
+  //     component: <Bahbah />,
+  //     key: "bahbah",
+  //   },
+  //   {
+  //     title: "RCJCIM Cambagang",
+  //     component: <Cambagang />,
+  //     key: "cambagang",
+  //   },
+  //   {
+  //     title: "RCJCIM Pasta",
+  //     component: <Pasta />,
+  //     key: "pasta",
+  //   },
+  //   {
+  //     title: "RCJCIM Unidad",
+  //     component: <Unidad />,
+  //     key: "unidad",
+  //   },
+  // ];
 
-  const negrosSections = [
-    {
-      title: "RCJCIM Biak na Bato",
-      component: <Biaknabato />,
-      key: "biaknabato",
-    },
-  ];
+  // const negrosSections = [
+  //   {
+  //     title: "RCJCIM Biak na Bato",
+  //     component: <Biaknabato />,
+  //     key: "biaknabato",
+  //   },
+  // ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -289,7 +300,7 @@ export default function Locations() {
             aria-haspopup="listbox"
             aria-expanded={isDropdownOpen}
             data-aos="fade-up"
-              data-aos-delay="500"
+            data-aos-delay="500"
           >
             {selectedLocation
               ? AreaOptions.find((opt) => opt.value === selectedLocation)?.label
@@ -381,14 +392,18 @@ export default function Locations() {
             </ul>
           </div> */}
           <div className="font-Roboto">
-            <h1 
-            data-aos="fade-up"
+            <h1
+              data-aos="fade-up"
               data-aos-delay="500"
-              className="text-center font-bold text-2xl">BOHOL</h1>
-            <div 
-            data-aos="fade-right"
+              className="text-center font-bold text-4xl"
+            >
+              BOHOL
+            </h1>
+            <div
+              data-aos="fade-right"
               data-aos-delay="500"
-              className="profile-image" >
+              className="profile-image"
+            >
               {/* Fatima Profile */}
               <div className="profilee">
                 <img
@@ -465,7 +480,11 @@ export default function Locations() {
                   <div className="details p-4 bg-gray-100 mt-2  shadow-inner">
                     <p>Purok 6 Eastern Cabul-an Buenavista Bohol</p>
                     <hr className="text-gray-400" />
-                    <p className="mt-5">Here's an early look at the current progress. Final details are pending your instructions, and I will update accordingly.</p>
+                    <p className="mt-5">
+                      Here's an early look at the current progress. Final
+                      details are pending your instructions, and I will update
+                      accordingly.
+                    </p>
                   </div>
                 )}
                 <hr className="mt-2" />
@@ -519,7 +538,289 @@ export default function Locations() {
             </div>
           </div>
 
+          <div className="font-Roboto">
+            <h1 className="font-bold text-4xl text-center">CEBU</h1>
+            <div
+              data-aos="fade-right"
+              data-aos-delay="500"
+              className="profile-image"
+            >
+              {/* Fatima Profile */}
+              <div className="profilee">
+                <img
+                  className="pic"
+                  src={Pfp}
+                  alt="Lileth"
+                  onClick={() => {
+                    toggleProfile("Lileth");
+                    toggleArrow("Lileth");
+                  }}
+                  style={{ cursor: "pointer" }}
+                />
+                <hr className="mt-2" />
+                <h1
+                  className="container"
+                  onClick={() => {
+                    toggleProfile("Lileth");
+                    toggleArrow("Lileth");
+                  }}
+                  style={{ cursor: "pointer" }}
+                >
+                  Pastor Lileth Labiaga
+                  <span
+                    className={`arrow-down ${
+                      arrowRotations.Lileth ? "rotated" : ""
+                    }`}
+                  ></span>
+                </h1>
+                {expandedProfiles.Lileth && (
+                  <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
+                    <p>Central 1 Cogon Bogo City</p>
+                    <hr className="text-gray-400" />
+                    <p className="mt-5">
+                      Here's an early look at the current progress. Final
+                      details are pending your instructions, and I will update
+                      accordingly.
+                    </p>
+                  </div>
+                )}
+                <hr className="mt-2" />
+              </div>
+
+              <div className="profilee">
+                <img
+                  className="pic"
+                  src={Cherilyn}
+                  alt="Cherilyn"
+                  onClick={() => {
+                    toggleProfile("Cherilyn");
+                    toggleArrow("Cherilyn");
+                  }}
+                  style={{ cursor: "pointer" }}
+                />
+                <hr className="mt-2" />
+                <h1
+                  className="container text-[90%]"
+                  onClick={() => {
+                    toggleProfile("Cherilyn");
+                    toggleArrow("Cherilyn");
+                  }}
+                  style={{ cursor: "pointer" }}
+                >
+                  Pastor Cherilyn Formentera
+                  <span
+                    className={`arrow-down ${
+                      arrowRotations.Cherilyn ? "rotated" : ""
+                    }`}
+                  ></span>
+                </h1>
+                {expandedProfiles.Cherilyn && (
+                  <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
+                    <p>Purok Pagnahian Sonog San Francisco Camotes Cebu</p>
+                    <hr className="text-gray-400" />
+                    <p className="mt-5">Sunday Service: 8:00 am - 12:00 nn</p>
+                    <p className="mt-5">
+                      Wednesday Outpouring Service: 8:00 pm - 10:00 pm
+                    </p>
+                    <p className="mt-5">
+                      Friday Prayer Meeting: 8:00 pm - 10:00 pm
+                    </p>
+                  </div>
+                )}
+                <hr className="mt-2" />
+              </div>
+              <div className="profilee">
+                <img
+                  className="pic"
+                  src={Vilma}
+                  alt="Vilma"
+                  onClick={() => {
+                    toggleProfile("Vilma");
+                    toggleArrow("Vilma");
+                  }}
+                  style={{ cursor: "pointer" }}
+                />
+                <hr className="mt-2" />
+                <h1
+                  className="container"
+                  onClick={() => {
+                    toggleProfile("Vilma");
+                    toggleArrow("Vilma");
+                  }}
+                  style={{ cursor: "pointer" }}
+                >
+                  Pastor Vilma Diaz
+                  <span
+                    className={`arrow-down ${
+                      arrowRotations.Vilma ? "rotated" : ""
+                    }`}
+                  ></span>
+                </h1>
+                {expandedProfiles.Vilma && (
+                  <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
+                    <p> Purok 4 Bagacay Talibon Bohol</p>
+                    <hr className="text-gray-400" />
+                    <p className="mt-5">Sunday Service: 8:30 am -12:00 nn</p>
+                    <p className="mt-5">
+                      Wednesday Outpouring Service: 6:30 pm - 8:30 pm
+                    </p>
+                    <p className="mt-5">
+                      Friday Prayer Meeting: 6:30 pm - 8:30 pm
+                    </p>
+                  </div>
+                )}
+                <hr className="mt-2" />
+              </div>
+            </div>
+          </div>
+
           <div
+            data-aos="fade-right"
+            data-aos-delay="500"
+            className="profile-image"
+          >
+            {/* Fatima Profile */}
+            <div className="profilee">
+              <img
+                className="pic"
+                src={Jessa}
+                alt="Jessa"
+                onClick={() => {
+                  toggleProfile("Jessa");
+                  toggleArrow("Jessa");
+                }}
+                style={{ cursor: "pointer" }}
+              />
+              <hr className="mt-2" />
+              <h1
+                className="container"
+                onClick={() => {
+                  toggleProfile("Jessa");
+                  toggleArrow("Jessa");
+                }}
+                style={{ cursor: "pointer" }}
+              >
+                Pastor Jessa Daligdig
+                <span
+                  className={`arrow-down ${
+                    arrowRotations.Jessa ? "rotated" : ""
+                  }`}
+                ></span>
+              </h1>
+              {expandedProfiles.Jessa && (
+                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
+                  <p>
+                    Catarman 2 Cordova Cebu across Catarman Elementary School
+                  </p>
+                  <hr className="text-gray-400" />
+                  <p className="mt-5">
+                    Here's an early look at the current progress. Final details
+                    are pending your instructions, and I will update
+                    accordingly.
+                  </p>
+                </div>
+              )}
+              <hr className="mt-2" />
+            </div>
+
+            <div className="profilee">
+              <img
+                className="pic"
+                src={Jinky}
+                alt="Jinky"
+                onClick={() => {
+                  toggleProfile("Jinky");
+                  toggleArrow("Jinky");
+                }}
+                style={{ cursor: "pointer" }}
+              />
+              <hr className="mt-2" />
+              <h1
+                className="container"
+                onClick={() => {
+                  toggleProfile("Jinky");
+                  toggleArrow("Jinky");
+                }}
+                style={{ cursor: "pointer" }}
+              >
+                Pastor Jinky Casiple
+                <span
+                  className={`arrow-down ${
+                    arrowRotations.Jinky ? "rotated" : ""
+                  }`}
+                ></span>
+              </h1>
+              {expandedProfiles.Jinky && (
+                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
+                  <p>
+                    Looc, Danao Cebu (few meters away from Brgy Hall across
+                    Riders Pit Stop)
+                  </p>
+                  <hr className="text-gray-400" />
+                  <p className="mt-5">Sunday Service: 8:00 am - 12:00 nn</p>
+                  <p className="mt-5">
+                    Wednesday Outpouring Service: 6:00 pm - 8:00 pm
+                  </p>
+                  <p className="mt-5">
+                    Friday Prayer Meeting Service: 6:00 pm - 8:00 pm
+                  </p>
+                  <a
+                    className="linkk mt-5"
+                    href="https://www.google.com/maps/place/Rise+of+Church+of+Jesus+Christ+Int%E2%80%99l+Ministry+Inc./@10.5116505,123.961267,13z/data=!4m10!1m2!2m1!1sharang+Rise+of+Church+of+Jesus+Christ+Int'l.+Min.+Inc.!3m6!1s0x33a9bb004ee31293:0xbd5dec52f63862cb!8m2!3d10.5116505!4d124.027185!15sCjZoYXJhbmcgUmlzZSBvZiBDaHVyY2ggb2YgSmVzdXMgQ2hyaXN0IEludCdsLiBNaW4uIEluYy6SAQZjaHVyY2iqAZUBEAEqNyIzaGFyYW5nIHJpc2Ugb2YgY2h1cmNoIG9mIGplc3VzIGNocmlzdCBpbnQgbCBtaW4gaW5jKAAyHxABIhsodpy0CN1g29n1cAg5x8EstGqKUedNCes8SzoyNxACIjNoYXJhbmcgcmlzZSBvZiBjaHVyY2ggb2YgamVzdXMgY2hyaXN0IGludCBsIG1pbiBpbmPgAQA!16s%2Fg%2F11wj2f82mt?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D"
+                  >
+                    {" "}
+                    Press to locate via Google map
+                  </a>
+                </div>
+              )}
+              <hr className="mt-2" />
+            </div>
+
+            <div className="profilee">
+              <img
+                className="pic"
+                src={Pfp}
+                alt="Bene"
+                onClick={() => {
+                  toggleProfile("Bene");
+                  toggleArrow("Bene");
+                }}
+                style={{ cursor: "pointer" }}
+              />
+              <hr className="mt-2" />
+              <h1
+                className="container"
+                onClick={() => {
+                  toggleProfile("Bene");
+                  toggleArrow("Bene");
+                }}
+                style={{ cursor: "pointer" }}
+              >
+                Bene Zulueta
+                <span
+                  className={`arrow-down ${
+                    arrowRotations.Bene ? "rotated" : ""
+                  }`}
+                ></span>
+              </h1>
+              {expandedProfiles.Bene && (
+                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
+                  <p> Tangil, Dumanjug, Cebu</p>
+                  <hr className="text-gray-400" />
+                  <p className="mt-5">Sunday Service: 8:00 am -12:00 nn</p>
+                  <p className="mt-5">
+                    Wednesday Outpouring Service: 6:00 am - 8:00 pm
+                  </p>
+                  <p className="mt-5">
+                    Friday Prayer Meeting Service: 6:00 pm - 8:00 pm
+                  </p>
+                </div>
+              )}
+              <hr className="mt-2" />
+            </div>
+          </div>
+
+          {/* <div
             className="text-center text-4xl font-DmSans-Bold mb-10"
             data-aos="fade-right"
             data-aos-delay="300"
@@ -528,7 +829,7 @@ export default function Locations() {
             <ul className="mt-4 mb-10">
               {cebuSections.map(({ title, component, key }) => (
                 <React.Fragment key={key}>
-                  {/* Title row */}
+                   Title row 
                   <li
                     onClick={() => toggleSection(key)}
                     className="expand flex justify-between items-center cursor-pointer hover:bg-gray-100"
@@ -536,7 +837,7 @@ export default function Locations() {
                     <span className="homee pl-5 text-xl font-DmSans">
                       {title}
                     </span>
-                    {/* Arrow indicator */}
+                     Arrow indicator 
                     <svg
                       className={`w-4 h-4 transition-transform duration-300 ${
                         expandSection[key] ? "rotate-180" : ""
@@ -553,7 +854,7 @@ export default function Locations() {
                       />
                     </svg>
                   </li>
-                  {/* Expandable content */}
+                   Expandable content 
                   <div
                     className="overflow-hidden transition-max-height duration-500"
                     style={{
@@ -576,8 +877,8 @@ export default function Locations() {
             <h1 className="homee">IN LEYTE</h1>
             <ul className="mt-4 mb-10">
               {leyteSections.map(({ title, component, key }) => (
-                <React.Fragment key={key}>
-                  {/* Title row */}
+                <React.Fragment key={key}> 
+                   Title row 
                   <li
                     onClick={() => toggleSection(key)}
                     className="expand flex justify-between items-center cursor-pointer hover:bg-gray-100"
@@ -585,7 +886,7 @@ export default function Locations() {
                     <span className="homee pl-5 text-xl font-DmSans">
                       {title}
                     </span>
-                    {/* Arrow indicator */}
+                     Arrow indicator 
                     <svg
                       className={`w-4 h-4 transition-transform duration-300 ${
                         expandSection[key] ? "rotate-180" : ""
@@ -602,7 +903,7 @@ export default function Locations() {
                       />
                     </svg>
                   </li>
-                  {/* Expandable content */}
+                   Expandable content 
                   <div
                     className="overflow-hidden transition-max-height duration-500"
                     style={{
@@ -626,15 +927,15 @@ export default function Locations() {
             <ul className="mt-4 mb-10">
               {mindanaoSections.map(({ title, component, key }) => (
                 <React.Fragment key={key}>
-                  {/* Title row */}
+                   Title row *
                   <li
                     onClick={() => toggleSection(key)}
                     className="expand flex justify-between items-center cursor-pointer hover:bg-gray-100"
                   >
                     <span className="homee pl-5 text-xl font-DmSans">
                       {title}
-                    </span>
-                    {/* Arrow indicator */}
+                    </span> */}
+          {/* Arrow indicator 
                     <svg
                       className={`w-4 h-4 transition-transform duration-300 ${
                         expandSection[key] ? "rotate-180" : ""
@@ -650,8 +951,8 @@ export default function Locations() {
                         d="M19 9l-7 7-7-7"
                       />
                     </svg>
-                  </li>
-                  {/* Expandable content */}
+                  </li> */}
+          {/* Expandable content 
                   <div
                     className="overflow-hidden transition-max-height duration-500"
                     style={{
@@ -674,8 +975,8 @@ export default function Locations() {
             <h1 className="homee">IN NEGROS</h1>
             <ul className="mt-4 mb-4">
               {negrosSections.map(({ title, component, key }) => (
-                <React.Fragment key={key}>
-                  {/* Title row */}
+                <React.Fragment key={key}> */}
+          {/* Title row 
                   <li
                     onClick={() => toggleSection(key)}
                     className="expand flex justify-between items-center cursor-pointer hover:bg-gray-100"
@@ -683,7 +984,7 @@ export default function Locations() {
                     <span className="homee pl-5 text-xl font-DmSans">
                       {title}
                     </span>
-                    {/* Arrow indicator */}
+                     Arrow indicator *
                     <svg
                       className={`w-4 h-4 transition-transform duration-300 ${
                         expandSection[key] ? "rotate-180" : ""
@@ -699,8 +1000,8 @@ export default function Locations() {
                         d="M19 9l-7 7-7-7"
                       />
                     </svg>
-                  </li>
-                  {/* Expandable content */}
+                  </li> */}
+          {/* Expandable content 
                   <div
                     className="overflow-hidden transition-max-height duration-500"
                     style={{
@@ -714,7 +1015,7 @@ export default function Locations() {
                 </React.Fragment>
               ))}
             </ul>
-          </div>
+          </div> */}
         </div>
 
         {/* Footer */}
