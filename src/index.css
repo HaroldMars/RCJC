@@ -262,7 +262,7 @@
 }
 
 .pic {
-  border-radius: 5px;
+  border-radius: 50%;
   max-width: 100%; /* Make images responsive */
   height: auto;
 }
