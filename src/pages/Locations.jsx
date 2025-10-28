@@ -38,6 +38,9 @@ import Cherilyn from "../assets/Cherilyn.jpg";
 import Vilma from "../assets/Vilma.jpg";
 import Jessa from "../assets/Jessa.jpg";
 import Jinky from "../assets/Jinky.jpg";
+import Seam from "../assets/pastor.jpg";
+import Mario from "../assets/Mario.jpg";
+import Janice from "../assets/Janice.jpg";
 AOS.init();
 
 export default function Locations() {
@@ -53,6 +56,11 @@ export default function Locations() {
     Jessa: false,
     Jinky: false,
     Bene: false,
+    Luz: false,
+    Pedro: false,
+    Seam: false,
+    Mario: false,
+    Janice: false,
   });
 
   const [arrowRotations, setArrowRotations] = useState({
@@ -679,7 +687,6 @@ export default function Locations() {
             data-aos-delay="500"
             className="profile-image"
           >
-            {/* Fatima Profile */}
             <div className="profilee">
               <img
                 className="pic"
@@ -796,7 +803,7 @@ export default function Locations() {
                 }}
                 style={{ cursor: "pointer" }}
               >
-                Bene Zulueta
+                Pastor Bene Zulueta
                 <span
                   className={`arrow-down ${
                     arrowRotations.Bene ? "rotated" : ""
@@ -813,6 +820,305 @@ export default function Locations() {
                   </p>
                   <p className="mt-5">
                     Friday Prayer Meeting Service: 6:00 pm - 8:00 pm
+                  </p>
+                </div>
+              )}
+              <hr className="mt-2" />
+            </div>
+          </div>
+
+          <div
+            data-aos="fade-right"
+            data-aos-delay="500"
+            className="profile-image"
+          >
+            <div className="profilee">
+              <img
+                className="pic"
+                src={Pfp}
+                alt="Luz"
+                onClick={() => {
+                  toggleProfile("Luz");
+                  toggleArrow("Luz");
+                }}
+                style={{ cursor: "pointer" }}
+              />
+              <hr className="mt-2" />
+              <h1
+                className="container"
+                onClick={() => {
+                  toggleProfile("Luz");
+                  toggleArrow("Luz");
+                }}
+                style={{ cursor: "pointer" }}
+              >
+                Pastor Luz Merida
+                <span
+                  className={`arrow-down ${
+                    arrowRotations.Luz ? "rotated" : ""
+                  }`}
+                ></span>
+              </h1>
+              {expandedProfiles.Luz && (
+                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
+                  <p>Tagunol, Basak San Nicolas, Cebu City</p>
+                  <hr className="text-gray-400" />
+                  <p className="mt-5">Sunday Service: 8:30 am -12:00 nn</p>
+                  <p className="mt-5">
+                    Wednesday Outpouring Service: 6:30 pm - 9:00 pm
+                  </p>
+                  <p className="mt-5">
+                    Friday Prayer Meeting Service: 6:30 pm -9:00 pm
+                  </p>
+                  <a
+                    className="linkk mt-5"
+                    href="https://www.google.com/maps/place/Rise+of+Church+of+Jesus+Christ+Int%E2%80%99l+Ministry+Inc./@10.5116505,123.961267,13z/data=!4m10!1m2!2m1!1sharang+Rise+of+Church+of+Jesus+Christ+Int'l.+Min.+Inc.!3m6!1s0x33a9bb004ee31293:0xbd5dec52f63862cb!8m2!3d10.5116505!4d124.027185!15sCjZoYXJhbmcgUmlzZSBvZiBDaHVyY2ggb2YgSmVzdXMgQ2hyaXN0IEludCdsLiBNaW4uIEluYy6SAQZjaHVyY2iqAZUBEAEqNyIzaGFyYW5nIHJpc2Ugb2YgY2h1cmNoIG9mIGplc3VzIGNocmlzdCBpbnQgbCBtaW4gaW5jKAAyHxABIhsodpy0CN1g29n1cAg5x8EstGqKUedNCes8SzoyNxACIjNoYXJhbmcgcmlzZSBvZiBjaHVyY2ggb2YgamVzdXMgY2hyaXN0IGludCBsIG1pbiBpbmPgAQA!16s%2Fg%2F11wj2f82mt?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D"
+                  >
+                    {" "}
+                    Press to locate via Google map
+                  </a>
+                </div>
+              )}
+              <hr className="mt-2" />
+            </div>
+
+            <div className="profilee">
+              <img
+                className="pic"
+                src={Pfp}
+                alt="Pedro"
+                onClick={() => {
+                  toggleProfile("Pedro");
+                  toggleArrow("Pedro");
+                }}
+                style={{ cursor: "pointer" }}
+              />
+              <hr className="mt-2" />
+              <h1
+                className="container"
+                onClick={() => {
+                  toggleProfile("Pedro");
+                  toggleArrow("Pedro");
+                }}
+                style={{ cursor: "pointer" }}
+              >
+                Pastor Pedro Baring
+                <span
+                  className={`arrow-down ${
+                    arrowRotations.Pedro ? "rotated" : ""
+                  }`}
+                ></span>
+              </h1>
+              {expandedProfiles.Pedro && (
+                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
+                  <p>Sitio Capayawan, Kawit, Medellin, Cebu</p>
+                  <hr className="text-gray-400" />
+                  <p className="mt-5">Sunday Service: 8:00 pm - 12:00 nn</p>
+                  <p className="mt-5">
+                    Wednesday Outpouring Service: 1:00 pm - 3:00 pm
+                  </p>
+                  <p className="mt-5">
+                    Friday Prayer Meeting Service: 1:00 pm - 3:00 pm
+                  </p>
+                  {/* <a
+                    className="linkk mt-5"
+                    href="https://www.google.com/maps/place/Rise+of+Church+of+Jesus+Christ+Int%E2%80%99l+Ministry+Inc./@10.5116505,123.961267,13z/data=!4m10!1m2!2m1!1sharang+Rise+of+Church+of+Jesus+Christ+Int'l.+Min.+Inc.!3m6!1s0x33a9bb004ee31293:0xbd5dec52f63862cb!8m2!3d10.5116505!4d124.027185!15sCjZoYXJhbmcgUmlzZSBvZiBDaHVyY2ggb2YgSmVzdXMgQ2hyaXN0IEludCdsLiBNaW4uIEluYy6SAQZjaHVyY2iqAZUBEAEqNyIzaGFyYW5nIHJpc2Ugb2YgY2h1cmNoIG9mIGplc3VzIGNocmlzdCBpbnQgbCBtaW4gaW5jKAAyHxABIhsodpy0CN1g29n1cAg5x8EstGqKUedNCes8SzoyNxACIjNoYXJhbmcgcmlzZSBvZiBjaHVyY2ggb2YgamVzdXMgY2hyaXN0IGludCBsIG1pbiBpbmPgAQA!16s%2Fg%2F11wj2f82mt?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D"
+                  >
+                    {" "}
+                    Press to locate via Google map
+                  </a> */}
+                </div>
+              )}
+              <hr className="mt-2" />
+            </div>
+
+            <div className="profilee">
+              <img
+                className="pic"
+                src={Seam}
+                alt="Seam"
+                onClick={() => {
+                  toggleProfile("Seam");
+                  toggleArrow("Seam");
+                }}
+                style={{ cursor: "pointer" }}
+              />
+              <hr className="mt-2" />
+              <h1
+                className="container"
+                onClick={() => {
+                  toggleProfile("Seam");
+                  toggleArrow("Seam");
+                }}
+                style={{ cursor: "pointer" }}
+              >
+                Pastor Seam Labiaga
+                <span
+                  className={`arrow-down ${
+                    arrowRotations.Seam ? "rotated" : ""
+                  }`}
+                ></span>
+              </h1>
+              {expandedProfiles.Seam && (
+                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
+                  <p> Purok Pagatpat 1 Suba Poblacion Liloan Cebu</p>
+                  <hr className="text-gray-400" />
+                  <p className="mt-5">
+                    Here's an early look at the current progress. Final details
+                    are pending your instructions, and I will update
+                    accordingly.
+                  </p>
+                </div>
+              )}
+              <hr className="mt-2" />
+            </div>
+          </div>
+          {/* sdghaysgid */}
+          <div
+            data-aos="fade-right"
+            data-aos-delay="500"
+            className="profile-image"
+          >
+            <div className="profilee">
+              <img
+                className="pic"
+                src={Pfp}
+                alt="Emma"
+                onClick={() => {
+                  toggleProfile("Emma");
+                  toggleArrow("Emma");
+                }}
+                style={{ cursor: "pointer" }}
+              />
+              <hr className="mt-2" />
+              <h1
+                className="container"
+                onClick={() => {
+                  toggleProfile("Emma");
+                  toggleArrow("Emma");
+                }}
+                style={{ cursor: "pointer" }}
+              >
+                Pastor Emma Merida
+                <span
+                  className={`arrow-down ${
+                    arrowRotations.Emma ? "rotated" : ""
+                  }`}
+                ></span>
+              </h1>
+              {expandedProfiles.Emma && (
+                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
+                  <p>A.C. Cortes Ave. (Interior), Looc, Mandaue City</p>
+                  <hr className="text-gray-400" />
+                  <p className="mt-5">Sunday Service: 8:30 am -12:00 nn</p>
+                  <p className="mt-5">
+                    Wednesday Outpouring Service: 6:30 pm - 9:00 pm
+                  </p>
+                  <p className="mt-5">
+                    Friday Prayer Meeting Service: 6:30 pm -9:00 pm
+                  </p>
+                  {/* <a
+                    className="linkk mt-5"
+                    href="https://www.google.com/maps/place/Rise+of+Church+of+Jesus+Christ+Int%E2%80%99l+Ministry+Inc./@10.5116505,123.961267,13z/data=!4m10!1m2!2m1!1sharang+Rise+of+Church+of+Jesus+Christ+Int'l.+Min.+Inc.!3m6!1s0x33a9bb004ee31293:0xbd5dec52f63862cb!8m2!3d10.5116505!4d124.027185!15sCjZoYXJhbmcgUmlzZSBvZiBDaHVyY2ggb2YgSmVzdXMgQ2hyaXN0IEludCdsLiBNaW4uIEluYy6SAQZjaHVyY2iqAZUBEAEqNyIzaGFyYW5nIHJpc2Ugb2YgY2h1cmNoIG9mIGplc3VzIGNocmlzdCBpbnQgbCBtaW4gaW5jKAAyHxABIhsodpy0CN1g29n1cAg5x8EstGqKUedNCes8SzoyNxACIjNoYXJhbmcgcmlzZSBvZiBjaHVyY2ggb2YgamVzdXMgY2hyaXN0IGludCBsIG1pbiBpbmPgAQA!16s%2Fg%2F11wj2f82mt?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D"
+                  >
+                    {" "}
+                    Press to locate via Google map
+                  </a> */}
+                </div>
+              )}
+              <hr className="mt-2" />
+            </div>
+
+            <div className="profilee">
+              <img
+                className="pic"
+                src={Mario}
+                alt="Mario"
+                onClick={() => {
+                  toggleProfile("Mario");
+                  toggleArrow("Mario");
+                }}
+                style={{ cursor: "pointer" }}
+              />
+              <hr className="mt-2" />
+              <h1
+                className="container"
+                onClick={() => {
+                  toggleProfile("Mario");
+                  toggleArrow("Mario");
+                }}
+                style={{ cursor: "pointer" }}
+              >
+                Pastor Mario Baring
+                <span
+                  className={`arrow-down ${
+                    arrowRotations.Mario ? "rotated" : ""
+                  }`}
+                ></span>
+              </h1>
+              {expandedProfiles.Mario && (
+                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
+                  <p>New Medellin East, (NMES) Poblacion Medellin Cebu</p>
+                  <hr className="text-gray-400" />
+                  <p className="mt-5">Sunday Service: 8:00 am - 12:00 nn</p>
+                  <p className="mt-5">
+                    Wednesday Outpouring Service: 7:00 pm - 9:00 pm
+                  </p>
+                  <p className="mt-5">
+                    Friday Prayer Meeting Service: 7:00 pm - 9:00 pm
+                  </p>
+                  {/* <a
+                    className="linkk mt-5"
+                    href="https://www.google.com/maps/place/Rise+of+Church+of+Jesus+Christ+Int%E2%80%99l+Ministry+Inc./@10.5116505,123.961267,13z/data=!4m10!1m2!2m1!1sharang+Rise+of+Church+of+Jesus+Christ+Int'l.+Min.+Inc.!3m6!1s0x33a9bb004ee31293:0xbd5dec52f63862cb!8m2!3d10.5116505!4d124.027185!15sCjZoYXJhbmcgUmlzZSBvZiBDaHVyY2ggb2YgSmVzdXMgQ2hyaXN0IEludCdsLiBNaW4uIEluYy6SAQZjaHVyY2iqAZUBEAEqNyIzaGFyYW5nIHJpc2Ugb2YgY2h1cmNoIG9mIGplc3VzIGNocmlzdCBpbnQgbCBtaW4gaW5jKAAyHxABIhsodpy0CN1g29n1cAg5x8EstGqKUedNCes8SzoyNxACIjNoYXJhbmcgcmlzZSBvZiBjaHVyY2ggb2YgamVzdXMgY2hyaXN0IGludCBsIG1pbiBpbmPgAQA!16s%2Fg%2F11wj2f82mt?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D"
+                  >
+                    {" "}
+                    Press to locate via Google map
+                  </a> */}
+                </div>
+              )}
+              <hr className="mt-2" />
+            </div>
+
+            <div className="profilee">
+              <img
+                className="pic"
+                src={Janice}
+                alt="Janice"
+                onClick={() => {
+                  toggleProfile("Janice");
+                  toggleArrow("Janice");
+                }}
+                style={{ cursor: "pointer" }}
+              />
+              <hr className="mt-2" />
+              <h1
+                className="container"
+                onClick={() => {
+                  toggleProfile("Janice");
+                  toggleArrow("Janice");
+                }}
+                style={{ cursor: "pointer" }}
+              >
+                Pastor Janice Nunez
+                <span
+                  className={`arrow-down ${
+                    arrowRotations.Janice ? "rotated" : ""
+                  }`}
+                ></span>
+              </h1>
+              {expandedProfiles.Janice && (
+                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
+                  <p>
+                    {" "}
+                    Almers Compound entrance Suico St Tabok Mandaue City Cebu
+                  </p>
+                  <hr className="text-gray-400" />
+                  <p className="mt-5">Sunday Service: 8:30 am - 12:00 nn</p>
+                  <p className="mt-5">
+                    Wednesday Outpouring Service: 6:30 pm - 9:00 pm
+                  </p>
+                  <p className="mt-5">
+                    Friday Prayer Meeting Service: 6:30 pm - 9:00 pm
                   </p>
                 </div>
               )}
