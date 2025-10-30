@@ -304,6 +304,9 @@ export default function Locations() {
           </div>
         </div>
 
+        <h1 className="headding text-center font-bold text-2xl mt-10">
+          Church Directory
+        </h1>
         <div className="search location-dropdown font-Roboto">
           {/* Select button */}
           <button
@@ -404,7 +407,7 @@ export default function Locations() {
             </ul>
           </div> */}
 
-          <div data-aos="fade-up"
+          {/* <div data-aos="fade-up"
             data-aos-delay="500">
             <div className="container-main">
               <hr className="mb-3 text-gray-600" />
@@ -433,16 +436,47 @@ export default function Locations() {
               <hr className="text-gray-600 mb-10" />
             </div>
           </div>
+          </div> */}
+
+          <div>
+            <h1 className="headding text-3xl text-center font-bold ">
+              RCJCIM Main Branch
+            </h1>
           </div>
 
-          {/* <div className="container-half"data-aos="fade-up"
+          <div className="main-branch">
+            <div className="content-container">
+              {/* Left side: PFP and info */}
+              <div className="profile-section">
+                <img className="pfp" src={Pfp} alt="Emma" />
+                <h1 className="name text-blue-700">Pastor Emma Merida</h1>
+                <hr />
+                <p className="name">Sunday Service: 8:30 am -12:00 nn</p>
+                <p className="name">
+                  Wednesday Outpouring Service: 6:30 pm - 9:00 pm
+                </p>
+                <p className="name">
+                  Friday Prayer Meeting Service: 6:30 pm -9:00 pm
+                </p>
+              </div>
+              {/* Right side: Map */}
+              <div className="map-section">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.85257577527!2d123.93625831537476!3d10.342542992480576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9992be6883d23%3A0xb3a18506188a71f2!2s8XG2%2B6R9%20Rise%20of%20Church%20of%20Jesus%20Christ%20Int%27l%20Ministries%20-%20Mandaue!5e0!3m2!1sen!2sph!4v1686541234567!5m2!1sen!2sph"
+                  
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+           {/* <div className="container-half"data-aos="fade-up"
             data-aos-delay="500">
             <div>
               <hr className="text-gray-600 mb-10" />
             </div>
-          </div> */}
+          </div>  */}
 
-          <div className="font-Roboto">
+          <div className="font-Roboto mt-10">
             <h1
               data-aos="fade-up"
               data-aos-delay="500"
@@ -589,7 +623,7 @@ export default function Locations() {
             </div>
           </div>
 
-          <div className="font-Roboto">
+          <div className="font-Roboto mt-10">
             <h1 className="font-bold text-4xl text-center">CEBU</h1>
             <div
               data-aos="fade-right"
@@ -1225,7 +1259,7 @@ export default function Locations() {
           </div>
 
           <h1
-            className="text-center font-bold text-4xl"
+            className="text-center font-bold text-4xl mt-10"
             data-aos="fade-right"
             data-aos-delay="500"
           >
@@ -1379,7 +1413,7 @@ export default function Locations() {
           </div>
 
           <h1
-            className="text-center font-bold text-4xl"
+            className="text-center mt-10 font-bold text-4xl"
             data-aos="fade-right"
             data-aos-delay="500"
           >
@@ -1629,7 +1663,7 @@ export default function Locations() {
           </div>
 
           <h1
-            className="text-center font-bold text-4xl"
+            className="text-center mt-10 font-bold text-4xl"
             data-aos="fade-right"
             data-aos-delay="500"
           >
