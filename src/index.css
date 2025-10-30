@@ -331,7 +331,8 @@
   display: flex;
   justify-content: center;  
   padding: 50px;
-  height: 50vh;           
+  height: 50vh;  
+  font-family: var(--font-Roboto);         
 }
 
 /* For smaller screens, stack vertically */
