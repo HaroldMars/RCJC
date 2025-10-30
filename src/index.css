@@ -413,6 +413,13 @@ iframe {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
 }
 
+@media (max-width: 768px) {
+  iframe {
+    height: 300px; 
+    width: 300px;
+  }
+}
+
 
 .headding {
   font-family: var(--font-Roboto);

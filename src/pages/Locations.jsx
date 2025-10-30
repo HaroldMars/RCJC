@@ -449,15 +449,16 @@ export default function Locations() {
               {/* Left side: PFP and info */}
               <div className="profile-section">
                 <img className="pfp" src={Pfp} alt="Emma" />
-                <h1 className="name text-blue-700">Pastor Emma Merida</h1>
-                <hr />
-                <p className="name">Sunday Service: 8:30 am -12:00 nn</p>
-                <p className="name">
+                <h1 className="name text-blue-700 mt-5">Pastor Emma Merida</h1>
+                <div>
+                <p className="mt-2 text-left">Sunday Service: 8:30 am -12:00 nn</p>
+                <p className="mt-2 text-left">
                   Wednesday Outpouring Service: 6:30 pm - 9:00 pm
                 </p>
-                <p className="name">
+                <p className="mt-2 text-left">
                   Friday Prayer Meeting Service: 6:30 pm -9:00 pm
                 </p>
+                </div>
               </div>
               {/* Right side: Map */}
               <div className="map-section">
