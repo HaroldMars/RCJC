@@ -23,12 +23,14 @@ export default function Contact() {
                 </div>
               </div>
       <div className=" w-full text-black ">
-                <footer className="foot text-white h-auto  py-4">
-                  <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-4 px-4">
-                    {/* Logo */}
-                    <img src={Logo} alt="Church Logo" className="w-50 " />
-                  </div>
-                </footer>
+                <footer className="foot text-white h-100">
+                            <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-4 py-4">
+                              {/* Logo */}
+                              <img src={Logo} alt="Church Logo" className="w-16 h-16" />
+                              <h1>Contact:</h1>
+                            </div>
+                            <h5 className="text-center text-[70%]">&copy; 2025 RCJCIM.</h5>
+                          </footer>
                 </div>
     </div>
   );

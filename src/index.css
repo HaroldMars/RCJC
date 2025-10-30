@@ -64,8 +64,9 @@
   background-color: green;
 }
 
-.Footer--container {
+.Footer-container {
   flex: 1;
+  border: red solid 2px;
   background-color: red;
 }
 
@@ -89,8 +90,11 @@
 }
 
 .foot {
-  background: linear-gradient(#93DBFA, #1D4554);
-  
+  background-color: #2E4057;
+  font-family: var(--font-Roboto);
+  border: red solid 2px hidden;
+  height: 100%;
+  color: white;
 }
 
 .section {
@@ -234,6 +238,12 @@
   height: 100px;
 }
 
+.contentt {
+  border: red solid 2px hidden;
+  border-radius: 10px;
+  color: black;
+}
+
 .search-2 {
   border: red solid 2px hidden; 
   position: absolute;
@@ -316,3 +326,31 @@
 .arrow-down.rotated {
   transform: translateY(-50%) rotate(-135deg);
 }
+.container-main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; /* Use a percentage for responsiveness */
+  max-width: 600px; /* Optional: limit maximum width */
+  height: auto; /* Let height adjust based on content or image aspect ratio */
+}
+
+.main {
+  border-radius: 50%;
+  width: 50%; /* or any width you prefer */
+  height: auto; /* maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* centers the element horizontally */
+}
+
+.container-half {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%; /* Use a percentage for responsiveness */
+  max-width: 600px; /* Optional: limit maximum width */
+  height: auto; 
+  margin-top: 10px;
+}
+
+
