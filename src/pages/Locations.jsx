@@ -146,8 +146,8 @@ export default function Locations() {
   //   }));
   // };
 
-  const [showHeader, setShowHeader] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  // const [showHeader, setShowHeader] = useState(true);
+  // const [lastScrollY, setLastScrollY] = useState(0);
 
   // const boholsections = [
   //   {
@@ -294,20 +294,20 @@ export default function Locations() {
   //   },
   // ];
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY) {
-        setShowHeader(false);
-      } else {
-        setShowHeader(true);
-      }
-      setLastScrollY(currentScrollY);
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const currentScrollY = window.scrollY;
+  //     if (currentScrollY > lastScrollY) {
+  //       setShowHeader(false);
+  //     } else {
+  //       setShowHeader(true);
+  //     }
+  //     setLastScrollY(currentScrollY);
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY]);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, [lastScrollY]);
 
   const toggleArrow = (name) => {
     setArrowRotations((prev) => ({
@@ -319,7 +319,7 @@ export default function Locations() {
   return (
     <>
       <div className="nav-text bg-white w-screen font-Roboto h-fit text-black ">
-        {showHeader && <Header />}
+        <Header />
 
         {/* Background section */}
         <div className="relative h-220 w-screen">
@@ -347,54 +347,54 @@ export default function Locations() {
           Church Directory
         </h1>
         <div className="search location-dropdown font-Roboto">
-  {/* Select button */}
-  <button
-    className="w-full px-4 py-2 border search-bar bg-white text-left flex justify-between items-center"
-    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-    aria-haspopup="listbox"
-    aria-expanded={isDropdownOpen}
-    data-aos="fade-up"
-    data-aos-delay="500"
-  >
-    {selectedLocation
-      ? AreaOptions.find((opt) => opt.value === selectedLocation)?.label
-      : "Select Area..."}
-    {/* Arrow icon */}
-    <svg
-      className={`w-4 h-4 transition-transform duration-300 ${
-        isDropdownOpen ? "rotate-180" : ""
-      }`}
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-      aria-hidden="true"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M19 9l-7 7-7-7"
-      />
-    </svg>
-  </button>
+          {/* Select button */}
+          <button
+            className="w-full px-4 py-2 border search-bar bg-white text-left flex justify-between items-center"
+            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+            aria-haspopup="listbox"
+            aria-expanded={isDropdownOpen}
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            {selectedLocation
+              ? AreaOptions.find((opt) => opt.value === selectedLocation)?.label
+              : "Select Area..."}
+            {/* Arrow icon */}
+            <svg
+              className={`w-4 h-4 transition-transform duration-300 ${
+                isDropdownOpen ? "rotate-180" : ""
+              }`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
 
-  {/* Dropdown options */}
-  {isDropdownOpen && (
-    <div className="absolute top-full search-bar-glass left-0 w-full bg-white border border-gray-300 rounded shadow-lg z-10 max-h-60 overflow-y-auto">
-      {AreaOptions.map((opt) => (
-        <div
-          key={opt.value}
-          className="px-4 py-2 hover:bg-green-100 rounded-2xl cursor-pointer"
-          onClick={() => handleLocationSelect(opt.value)}
-          role="option"
-          aria-selected={selectedLocation === opt.value}
-        >
-          {opt.label}
+          {/* Dropdown options */}
+          {isDropdownOpen && (
+            <div className="absolute top-full search-bar-glass left-0 w-full bg-white border border-gray-300 rounded shadow-lg z-10 max-h-60 overflow-y-auto">
+              {AreaOptions.map((opt) => (
+                <div
+                  key={opt.value}
+                  className="px-4 py-2 hover:bg-green-100 rounded-2xl cursor-pointer"
+                  onClick={() => handleLocationSelect(opt.value)}
+                  role="option"
+                  aria-selected={selectedLocation === opt.value}
+                >
+                  {opt.label}
+                </div>
+              ))}
+            </div>
+          )}
         </div>
-      ))}
-    </div>
-  )}
-</div>
 
         {/* Main content */}
         <div className="h-auto bg-white mt-50">
@@ -603,10 +603,12 @@ export default function Locations() {
                   <div className="details p-4 bg-gray-100 mt-2  shadow-inner">
                     <p>Purok 6 Eastern Cabul-an Buenavista Bohol</p>
                     <hr className="text-gray-400" />
+                    <p className="mt-5">Sunday Service: 8:00 am - 12:00 nn</p>
                     <p className="mt-5">
-                      Here's an early look at the current progress. Final
-                      details are pending your instructions, and I will update
-                      accordingly.
+                      Wednesday Outpouring: 5:00 pm - 7:00 pm
+                    </p>
+                    <p className="mt-5">
+                      Friday Prayer Meeting: 5:00 pm - 7:00 pm
                     </p>
                   </div>
                 )}
@@ -700,11 +702,7 @@ export default function Locations() {
                   <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
                     <p>Central 1 Cogon Bogo City</p>
                     <hr className="text-gray-400" />
-                    <p className="mt-5">
-                      Here's an early look at the current progress. Final
-                      details are pending your instructions, and I will update
-                      accordingly.
-                    </p>
+                    <p className="mt-5">Sunday Service: 8:30 am - 12:00 nn</p>
                   </div>
                 )}
                 <hr className="mt-2" />
@@ -835,11 +833,7 @@ export default function Locations() {
                     Catarman 2 Cordova Cebu across Catarman Elementary School
                   </p>
                   <hr className="text-gray-400" />
-                  <p className="mt-5">
-                    Here's an early look at the current progress. Final details
-                    are pending your instructions, and I will update
-                    accordingly.
-                  </p>
+                  <p className="mt-5">Sunday Service: 8:30 am -12:00 nn</p>
                 </div>
               )}
               <hr className="mt-2" />
@@ -1078,10 +1072,12 @@ export default function Locations() {
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
                   <p> Purok Pagatpat 1 Suba Poblacion Liloan Cebu</p>
                   <hr className="text-gray-400" />
+                  <p className="mt-5">Sunday Service: 8:00 am -12:00 nn</p>
                   <p className="mt-5">
-                    Here's an early look at the current progress. Final details
-                    are pending your instructions, and I will update
-                    accordingly.
+                    Wednesday Outpouring: 6:00 pm - 8:00 pm
+                  </p>
+                  <p className="mt-5">
+                    Friday Prayer Meeting: 6:00 pm - 8:00 pm
                   </p>
                 </div>
               )}
@@ -1277,10 +1273,12 @@ export default function Locations() {
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
                   <p>Hernan Cortes St. Telecom, Casuntingan, Mandaue City</p>
                   <hr className="text-gray-400" />
+                  <p className="mt-5">Sunday Service: 8:00 am - 12:00 nn</p>
                   <p className="mt-5">
-                    Here's an early look at the current progress. Final details
-                    are pending your instructions, and I will update
-                    accordingly.
+                    Wednesday Outpouring: 6:30 pm - 8:30 pm
+                  </p>
+                  <p className="mt-5">
+                    Friday Prayer Meeting: 6:30 pm - 8:30 pm
                   </p>
 
                   {/* <a
@@ -1299,7 +1297,8 @@ export default function Locations() {
           <h1
             className="text-center font-bold text-4xl mt-10"
             data-aos="fade-right"
-            data-aos-delay="500" id="leyte-section"
+            data-aos-delay="500"
+            id="leyte-section"
           >
             Leyte
           </h1>
@@ -1338,7 +1337,10 @@ export default function Locations() {
               {expandedProfiles.Elvie && (
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
                   <p>P. Gomez St. Brgy. Riverside Matag-ob, Leyte</p>
-                  <p className="mt-5"> Mabini St. Brgy. Mazawalo Palompon, Leyte</p>
+                  <p className="mt-5">
+                    {" "}
+                    Mabini St. Brgy. Mazawalo Palompon, Leyte
+                  </p>
                   <hr className="text-gray-400" />
                   <p className="mt-5">Sunday Service: 8:00 am - 12:00 nn</p>
                   <p className="mt-5">
@@ -1347,7 +1349,20 @@ export default function Locations() {
                   <p className="mt-5">
                     Friday Prayer Meeting Service: 6:30 pm - 8:30 pm
                   </p>
-                  
+                  <hr className="text-gray-400" />
+                  <p className="mt-5">
+                    {" "}
+                    Mabini St. Brgy. Mazawalo Palompon, Leyte
+                  </p>
+                  <hr className="text-gray-400" />
+                  <p className="mt-5">Sunday Service: 8:00 am - 12:00 nn</p>
+                  <p className="mt-5">
+                    Wednesday Outpouring: 6:30 pm - 8:30 pm
+                  </p>
+                  <p className="mt-5">
+                    Friday Prayer Meeting: 6:30 pm - 8:30 pm
+                  </p>
+
                   {/* <a
                     className="linkk mt-5"
                     href="https://www.google.com/maps/place/Rise+of+Church+of+Jesus+Christ+Int%E2%80%99l+Ministry+Inc./@10.5116505,123.961267,13z/data=!4m10!1m2!2m1!1sharang+Rise+of+Church+of+Jesus+Christ+Int'l.+Min.+Inc.!3m6!1s0x33a9bb004ee31293:0xbd5dec52f63862cb!8m2!3d10.5116505!4d124.027185!15sCjZoYXJhbmcgUmlzZSBvZiBDaHVyY2ggb2YgSmVzdXMgQ2hyaXN0IEludCdsLiBNaW4uIEluYy6SAQZjaHVyY2iqAZUBEAEqNyIzaGFyYW5nIHJpc2Ugb2YgY2h1cmNoIG9mIGplc3VzIGNocmlzdCBpbnQgbCBtaW4gaW5jKAAyHxABIhsodpy0CN1g29n1cAg5x8EstGqKUedNCes8SzoyNxACIjNoYXJhbmcgcmlzZSBvZiBjaHVyY2ggb2YgamVzdXMgY2hyaXN0IGludCBsIG1pbiBpbmPgAQA!16s%2Fg%2F11wj2f82mt?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D"
@@ -1649,11 +1664,7 @@ export default function Locations() {
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
                   <p>Unidad, Barobo, Surigao del Sur</p>
                   <hr className="text-gray-400" />
-                  <p className="mt-5">
-                    Here's an early look at the current progress. Final details
-                    are pending your instructions, and I will update
-                    accordingly.
-                  </p>
+                  <p className="mt-5">Sunday Service: 8:30 am - 12:00 nn</p>
                 </div>
               )}
               <hr className="mt-2" />

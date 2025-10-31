@@ -15,7 +15,7 @@ export default function Home() {
       data-aos="fade-in"
       className="nav-text w-full min-h-screen font-Roboto  text-black mb-0"
     >
-      <Header className={"text-white"} />
+      <Header/>
 
       {/* Hero Section with Video Background */}
       <div

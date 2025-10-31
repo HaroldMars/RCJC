@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Header from "../components/Header";
 import Background from "../assets/footerpic.jpg";
 import ExpandableSection from "../components/ExpandableSection";
@@ -19,8 +19,8 @@ export default function About() {
     statementofFaith: false,
   });
 
-  const [showHeader, setShowHeader] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  // const [showHeader, setShowHeader] = useState(true);
+  // const [lastScrollY, setLastScrollY] = useState(0);
 
   // Toggle a section and close others
   const toggleSection = (section) => {
@@ -30,24 +30,24 @@ export default function About() {
     }));
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY) {
-        setShowHeader(false);
-      } else {
-        setShowHeader(true);
-      }
-      setLastScrollY(currentScrollY);
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const currentScrollY = window.scrollY;
+  //     if (currentScrollY > lastScrollY) {
+  //       setShowHeader(false);
+  //     } else {
+  //       setShowHeader(true);
+  //     }
+  //     setLastScrollY(currentScrollY);
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY]);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, [lastScrollY]);
 
   return (
     <div className="navi bg-gray-100 w-screen font-Roboto h-fit text-black">
-      {showHeader && <Header />}
+      <Header />
 
       {/* Background Image Section */}
       <div
