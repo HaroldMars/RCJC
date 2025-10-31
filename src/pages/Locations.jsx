@@ -485,19 +485,22 @@ export default function Locations() {
               {/* Left side: PFP and info */}
               <div className="profile-section">
                 <img className="pfp" src={Emma} alt="Emma" />
-                <h1 className="name font-bold text-2xl text-blue-700 mt-5">
+                <h1 className="name font-bold  mt-5">
                   Pastor Emma Merida
                 </h1>
-                <div>
+                <div >
                   <p className="mt-2 text-left">
-                    Sunday Service: 8:30 am - 12:00 nn
+                    Sunday Service: 
                   </p>
+                  <p>8:30 am - 12:00 nn</p>
                   <p className="mt-2 text-left">
-                    Wednesday Outpouring Service: 6:30 pm - 9:00 pm
+                    Wednesday Outpouring:
                   </p>
+                  <p> 6:30 pm - 9:00 pm</p>
                   <p className="mt-2 text-left">
-                    Friday Prayer Meeting Service: 6:30 pm - 9:00 pm
+                    Friday Prayer Meeting:
                   </p>
+                  <p> 6:30 pm - 9:00 pm</p>
                 </div>
               </div>
               {/* Right side: Map */}
@@ -559,10 +562,12 @@ export default function Locations() {
                   <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
                     <p> Purok 4 Bagacay Talibon Bohol</p>
                     <hr className="text-gray-400" />
-                    <p className="mt-5">Sunday Service: 8:30 am -12:00 nn</p>
+                    <p className="mt-5">Sunday Service:</p>
+                    <p> 8:30 am -12:00 nn</p>
                     <p className="mt-5">
-                      Wednesday Outpouring Service: 6:30 pm - 8:30 pm
+                      Wednesday Outpouring Service: 
                     </p>
+                    <p>6:30 pm - 8:30 pm</p>
                     <p className="mt-5">
                       Friday Prayer Meeting: 6:30 pm - 8:30 pm
                     </p>
@@ -603,10 +608,12 @@ export default function Locations() {
                   <div className="details p-4 bg-gray-100 mt-2  shadow-inner">
                     <p>Purok 6 Eastern Cabul-an Buenavista Bohol</p>
                     <hr className="text-gray-400" />
-                    <p className="mt-5">Sunday Service: 8:00 am - 12:00 nn</p>
+                    <p className="mt-5">Sunday Service:</p>
+                    <p> 8:00 am - 12:00 nn</p>
                     <p className="mt-5">
-                      Wednesday Outpouring: 5:00 pm - 7:00 pm
+                      Wednesday Outpouring: 
                     </p>
+                    <p>5:00 pm - 7:00 pm</p>
                     <p className="mt-5">
                       Friday Prayer Meeting: 5:00 pm - 7:00 pm
                     </p>
@@ -651,8 +658,9 @@ export default function Locations() {
                       Friday Prayer Meeting: 7:00 pm - 9:00 pm
                     </p>
                     <p className="mt-5">
-                      Wednesday Outpouring Service: 7:00 pm - 9:00 pm
+                      Wednesday Outpouring Service:
                     </p>
+                    <p> 7:00 pm - 9:00 pm</p>
                     <p className="mt-5">
                       Friday Prayer Meeting: 7:00 pm - 9:00 pm
                     </p>
@@ -702,7 +710,8 @@ export default function Locations() {
                   <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
                     <p>Central 1 Cogon Bogo City</p>
                     <hr className="text-gray-400" />
-                    <p className="mt-5">Sunday Service: 8:30 am - 12:00 nn</p>
+                    <p className="mt-5">Sunday Service: </p>
+                    <p>8:30 am - 12:00 nn</p>
                   </div>
                 )}
                 <hr className="mt-2" />
@@ -739,10 +748,12 @@ export default function Locations() {
                   <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
                     <p>Purok Pagnahian Sonog San Francisco Camotes Cebu</p>
                     <hr className="text-gray-400" />
-                    <p className="mt-5">Sunday Service: 8:00 am - 12:00 nn</p>
+                    <p className="mt-5">Sunday Service:</p>
+                    <p> 8:00 am - 12:00 nn</p>
                     <p className="mt-5">
-                      Wednesday Outpouring Service: 8:00 pm - 10:00 pm
+                      Wednesday Outpouring: 
                     </p>
+                    <p>8:00 pm - 10:00 pm</p>
                     <p className="mt-5">
                       Friday Prayer Meeting: 8:00 pm - 10:00 pm
                     </p>
@@ -781,10 +792,12 @@ export default function Locations() {
                   <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
                     <p> Currently joining with RCJCIM Liloan as we're still looking for another place in Compostela</p>
                     <hr className="text-gray-400" />
-                    <p className="mt-5">Sunday Service: 8:00 am -12:00 nn</p>
+                    <p className="mt-5">Sunday Service: </p>
+                    <p className="">8:00 am -12:00 nn</p>
                     <p className="mt-5">
-                      Wednesday Outpouring: 6:00 pm - 8:00 pm
+                      Wednesday Outpouring:
                     </p>
+                    <p> 6:00 pm - 8:00 pm</p>
                     <p className="mt-5">
                       Friday Prayer Meeting: 6:00 pm - 8:00 pm
                     </p>
@@ -833,7 +846,8 @@ export default function Locations() {
                     Catarman 2 Cordova Cebu across Catarman Elementary School
                   </p>
                   <hr className="text-gray-400" />
-                  <p className="mt-5">Sunday Service: 8:30 am -12:00 nn</p>
+                  <p className="mt-5">Sunday Service: </p>
+                  <p>8:30 am -12:00 nn</p>
                 </div>
               )}
               <hr className="mt-2" />
@@ -873,13 +887,16 @@ export default function Locations() {
                     Riders Pit Stop)
                   </p>
                   <hr className="text-gray-400" />
-                  <p className="mt-5">Sunday Service: 8:00 am - 12:00 nn</p>
+                  <p className="mt-5">Sunday Service: </p>
+                  <p>8:00 am - 12:00 nn</p>
                   <p className="mt-5">
-                    Wednesday Outpouring Service: 6:00 pm - 8:00 pm
+                    Wednesday Outpouring Service:
                   </p>
+                  <p> 6:00 pm - 8:00 pm</p>
                   <p className="mt-5">
-                    Friday Prayer Meeting Service: 6:00 pm - 8:00 pm
+                    Friday Prayer Meeting: 
                   </p>
+                  <p>6:00 pm - 8:00 pm</p>
                   <a
                     className="linkk mt-5"
                     href="https://www.google.com/maps/place/Rise+of+Church+of+Jesus+Christ+Int%E2%80%99l+Ministry+Inc./@10.5116505,123.961267,13z/data=!4m10!1m2!2m1!1sharang+Rise+of+Church+of+Jesus+Christ+Int'l.+Min.+Inc.!3m6!1s0x33a9bb004ee31293:0xbd5dec52f63862cb!8m2!3d10.5116505!4d124.027185!15sCjZoYXJhbmcgUmlzZSBvZiBDaHVyY2ggb2YgSmVzdXMgQ2hyaXN0IEludCdsLiBNaW4uIEluYy6SAQZjaHVyY2iqAZUBEAEqNyIzaGFyYW5nIHJpc2Ugb2YgY2h1cmNoIG9mIGplc3VzIGNocmlzdCBpbnQgbCBtaW4gaW5jKAAyHxABIhsodpy0CN1g29n1cAg5x8EstGqKUedNCes8SzoyNxACIjNoYXJhbmcgcmlzZSBvZiBjaHVyY2ggb2YgamVzdXMgY2hyaXN0IGludCBsIG1pbiBpbmPgAQA!16s%2Fg%2F11wj2f82mt?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D"
@@ -923,13 +940,16 @@ export default function Locations() {
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
                   <p> Tangil, Dumanjug, Cebu</p>
                   <hr className="text-gray-400" />
-                  <p className="mt-5">Sunday Service: 8:00 am -12:00 nn</p>
+                  <p className="mt-5">Sunday Service: </p>
+                  <p>8:00 am -12:00 nn</p>
                   <p className="mt-5">
-                    Wednesday Outpouring Service: 6:00 am - 8:00 pm
+                    Wednesday Outpouring:
                   </p>
+                  <p> 6:00 am - 8:00 pm</p>
                   <p className="mt-5">
-                    Friday Prayer Meeting Service: 6:00 pm - 8:00 pm
+                    Friday Prayer Meeting: 
                   </p>
+                  <p>6:00 pm - 8:00 pm</p>
                 </div>
               )}
               <hr className="mt-2" />
@@ -972,13 +992,16 @@ export default function Locations() {
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
                   <p>Tagunol, Basak San Nicolas, Cebu City</p>
                   <hr className="text-gray-400" />
-                  <p className="mt-5">Sunday Service: 8:30 am -12:00 nn</p>
+                  <p className="mt-5">Sunday Service: </p>
+                  <p>8:30 am -12:00 nn</p>
                   <p className="mt-5">
-                    Wednesday Outpouring Service: 6:30 pm - 9:00 pm
+                    Wednesday Outpouring: 
                   </p>
+                  <p>6:30 pm - 9:00 pm</p>
                   <p className="mt-5">
-                    Friday Prayer Meeting Service: 6:30 pm -9:00 pm
+                    Friday Prayer Meeting:
                   </p>
+                  <p> 6:30 pm -9:00 pm</p>
                   <a
                     className="linkk mt-5"
                     href="https://www.google.com/maps/place/Rise+of+Church+of+Jesus+Christ+Int%E2%80%99l+Ministry+Inc./@10.5116505,123.961267,13z/data=!4m10!1m2!2m1!1sharang+Rise+of+Church+of+Jesus+Christ+Int'l.+Min.+Inc.!3m6!1s0x33a9bb004ee31293:0xbd5dec52f63862cb!8m2!3d10.5116505!4d124.027185!15sCjZoYXJhbmcgUmlzZSBvZiBDaHVyY2ggb2YgSmVzdXMgQ2hyaXN0IEludCdsLiBNaW4uIEluYy6SAQZjaHVyY2iqAZUBEAEqNyIzaGFyYW5nIHJpc2Ugb2YgY2h1cmNoIG9mIGplc3VzIGNocmlzdCBpbnQgbCBtaW4gaW5jKAAyHxABIhsodpy0CN1g29n1cAg5x8EstGqKUedNCes8SzoyNxACIjNoYXJhbmcgcmlzZSBvZiBjaHVyY2ggb2YgamVzdXMgY2hyaXN0IGludCBsIG1pbiBpbmPgAQA!16s%2Fg%2F11wj2f82mt?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D"
@@ -1022,13 +1045,16 @@ export default function Locations() {
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
                   <p>Sitio Capayawan, Kawit, Medellin, Cebu</p>
                   <hr className="text-gray-400" />
-                  <p className="mt-5">Sunday Service: 8:00 pm - 12:00 nn</p>
+                  <p className="mt-5">Sunday Service: </p>
+                  <p>8:00 pm - 12:00 nn</p>
                   <p className="mt-5">
-                    Wednesday Outpouring Service: 1:00 pm - 3:00 pm
+                    Wednesday Outpouring: 
                   </p>
+                  <p>1:00 pm - 3:00 pm</p>
                   <p className="mt-5">
-                    Friday Prayer Meeting Service: 1:00 pm - 3:00 pm
+                    Friday Prayer Meeting: 
                   </p>
+                  <p>1:00 pm - 3:00 pm</p>
                   {/* <a
                     className="linkk mt-5"
                     href="https://www.google.com/maps/place/Rise+of+Church+of+Jesus+Christ+Int%E2%80%99l+Ministry+Inc./@10.5116505,123.961267,13z/data=!4m10!1m2!2m1!1sharang+Rise+of+Church+of+Jesus+Christ+Int'l.+Min.+Inc.!3m6!1s0x33a9bb004ee31293:0xbd5dec52f63862cb!8m2!3d10.5116505!4d124.027185!15sCjZoYXJhbmcgUmlzZSBvZiBDaHVyY2ggb2YgSmVzdXMgQ2hyaXN0IEludCdsLiBNaW4uIEluYy6SAQZjaHVyY2iqAZUBEAEqNyIzaGFyYW5nIHJpc2Ugb2YgY2h1cmNoIG9mIGplc3VzIGNocmlzdCBpbnQgbCBtaW4gaW5jKAAyHxABIhsodpy0CN1g29n1cAg5x8EstGqKUedNCes8SzoyNxACIjNoYXJhbmcgcmlzZSBvZiBjaHVyY2ggb2YgamVzdXMgY2hyaXN0IGludCBsIG1pbiBpbmPgAQA!16s%2Fg%2F11wj2f82mt?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D"
@@ -1072,13 +1098,16 @@ export default function Locations() {
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
                   <p> Purok Pagatpat 1 Suba Poblacion Liloan Cebu</p>
                   <hr className="text-gray-400" />
-                  <p className="mt-5">Sunday Service: 8:00 am -12:00 nn</p>
+                  <p className="mt-5">Sunday Service: </p>
+                  <p>8:00 am -12:00 nn</p>
                   <p className="mt-5">
-                    Wednesday Outpouring: 6:00 pm - 8:00 pm
+                    Wednesday Outpouring: 
                   </p>
+                  <p>6:00 pm - 8:00 pm</p>
                   <p className="mt-5">
-                    Friday Prayer Meeting: 6:00 pm - 8:00 pm
+                    Friday Prayer Meeting: 
                   </p>
+                  <p>6:00 pm - 8:00 pm</p>
                 </div>
               )}
               <hr className="mt-2" />
@@ -1121,13 +1150,16 @@ export default function Locations() {
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
                   <p>New Medellin East, (NMES) Poblacion Medellin Cebu</p>
                   <hr className="text-gray-400" />
-                  <p className="mt-5">Sunday Service: 8:00 am - 12:00 nn</p>
+                  <p className="mt-5">Sunday Service:</p>
+                  <p> 8:00 am - 12:00 nn</p>
                   <p className="mt-5">
-                    Wednesday Outpouring Service: 7:00 pm - 9:00 pm
+                    Wednesday Outpouring: 
                   </p>
+                  <p>7:00 pm - 9:00 pm</p>
                   <p className="mt-5">
-                    Friday Prayer Meeting Service: 7:00 pm - 9:00 pm
+                    Friday Prayer Meeting:
                   </p>
+                  <p> 7:00 pm - 9:00 pm</p>
                   {/* <a
                     className="linkk mt-5"
                     href="https://www.google.com/maps/place/Rise+of+Church+of+Jesus+Christ+Int%E2%80%99l+Ministry+Inc./@10.5116505,123.961267,13z/data=!4m10!1m2!2m1!1sharang+Rise+of+Church+of+Jesus+Christ+Int'l.+Min.+Inc.!3m6!1s0x33a9bb004ee31293:0xbd5dec52f63862cb!8m2!3d10.5116505!4d124.027185!15sCjZoYXJhbmcgUmlzZSBvZiBDaHVyY2ggb2YgSmVzdXMgQ2hyaXN0IEludCdsLiBNaW4uIEluYy6SAQZjaHVyY2iqAZUBEAEqNyIzaGFyYW5nIHJpc2Ugb2YgY2h1cmNoIG9mIGplc3VzIGNocmlzdCBpbnQgbCBtaW4gaW5jKAAyHxABIhsodpy0CN1g29n1cAg5x8EstGqKUedNCes8SzoyNxACIjNoYXJhbmcgcmlzZSBvZiBjaHVyY2ggb2YgamVzdXMgY2hyaXN0IGludCBsIG1pbiBpbmPgAQA!16s%2Fg%2F11wj2f82mt?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D"
@@ -1174,13 +1206,16 @@ export default function Locations() {
                     Almers Compound entrance Suico St Tabok Mandaue City Cebu
                   </p>
                   <hr className="text-gray-400" />
-                  <p className="mt-5">Sunday Service: 8:30 am - 12:00 nn</p>
+                  <p className="mt-5">Sunday Service:</p>
+                  <p> 8:30 am - 12:00 nn</p>
                   <p className="mt-5">
-                    Wednesday Outpouring Service: 6:30 pm - 9:00 pm
+                    Wednesday Outpouring: 
                   </p>
+                  <p>6:30 pm - 9:00 pm</p>
                   <p className="mt-5">
-                    Friday Prayer Meeting Service: 6:30 pm - 9:00 pm
+                    Friday Prayer Meeting: 
                   </p>
+                  <p>6:30 pm - 9:00 pm</p>
                 </div>
               )}
               <hr className="mt-2" />
@@ -1217,13 +1252,16 @@ export default function Locations() {
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
                   <p>A.C. Cortes Ave. (Interior), Looc, Mandaue City</p>
                   <hr className="text-gray-400" />
-                  <p className="mt-5">Sunday Service: 8:30 am -12:00 nn</p>
+                  <p className="mt-5">Sunday Service:</p>
+                  <p> 8:30 am -12:00 nn</p>
                   <p className="mt-5">
-                    Wednesday Outpouring Service: 6:30 pm - 9:00 pm
+                    Wednesday Outpouring:
                   </p>
+                  <p> 6:30 pm - 9:00 pm</p>
                   <p className="mt-5">
-                    Friday Prayer Meeting Service: 6:30 pm -9:00 pm
+                    Friday Prayer Meeting:
                   </p>
+                  <p> 6:30 pm -9:00 pm</p>
                   {/* <a
                     className="linkk mt-5"
                     href="https://www.google.com/maps/place/Rise+of+Church+of+Jesus+Christ+Int%E2%80%99l+Ministry+Inc./@10.5116505,123.961267,13z/data=!4m10!1m2!2m1!1sharang+Rise+of+Church+of+Jesus+Christ+Int'l.+Min.+Inc.!3m6!1s0x33a9bb004ee31293:0xbd5dec52f63862cb!8m2!3d10.5116505!4d124.027185!15sCjZoYXJhbmcgUmlzZSBvZiBDaHVyY2ggb2YgSmVzdXMgQ2hyaXN0IEludCdsLiBNaW4uIEluYy6SAQZjaHVyY2iqAZUBEAEqNyIzaGFyYW5nIHJpc2Ugb2YgY2h1cmNoIG9mIGplc3VzIGNocmlzdCBpbnQgbCBtaW4gaW5jKAAyHxABIhsodpy0CN1g29n1cAg5x8EstGqKUedNCes8SzoyNxACIjNoYXJhbmcgcmlzZSBvZiBjaHVyY2ggb2YgamVzdXMgY2hyaXN0IGludCBsIG1pbiBpbmPgAQA!16s%2Fg%2F11wj2f82mt?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D"
@@ -1273,13 +1311,16 @@ export default function Locations() {
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
                   <p>Hernan Cortes St. Telecom, Casuntingan, Mandaue City</p>
                   <hr className="text-gray-400" />
-                  <p className="mt-5">Sunday Service: 8:00 am - 12:00 nn</p>
+                  <p className="mt-5">Sunday Service:</p>
+                  <p> 8:00 am - 12:00 nn</p>
                   <p className="mt-5">
-                    Wednesday Outpouring: 6:30 pm - 8:30 pm
+                    Wednesday Outpouring: 
                   </p>
+                  <p>6:30 pm - 8:30 pm</p>
                   <p className="mt-5">
-                    Friday Prayer Meeting: 6:30 pm - 8:30 pm
+                    Friday Prayer Meeting:
                   </p>
+                  <p> 6:30 pm - 8:30 pm</p>
 
                   {/* <a
                     className="linkk mt-5"
@@ -1342,26 +1383,32 @@ export default function Locations() {
                     Mabini St. Brgy. Mazawalo Palompon, Leyte
                   </p>
                   <hr className="text-gray-400" />
-                  <p className="mt-5">Sunday Service: 8:00 am - 12:00 nn</p>
+                  <p className="mt-5">Sunday Service:</p>
+                  <p> 8:00 am - 12:00 nn</p>
                   <p className="mt-5">
-                    Wednesday Outpouring Service: 6:30 pm - 8:30 pm
+                    Wednesday Outpouring : 
                   </p>
+                  <p>6:30 pm - 8:30 pm</p>
                   <p className="mt-5">
-                    Friday Prayer Meeting Service: 6:30 pm - 8:30 pm
+                    Friday Prayer Meeting:
                   </p>
+                  <p> 6:30 pm - 8:30 pm</p>
                   <hr className="text-gray-400" />
                   <p className="mt-5">
                     {" "}
                     Mabini St. Brgy. Mazawalo Palompon, Leyte
                   </p>
                   <hr className="text-gray-400" />
-                  <p className="mt-5">Sunday Service: 8:00 am - 12:00 nn</p>
+                  <p className="mt-5">Sunday Service:</p>
+                  <p> 8:00 am - 12:00 nn</p>
                   <p className="mt-5">
-                    Wednesday Outpouring: 6:30 pm - 8:30 pm
+                    Wednesday Outpouring:
                   </p>
+                  <p> 6:30 pm - 8:30 pm</p>
                   <p className="mt-5">
-                    Friday Prayer Meeting: 6:30 pm - 8:30 pm
+                    Friday Prayer Meeting: 
                   </p>
+                  <p>6:30 pm - 8:30 pm</p>
 
                   {/* <a
                     className="linkk mt-5"
@@ -1468,13 +1515,16 @@ export default function Locations() {
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
                   <p>P-5 Alegria San Francisco Agusan del Sur</p>
                   <hr className="text-gray-400" />
-                  <p className="mt-5">Sunday Service: 8:00 am - 12:00 nn</p>
+                  <p className="mt-5">Sunday Service:</p>
+                  <p> 8:00 am - 12:00 nn</p>
                   <p className="mt-5">
-                    Wednesday Outpouring Service: 7:00 pm - 9:00 pm
+                    Wednesday Outpouring: 
                   </p>
+                  <p>7:00 pm - 9:00 pm</p>
                   <p className="mt-5">
-                    Friday Prayer Meeting Service: 7:00 pm - 9:00 pm
+                    Friday Prayer Meeting:
                   </p>
+                  <p> 7:00 pm - 9:00 pm</p>
                   {/* <a
                     className="linkk mt-5"
                     href="https://www.google.com/maps/place/Rise+of+Church+of+Jesus+Christ+Int%E2%80%99l+Ministry+Inc./@10.5116505,123.961267,13z/data=!4m10!1m2!2m1!1sharang+Rise+of+Church+of+Jesus+Christ+Int'l.+Min.+Inc.!3m6!1s0x33a9bb004ee31293:0xbd5dec52f63862cb!8m2!3d10.5116505!4d124.027185!15sCjZoYXJhbmcgUmlzZSBvZiBDaHVyY2ggb2YgSmVzdXMgQ2hyaXN0IEludCdsLiBNaW4uIEluYy6SAQZjaHVyY2iqAZUBEAEqNyIzaGFyYW5nIHJpc2Ugb2YgY2h1cmNoIG9mIGplc3VzIGNocmlzdCBpbnQgbCBtaW4gaW5jKAAyHxABIhsodpy0CN1g29n1cAg5x8EstGqKUedNCes8SzoyNxACIjNoYXJhbmcgcmlzZSBvZiBjaHVyY2ggb2YgamVzdXMgY2hyaXN0IGludCBsIG1pbiBpbmPgAQA!16s%2Fg%2F11wj2f82mt?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D"
@@ -1614,13 +1664,16 @@ export default function Locations() {
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
                   <p>Brgy. Pasta Agusan del Sur</p>
                   <hr className="text-gray-400" />
-                  <p className="mt-5">Sunday Service: 8:00 am - 12:00 nn</p>
+                  <p className="mt-5">Sunday Service:</p>
+                  <p> 8:00 am - 12:00 nn</p>
                   <p className="mt-5">
-                    Wednesday Outpouring Service: 6:30 pm - 8:30 pm
+                    Wednesday Outpouring:
                   </p>
+                  <p> 6:30 pm - 8:30 pm</p>
                   <p className="mt-5">
-                    Friday Prayer Meeting Service: 6:00 pm - 8:00 pm
+                    Friday Prayer Meeting:
                   </p>
+                  <p> 6:00 pm - 8:00 pm</p>
                   {/* <a
                     className="linkk mt-5"
                     href="https://www.google.com/maps/place/Rise+of+Church+of+Jesus+Christ+Int%E2%80%99l+Ministry+Inc./@10.5116505,123.961267,13z/data=!4m10!1m2!2m1!1sharang+Rise+of+Church+of+Jesus+Christ+Int'l.+Min.+Inc.!3m6!1s0x33a9bb004ee31293:0xbd5dec52f63862cb!8m2!3d10.5116505!4d124.027185!15sCjZoYXJhbmcgUmlzZSBvZiBDaHVyY2ggb2YgSmVzdXMgQ2hyaXN0IEludCdsLiBNaW4uIEluYy6SAQZjaHVyY2iqAZUBEAEqNyIzaGFyYW5nIHJpc2Ugb2YgY2h1cmNoIG9mIGplc3VzIGNocmlzdCBpbnQgbCBtaW4gaW5jKAAyHxABIhsodpy0CN1g29n1cAg5x8EstGqKUedNCes8SzoyNxACIjNoYXJhbmcgcmlzZSBvZiBjaHVyY2ggb2YgamVzdXMgY2hyaXN0IGludCBsIG1pbiBpbmPgAQA!16s%2Fg%2F11wj2f82mt?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D"
@@ -1664,7 +1717,8 @@ export default function Locations() {
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
                   <p>Unidad, Barobo, Surigao del Sur</p>
                   <hr className="text-gray-400" />
-                  <p className="mt-5">Sunday Service: 8:30 am - 12:00 nn</p>
+                  <p className="mt-5">Sunday Service: </p>
+                  <p>8:30 am - 12:00 nn</p>
                 </div>
               )}
               <hr className="mt-2" />
@@ -1717,11 +1771,13 @@ export default function Locations() {
                   <hr className="text-gray-400" />
                   <p className="mt-5">Sunday Service: 8:30 am - 12:00 nn</p>
                   <p className="mt-5">
-                    Wednesday Outpouring Service: 6:00 pm - 8:00 pm
+                    Wednesday Outpouring:
                   </p>
+                  <p> 6:00 pm - 8:00 pm</p>
                   <p className="mt-5">
-                    Friday Prayer Meeting Service: 6:00 pm - 8:00 pm
+                    Friday Prayer Meeting:
                   </p>
+                  <p> 6:00 pm - 8:00 pm</p>
                   {/* <a
                     className="linkk mt-5"
                     href="https://www.google.com/maps/place/Rise+of+Church+of+Jesus+Christ+Int%E2%80%99l+Ministry+Inc./@10.5116505,123.961267,13z/data=!4m10!1m2!2m1!1sharang+Rise+of+Church+of+Jesus+Christ+Int'l.+Min.+Inc.!3m6!1s0x33a9bb004ee31293:0xbd5dec52f63862cb!8m2!3d10.5116505!4d124.027185!15sCjZoYXJhbmcgUmlzZSBvZiBDaHVyY2ggb2YgSmVzdXMgQ2hyaXN0IEludCdsLiBNaW4uIEluYy6SAQZjaHVyY2iqAZUBEAEqNyIzaGFyYW5nIHJpc2Ugb2YgY2h1cmNoIG9mIGplc3VzIGNocmlzdCBpbnQgbCBtaW4gaW5jKAAyHxABIhsodpy0CN1g29n1cAg5x8EstGqKUedNCes8SzoyNxACIjNoYXJhbmcgcmlzZSBvZiBjaHVyY2ggb2YgamVzdXMgY2hyaXN0IGludCBsIG1pbiBpbmPgAQA!16s%2Fg%2F11wj2f82mt?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D"
