@@ -514,7 +514,7 @@ export default function Locations() {
             </div>
           </div>  */}
 
-          <div className="font-Roboto mt-10" id="bohol-section">
+          <div className="font-Roboto mt-20" id="bohol-section">
             <h1
               data-aos="fade-up"
               data-aos-delay="500"
