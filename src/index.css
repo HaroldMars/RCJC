@@ -345,7 +345,6 @@ header {
   height: 60vh;  
   font-family: var(--font-Roboto);
   border: white solid 2px ;   
-  background-color: #C1F8BF;  
   border-radius: 30px;    
 }
 
@@ -453,9 +452,7 @@ iframe {
 
 .headding {
   font-family: var(--font-Roboto);
-  border: green solid 2px;
   border-radius: 30%;
-  background-color: #A9D0D8;
 }
 
 @media (max-width: 500px) {
