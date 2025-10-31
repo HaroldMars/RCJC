@@ -43,6 +43,13 @@ import Mario from "../assets/Mario.jpg";
 import Janice from "../assets/Janice.jpg";
 import Rechiel from "../assets/Rechiel.jpg";
 import Elvie from "../assets/Elvie.jpg";
+import Anabel from "../assets/Anabel.jpg";
+import Jeashin from "../assets/Jeashin.jpg";
+import Bene from "../assets/Bene.jpg";
+import Jinalyn from "../assets/Jinalyn.jpg";
+import Luz from "../assets/Lux.jpg";
+import Merciely from "../assets/Merciely.jpg";
+import Pedro from "../assets/Pedro.jpg";
 AOS.init();
 
 export default function Locations() {
@@ -90,6 +97,30 @@ export default function Locations() {
     { value: "mindanao", label: "Mindanao" },
     { value: "negros", label: "Negros" },
   ];
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const locationToSectionId = {
+    cebu: "cebu-section",
+    mindanao: "mindanao-section",
+    leyte: "leyte-section",
+    bohol: "bohol-section",
+    negros: "negros-section",
+  };
+
+  const handleLocationSelect = (value) => {
+    setSelectedLocation(value);
+    setIsDropdownOpen(false);
+    const sectionId = locationToSectionId[value];
+    if (sectionId) {
+      scrollToSection(sectionId);
+    }
+  };
 
   // Optional: Close dropdown if clicking outside
   useEffect(() => {
@@ -304,61 +335,62 @@ export default function Locations() {
           </div>
         </div>
 
-        <h1 className="headding text-center font-bold text-2xl mt-10">
+        <h1
+          data-aos="fade-up"
+          data-aos-delay="500"
+          className="headding text-center font-bold text-2xl mt-10"
+        >
           Church Directory
         </h1>
         <div className="search location-dropdown font-Roboto">
-          {/* Select button */}
-          <button
-            className="w-full px-4 py-2 border search-bar bg-white text-left flex justify-between items-center"
-            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-            aria-haspopup="listbox"
-            aria-expanded={isDropdownOpen}
-            data-aos="fade-up"
-            data-aos-delay="500"
-          >
-            {selectedLocation
-              ? AreaOptions.find((opt) => opt.value === selectedLocation)?.label
-              : "Select Area..."}
-            {/* Arrow icon */}
-            <svg
-              className={`w-4 h-4 transition-transform duration-300 ${
-                isDropdownOpen ? "rotate-180" : ""
-              }`}
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </button>
+  {/* Select button */}
+  <button
+    className="w-full px-4 py-2 border search-bar bg-white text-left flex justify-between items-center"
+    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+    aria-haspopup="listbox"
+    aria-expanded={isDropdownOpen}
+    data-aos="fade-up"
+    data-aos-delay="500"
+  >
+    {selectedLocation
+      ? AreaOptions.find((opt) => opt.value === selectedLocation)?.label
+      : "Select Area..."}
+    {/* Arrow icon */}
+    <svg
+      className={`w-4 h-4 transition-transform duration-300 ${
+        isDropdownOpen ? "rotate-180" : ""
+      }`}
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M19 9l-7 7-7-7"
+      />
+    </svg>
+  </button>
 
-          {/* Dropdown options */}
-          {isDropdownOpen && (
-            <div className="absolute top-full search-bar-glass left-0 w-full bg-white border border-gray-300 rounded shadow-lg z-10 max-h-60 overflow-y-auto">
-              {AreaOptions.map((opt) => (
-                <div
-                  key={opt.value}
-                  className="px-4 py-2 hover:bg-green-100 rounded-2xl cursor-pointer"
-                  onClick={() => {
-                    setSelectedLocation(opt.value);
-                    setIsDropdownOpen(false);
-                  }}
-                  role="option"
-                  aria-selected={selectedLocation === opt.value}
-                >
-                  {opt.label}
-                </div>
-              ))}
-            </div>
-          )}
+  {/* Dropdown options */}
+  {isDropdownOpen && (
+    <div className="absolute top-full search-bar-glass left-0 w-full bg-white border border-gray-300 rounded shadow-lg z-10 max-h-60 overflow-y-auto">
+      {AreaOptions.map((opt) => (
+        <div
+          key={opt.value}
+          className="px-4 py-2 hover:bg-green-100 rounded-2xl cursor-pointer"
+          onClick={() => handleLocationSelect(opt.value)}
+          role="option"
+          aria-selected={selectedLocation === opt.value}
+        >
+          {opt.label}
         </div>
+      ))}
+    </div>
+  )}
+</div>
 
         {/* Main content */}
         <div className="h-auto bg-white mt-50">
@@ -438,46 +470,47 @@ export default function Locations() {
           </div>
           </div> */}
 
-          <div>
+          <div data-aos="fade-up" data-aos-delay="500">
             <h1 className="headding text-3xl text-center font-bold ">
               RCJCIM Main Branch
             </h1>
           </div>
 
-          <div className="main-branch">
+          <div className="main-branch" data-aos="fade-up" data-aos-delay="500">
             <div className="content-container">
               {/* Left side: PFP and info */}
               <div className="profile-section">
                 <img className="pfp" src={Pfp} alt="Emma" />
-                <h1 className="name text-blue-700 mt-5">Pastor Emma Merida</h1>
+                <h1 className="name font-bold text-2xl text-blue-700 mt-5">
+                  Pastor Emma Merida
+                </h1>
                 <div>
-                <p className="mt-2 text-left">Sunday Service: 8:30 am -12:00 nn</p>
-                <p className="mt-2 text-left">
-                  Wednesday Outpouring Service: 6:30 pm - 9:00 pm
-                </p>
-                <p className="mt-2 text-left">
-                  Friday Prayer Meeting Service: 6:30 pm -9:00 pm
-                </p>
+                  <p className="mt-2 text-left">
+                    Sunday Service: 8:30 am - 12:00 nn
+                  </p>
+                  <p className="mt-2 text-left">
+                    Wednesday Outpouring Service: 6:30 pm - 9:00 pm
+                  </p>
+                  <p className="mt-2 text-left">
+                    Friday Prayer Meeting Service: 6:30 pm - 9:00 pm
+                  </p>
                 </div>
               </div>
               {/* Right side: Map */}
-              <div className="map-section">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.85257577527!2d123.93625831537476!3d10.342542992480576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9992be6883d23%3A0xb3a18506188a71f2!2s8XG2%2B6R9%20Rise%20of%20Church%20of%20Jesus%20Christ%20Int%27l%20Ministries%20-%20Mandaue!5e0!3m2!1sen!2sph!4v1686541234567!5m2!1sen!2sph"
-                  
-                ></iframe>
+              <div className="map-section mt-10">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.85257577527!2d123.93625831537476!3d10.342542992480576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9992be6883d23%3A0xb3a18506188a71f2!2s8XG2%2B6R9%20Rise%20of%20Church%20of%20Jesus%20Christ%20Int%27l%20Ministries%20-%20Mandaue!5e0!3m2!1sen!2sph!4v1686541234567!5m2!1sen!2sph"></iframe>
               </div>
             </div>
           </div>
 
-           {/* <div className="container-half"data-aos="fade-up"
+          {/* <div className="container-half"data-aos="fade-up"
             data-aos-delay="500">
             <div>
               <hr className="text-gray-600 mb-10" />
             </div>
           </div>  */}
 
-          <div className="font-Roboto mt-10">
+          <div className="font-Roboto mt-10" id="bohol-section">
             <h1
               data-aos="fade-up"
               data-aos-delay="500"
@@ -624,7 +657,7 @@ export default function Locations() {
             </div>
           </div>
 
-          <div className="font-Roboto mt-10">
+          <div className="font-Roboto mt-10" id="cebu-section">
             <h1 className="font-bold text-4xl text-center">CEBU</h1>
             <div
               data-aos="fade-right"
@@ -864,7 +897,7 @@ export default function Locations() {
             <div className="profilee">
               <img
                 className="pic"
-                src={Pfp}
+                src={Bene}
                 alt="Bene"
                 onClick={() => {
                   toggleProfile("Bene");
@@ -913,7 +946,7 @@ export default function Locations() {
             <div className="profilee">
               <img
                 className="pic"
-                src={Pfp}
+                src={Luz}
                 alt="Luz"
                 onClick={() => {
                   toggleProfile("Luz");
@@ -963,7 +996,7 @@ export default function Locations() {
             <div className="profilee">
               <img
                 className="pic"
-                src={Pfp}
+                src={Pedro}
                 alt="Pedro"
                 onClick={() => {
                   toggleProfile("Pedro");
@@ -1212,7 +1245,7 @@ export default function Locations() {
             <div className="profilee">
               <img
                 className="pic"
-                src={Pfp}
+                src={Jinalyn}
                 alt="Jinalyn"
                 onClick={() => {
                   toggleProfile("Jinalyn");
@@ -1262,7 +1295,7 @@ export default function Locations() {
           <h1
             className="text-center font-bold text-4xl mt-10"
             data-aos="fade-right"
-            data-aos-delay="500"
+            data-aos-delay="500" id="leyte-section"
           >
             Leyte
           </h1>
@@ -1365,11 +1398,11 @@ export default function Locations() {
             <div className="profilee">
               <img
                 className="pic"
-                src={Rechiel}
-                alt="Rechiel"
+                src={Pfp}
+                alt="Oliver"
                 onClick={() => {
-                  toggleProfile("Rechiel");
-                  toggleArrow("Rechiel");
+                  toggleProfile("Oliver");
+                  toggleArrow("Oliver");
                 }}
                 style={{ cursor: "pointer" }}
               />
@@ -1377,28 +1410,26 @@ export default function Locations() {
               <h1
                 className="container"
                 onClick={() => {
-                  toggleProfile("Rechiel");
-                  toggleArrow("Rechiel");
+                  toggleProfile("Oliver");
+                  toggleArrow("Oliver");
                 }}
                 style={{ cursor: "pointer" }}
               >
                 Pastor Oliver Marva
                 <span
                   className={`arrow-down ${
-                    arrowRotations.Rechiel ? "rotated" : ""
+                    arrowRotations.Oliver ? "rotated" : ""
                   }`}
                 ></span>
               </h1>
-              {expandedProfiles.Rechiel && (
-                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  <p>A.C. Cortes Ave. (Interior), Looc, Mandaue City</p>
+              {expandedProfiles.Oliver && (
+                <div className="details p-4 bg-gray-100 mt-2 rounded-lg shadow-inner">
+                  <p>Brgy. Tuno, San Francisco , Southern Leyte</p>
                   <hr className="text-gray-400" />
-                  <p className="mt-5">Sunday Service: 8:30 am -12:00 nn</p>
                   <p className="mt-5">
-                    Wednesday Outpouring Service: 6:30 pm - 9:00 pm
-                  </p>
-                  <p className="mt-5">
-                    Friday Prayer Meeting Service: 6:30 pm -9:00 pm
+                    Here's an early look at the current progress. Final details
+                    are pending your instructions, and I will update
+                    accordingly.
                   </p>
                   {/* <a
                     className="linkk mt-5"
@@ -1417,6 +1448,7 @@ export default function Locations() {
             className="text-center mt-10 font-bold text-4xl"
             data-aos="fade-right"
             data-aos-delay="500"
+            id="mindanao-section"
           >
             Mindanao
           </h1>
@@ -1428,7 +1460,7 @@ export default function Locations() {
             <div className="profilee">
               <img
                 className="pic"
-                src={Pfp}
+                src={Anabel}
                 alt="Anabel"
                 onClick={() => {
                   toggleProfile("Anabel");
@@ -1574,7 +1606,7 @@ export default function Locations() {
             <div className="profilee">
               <img
                 className="pic"
-                src={Pfp}
+                src={Merciely}
                 alt="Merciely"
                 onClick={() => {
                   toggleProfile("Merciely");
@@ -1624,7 +1656,7 @@ export default function Locations() {
             <div className="profilee">
               <img
                 className="pic"
-                src={Pfp}
+                src={Jeashin}
                 alt="Jeashin"
                 onClick={() => {
                   toggleProfile("Jeashin");
@@ -1667,6 +1699,7 @@ export default function Locations() {
             className="text-center mt-10 font-bold text-4xl"
             data-aos="fade-right"
             data-aos-delay="500"
+            id="negros-section"
           >
             Negros
           </h1>
