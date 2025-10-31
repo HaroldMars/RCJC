@@ -50,6 +50,10 @@ import Jinalyn from "../assets/Jinalyn.jpg";
 import Luz from "../assets/Lux.jpg";
 import Merciely from "../assets/Merciely.jpg";
 import Pedro from "../assets/Pedro.jpg";
+import Allan from "../assets/Allan.jpg";
+import Emma from "../assets/Emma.jpg";
+import Gene from "../assets/Gene.jpg";
+import Lileth from "../assets/Lileth.jpg";
 AOS.init();
 
 export default function Locations() {
@@ -480,7 +484,7 @@ export default function Locations() {
             <div className="content-container">
               {/* Left side: PFP and info */}
               <div className="profile-section">
-                <img className="pfp" src={Pfp} alt="Emma" />
+                <img className="pfp" src={Emma} alt="Emma" />
                 <h1 className="name font-bold text-2xl text-blue-700 mt-5">
                   Pastor Emma Merida
                 </h1>
@@ -571,7 +575,7 @@ export default function Locations() {
               <div className="profilee">
                 <img
                   className="pic"
-                  src={Pfp}
+                  src={Allan}
                   alt="Allan"
                   onClick={() => {
                     toggleProfile("Allan");
@@ -668,7 +672,7 @@ export default function Locations() {
               <div className="profilee">
                 <img
                   className="pic"
-                  src={Pfp}
+                  src={Lileth}
                   alt="Lileth"
                   onClick={() => {
                     toggleProfile("Lileth");
@@ -1711,7 +1715,7 @@ export default function Locations() {
             <div className="profilee">
               <img
                 className="pic"
-                src={Pfp}
+                src={Gene}
                 alt="Gene"
                 onClick={() => {
                   toggleProfile("Gene");
