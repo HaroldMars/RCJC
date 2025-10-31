@@ -330,9 +330,11 @@
 .main-branch {
   display: flex;
   justify-content: center;  
+  align-items: center; /* Center vertically */
   padding: 50px;
   height: 50vh;  
-  font-family: var(--font-Roboto);         
+  font-family: var(--font-Roboto);
+  border: red solid 2px hidden;         
 }
 
 /* For smaller screens, stack vertically */
@@ -352,12 +354,13 @@
 
 /* Layout for larger screens */
 .content-container {
-  display: flex;
+  display: flex; 
   width: 100%;
-  max-width: 1200px;
+  max-width: 750px;
   gap: 20px; 
+  justify-content: center;
+  border: red solid 2px hidden;
 }
-
 /* Left side styling */
 /* Default styles for larger screens */
 .profile-section {

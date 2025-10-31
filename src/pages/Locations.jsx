@@ -514,7 +514,7 @@ export default function Locations() {
             </div>
           </div>  */}
 
-          <div className="font-Roboto mt-20" id="bohol-section">
+          <div className="font-Roboto mt-50" id="bohol-section">
             <h1
               data-aos="fade-up"
               data-aos-delay="500"
@@ -1338,6 +1338,7 @@ export default function Locations() {
               {expandedProfiles.Elvie && (
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
                   <p>P. Gomez St. Brgy. Riverside Matag-ob, Leyte</p>
+                  <p className="mt-5"> Mabini St. Brgy. Mazawalo Palompon, Leyte</p>
                   <hr className="text-gray-400" />
                   <p className="mt-5">Sunday Service: 8:00 am - 12:00 nn</p>
                   <p className="mt-5">
@@ -1346,6 +1347,7 @@ export default function Locations() {
                   <p className="mt-5">
                     Friday Prayer Meeting Service: 6:30 pm - 8:30 pm
                   </p>
+                  
                   {/* <a
                     className="linkk mt-5"
                     href="https://www.google.com/maps/place/Rise+of+Church+of+Jesus+Christ+Int%E2%80%99l+Ministry+Inc./@10.5116505,123.961267,13z/data=!4m10!1m2!2m1!1sharang+Rise+of+Church+of+Jesus+Christ+Int'l.+Min.+Inc.!3m6!1s0x33a9bb004ee31293:0xbd5dec52f63862cb!8m2!3d10.5116505!4d124.027185!15sCjZoYXJhbmcgUmlzZSBvZiBDaHVyY2ggb2YgSmVzdXMgQ2hyaXN0IEludCdsLiBNaW4uIEluYy6SAQZjaHVyY2iqAZUBEAEqNyIzaGFyYW5nIHJpc2Ugb2YgY2h1cmNoIG9mIGplc3VzIGNocmlzdCBpbnQgbCBtaW4gaW5jKAAyHxABIhsodpy0CN1g29n1cAg5x8EstGqKUedNCes8SzoyNxACIjNoYXJhbmcgcmlzZSBvZiBjaHVyY2ggb2YgamVzdXMgY2hyaXN0IGludCBsIG1pbiBpbmPgAQA!16s%2Fg%2F11wj2f82mt?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D"
@@ -1353,47 +1355,6 @@ export default function Locations() {
                     {" "}
                     Press to locate via Google map
                   </a> */}
-                </div>
-              )}
-              <hr className="mt-2" />
-            </div>
-
-            <div className="profilee">
-              <img
-                className="pic"
-                src={Elvie}
-                alt="Elvie"
-                onClick={() => {
-                  toggleProfile("Elviee");
-                  toggleArrow("Elviee");
-                }}
-                style={{ cursor: "pointer" }}
-              />
-              <hr className="mt-2" />
-              <h1
-                className="container"
-                onClick={() => {
-                  toggleProfile("Elviee");
-                  toggleArrow("Elviee");
-                }}
-                style={{ cursor: "pointer" }}
-              >
-                Pastor Elvie Bulado
-                <span
-                  className={`arrow-down ${
-                    arrowRotations.Elviee ? "rotated" : ""
-                  }`}
-                ></span>
-              </h1>
-              {expandedProfiles.Elviee && (
-                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  <p> Mabini St. Brgy. Mazawalo Palompon, Leyte</p>
-                  <hr className="text-gray-400" />
-                  <p className="mt-5">
-                    Here's an early look at the current progress. Final details
-                    are pending your instructions, and I will update
-                    accordingly.
-                  </p>
                 </div>
               )}
               <hr className="mt-2" />
