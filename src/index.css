@@ -53,6 +53,9 @@
   font-family: var(--font-Roboto);
 }
 
+header {
+  position: fixed;
+}
 
 .nav-linkk {
   background-color: #3ED63F;

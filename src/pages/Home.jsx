@@ -11,11 +11,9 @@ export default function Home() {
     AOS.init({ duration: 1000 }); // Initialize AOS with a duration of 1 second
   }, []);
   return (
-    <div
-      data-aos="fade-in"
-      className="nav-text w-full min-h-screen font-Roboto  text-black mb-0"
-    >
-      <Header/>
+    <div className="nav-text bg-white w-screen h-fit font-Roboto text-black">
+      <Header />
+      
 
       {/* Hero Section with Video Background */}
       <div
