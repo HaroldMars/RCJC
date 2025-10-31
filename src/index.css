@@ -55,6 +55,17 @@
 
 header {
   position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50; /* ensure it stays above other content */
+}
+
+@media (max-width: 780px) {
+  /* If you need to change styles for smaller screens, do it here */
+  /* For example, you might want to adjust height or padding */
+  header {
+    position: fixed;
+  }
 }
 
 .nav-linkk {
@@ -331,9 +342,11 @@ header {
   display: flex;
   justify-content: center;   
   padding: 50px;
-  height: 50vh;  
+  height: 60vh;  
   font-family: var(--font-Roboto);
-  border: red solid 2px hidden;         
+  border: white solid 2px ;   
+  background-color: #C1F8BF;  
+  border-radius: 30px;    
 }
 
 /* For smaller screens, stack vertically */
@@ -424,7 +437,7 @@ header {
 }
 
 iframe {
-  height: 300px;
+  height: 450px;
   width: 500px;
   border-radius: 20%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
@@ -440,6 +453,9 @@ iframe {
 
 .headding {
   font-family: var(--font-Roboto);
+  border: green solid 2px;
+  border-radius: 30%;
+  background-color: #A9D0D8;
 }
 
 @media (max-width: 500px) {

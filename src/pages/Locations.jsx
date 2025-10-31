@@ -501,7 +501,7 @@ export default function Locations() {
                 </div>
               </div>
               {/* Right side: Map */}
-              <div className="map-section mt-10">
+              <div className="map-section ">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.85257577527!2d123.93625831537476!3d10.342542992480576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9992be6883d23%3A0xb3a18506188a71f2!2s8XG2%2B6R9%20Rise%20of%20Church%20of%20Jesus%20Christ%20Int%27l%20Ministries%20-%20Mandaue!5e0!3m2!1sen!2sph!4v1686541234567!5m2!1sen!2sph"></iframe>
               </div>
             </div>
@@ -779,14 +779,14 @@ export default function Locations() {
                 </h1>
                 {expandedProfiles.Vilma && (
                   <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                    <p> Purok 4 Bagacay Talibon Bohol</p>
+                    <p> Currently joining with RCJCIM Liloan as we're still looking for another place in Compostela</p>
                     <hr className="text-gray-400" />
-                    <p className="mt-5">Sunday Service: 8:30 am -12:00 nn</p>
+                    <p className="mt-5">Sunday Service: 8:00 am -12:00 nn</p>
                     <p className="mt-5">
-                      Wednesday Outpouring Service: 6:30 pm - 8:30 pm
+                      Wednesday Outpouring: 6:00 pm - 8:00 pm
                     </p>
                     <p className="mt-5">
-                      Friday Prayer Meeting: 6:30 pm - 8:30 pm
+                      Friday Prayer Meeting: 6:00 pm - 8:00 pm
                     </p>
                   </div>
                 )}
