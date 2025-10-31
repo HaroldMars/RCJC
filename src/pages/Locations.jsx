@@ -1378,6 +1378,7 @@ export default function Locations() {
               {expandedProfiles.Elvie && (
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
                   <p>P. Gomez St. Brgy. Riverside Matag-ob, Leyte</p>
+                  <p className="mt-5">and</p>
                   <p className="mt-5">
                     {" "}
                     Mabini St. Brgy. Mazawalo Palompon, Leyte
@@ -1386,29 +1387,13 @@ export default function Locations() {
                   <p className="mt-5">Sunday Service:</p>
                   <p> 8:00 am - 12:00 nn</p>
                   <p className="mt-5">
-                    Wednesday Outpouring : 
+                    Wednesday Outpouring: 
                   </p>
                   <p>6:30 pm - 8:30 pm</p>
                   <p className="mt-5">
                     Friday Prayer Meeting:
                   </p>
                   <p> 6:30 pm - 8:30 pm</p>
-                  <hr className="text-gray-400" />
-                  <p className="mt-5">
-                    {" "}
-                    Mabini St. Brgy. Mazawalo Palompon, Leyte
-                  </p>
-                  <hr className="text-gray-400" />
-                  <p className="mt-5">Sunday Service:</p>
-                  <p> 8:00 am - 12:00 nn</p>
-                  <p className="mt-5">
-                    Wednesday Outpouring:
-                  </p>
-                  <p> 6:30 pm - 8:30 pm</p>
-                  <p className="mt-5">
-                    Friday Prayer Meeting: 
-                  </p>
-                  <p>6:30 pm - 8:30 pm</p>
 
                   {/* <a
                     className="linkk mt-5"
