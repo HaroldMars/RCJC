@@ -1,16 +1,19 @@
-import React from 'react'
+import React from "react";
 
 function OurMission() {
   return (
-    <div className='font-DmSans homee'>
-      <h1 className=' font-bold'>RCJCIM Mission Statement</h1>
-      <p className='pt-5 '><b>1.</b> Proclaiming salvation and repentance through preaching, 
-        teaching, and sharing God's message.</p>
-        <p className=' pt-5'><b>2.</b> Discipling and equipping all members until they obtain maturity as Christ's true disciples,
-        then send them out to fulfill God's Great Commission.</p>
-        <p className='pt-5'><b>3.</b> Teaching everything Jesus' commanded. Matthew 28:19-20.</p>
+    <div className="font-DmSans homee">
+      <h1 className=" font-bold">RCJCIM Mission Statement</h1>
+      <p className="pt-5 ">
+        To proclaim the message of salvation through Jesus Christ, to
+        nurture believers toward spiritual maturity, and to equip and send
+        disciples to fulfill the Great Commission.
+      </p>
     </div>
-  )
+  );
 }
 
-export default OurMission
+export default OurMission;
+
+//  Proclaiming salvation and repentance through preaching,
+//         teaching, and sharing God's message.

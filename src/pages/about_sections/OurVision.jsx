@@ -1,17 +1,21 @@
-import React from 'react'
+import React from "react";
 
 function OurVision() {
   return (
-    <div className='font-DmSans homee'>
-      <h1 className='font-bold '>RCJCIM Vision Statement</h1>
+    <div className="font-DmSans homee">
+      <h1 className="font-bold ">RCJCIM Vision Statement</h1>
       <br />
-      <p className=''><b>1.</b> Each one brings one to Jesus.</p>
-      <br />
+      <p className="">
+        We envision a Christ-centered community of Spirit-empowered believers,
+        each bringing others to Jesus, establishing house fellowships in every
+        place, and living faithfully in obedience to God’s Word.
+      </p>
+      {/* <br />
       <p className=''><b>2.</b> Establish house fellowship in all locations.</p>
       <br />
-      <p className=''><b>3.</b> Members must always obey the words of God.</p>
+      <p className=''><b>3.</b> Members must always obey the words of God.</p> */}
     </div>
-  )
+  );
 }
 
-export default OurVision
+export default OurVision;
