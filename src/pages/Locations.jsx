@@ -54,6 +54,9 @@ import Allan from "../assets/Allan.jpg";
 import Emma from "../assets/Emma.jpg";
 import Gene from "../assets/Gene.jpg";
 import Lileth from "../assets/Lileth.jpg";
+import Susan from "../assets/Susan.jpg";
+import Oliver from "../assets/Oliver.jpg";
+import Mary from "../assets/Mary.jpg";
 AOS.init();
 
 export default function Locations() {
@@ -1410,7 +1413,7 @@ export default function Locations() {
             <div className="profilee">
               <img
                 className="pic"
-                src={Pfp}
+                src={Oliver}
                 alt="Oliver"
                 onClick={() => {
                   toggleProfile("Oliver");
@@ -1525,7 +1528,7 @@ export default function Locations() {
             <div className="profilee">
               <img
                 className="pic"
-                src={Pfp}
+                src={Susan}
                 alt="Susan"
                 onClick={() => {
                   toggleProfile("Susan");
@@ -1566,7 +1569,7 @@ export default function Locations() {
             <div className="profilee">
               <img
                 className="pic"
-                src={Pfp}
+                src={Mary}
                 alt="Mary"
                 onClick={() => {
                   toggleProfile("Mary");

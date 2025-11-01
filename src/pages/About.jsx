@@ -98,7 +98,7 @@ export default function About() {
         >
           <ul className="space-y-4 ">
             {[
-              { title: "4S", component: <StateMent />, key: "stateMent" },
+              // { title: "4S", component: <StateMent />, key: "stateMent" },
               {
                 title: "OUR MISSION",
                 component: <OurMission />,
