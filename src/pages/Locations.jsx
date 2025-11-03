@@ -1195,7 +1195,7 @@ export default function Locations() {
                 }}
                 style={{ cursor: "pointer" }}
               >
-                Pastor Janice Nunez
+                Pastor Janice Nuñez
                 <span
                   className={`arrow-down ${
                     arrowRotations.Janice ? "rotated" : ""
@@ -1253,7 +1253,7 @@ export default function Locations() {
               </h1>
               {expandedProfiles.Rechiel && (
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  <p>Purok Pagnahian Sonog San Francisco Camotes Cebuy</p>
+                  <p>Rabaya Street, Purok Mabini, Tabunok, Talisay City Cebu</p>
                   <hr className="text-gray-400" />
                   <p className="mt-5">Sunday Service:</p>
                   <p>8:00 am - 12:00 nn</p>
@@ -1641,7 +1641,7 @@ export default function Locations() {
                 }}
                 style={{ cursor: "pointer" }}
               >
-                Pastor Merciely Canete
+                Pastor Merciely Cañete
                 <span
                   className={`arrow-down ${
                     arrowRotations.Merciely ? "rotated" : ""
