@@ -51,24 +51,27 @@ export default function Contact() {
         </footer>
       </div> */}
 
-<div class="footer">
-  <div class="footer-content">
-    <div class="connect-text">connect with us</div>
-    <div class="links">
-      <a href="https://facebook.com/rcj cim" target="_blank" rel="noopener noreferrer" class="link">
-        <img src={fb} alt="Facebook" class="icon" />
-        <span class="link-text">/rcjcim</span>
-      </a>
-      <a href="mailto:rcjcm2003@gmail.com" class="link">
-        <img src={Gmail} alt="Email" class="icon" />
-        <span class="link-text">rcjcm2003@gmail.com</span>
-      </a>
-    </div>
-  </div>
-  <div class="copyright">
-    RCJ CIM @ 2025
-  </div>
-</div>
+      <div class="footer">
+        <div class="footer-content">
+          <div class="connect-text">connect with us</div>
+          <div class="links">
+            <a
+              href="https://facebook.com/rcj cim"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link"
+            >
+              <img src={fb} alt="Facebook" class="icon" />
+              <span class="link-text">/rcjcim</span>
+            </a>
+            <a href="mailto:rcjcm2003@gmail.com" class="link">
+              <img src={Gmail} alt="Email" class="icon" />
+              <span class="link-text">rcjcm2003@gmail.com</span>
+            </a>
+          </div>
+        </div>
+        <div class="copyright">RCJ CIM @ 2025</div>
+      </div>
     </div>
   );
 }

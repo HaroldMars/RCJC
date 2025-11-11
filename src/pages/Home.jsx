@@ -15,7 +15,6 @@ export default function Home() {
   return (
     <div className="nav-text bg-white w-screen h-fit font-Roboto text-black">
       <Header />
-      
 
       {/* Hero Section with Video Background */}
       <div
@@ -93,7 +92,7 @@ export default function Home() {
           className="flex justify-center pt-10 pb-10 mb-10"
           data-aos="fade-up"
         >
-          <div className="w-full max-w-2xl aspect-video rounded-2xl overflow-hidden shadow-lg">
+          <div className="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden ">
             <iframe
               className="w-full h-full"
               src="https://www.youtube.com/embed/0dOHXPUGAvk"
@@ -106,27 +105,27 @@ export default function Home() {
         </div>
       </div>
 
-     <div class="footer">
-             <div class="footer-content">
-               <div class="connect-text">connect with us</div>
-               <div class="links">
-                 <a
-                   href="https://facebook.com/rcj cim"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="link"
-                 >
-                   <img src={fb} alt="Facebook" class="icon" />
-                   <span class="link-text">/rcjcim</span>
-                 </a>
-                 <a href="mailto:rcjcm2003@gmail.com" class="link">
-                   <img src={Gmail} alt="Email" class="icon" />
-                   <span class="link-text">rcjcm2003@gmail.com</span>
-                 </a>
-               </div>
-             </div>
-             <div class="copyright">RCJ CIM @ 2025</div>
-           </div>
+      <div class="footer">
+        <div class="footer-content">
+          <div class="connect-text">connect with us</div>
+          <div class="links">
+            <a
+              href="https://facebook.com/rcj cim"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link"
+            >
+              <img src={fb} alt="Facebook" class="icon" />
+              <span class="link-text">/rcjcim</span>
+            </a>
+            <a href="mailto:rcjcm2003@gmail.com" class="link">
+              <img src={Gmail} alt="Email" class="icon" />
+              <span class="link-text">rcjcm2003@gmail.com</span>
+            </a>
+          </div>
+        </div>
+        <div class="copyright">RCJ CIM @ 2025</div>
+      </div>
     </div>
   );
 }
