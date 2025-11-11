@@ -1984,7 +1984,7 @@ export default function Locations() {
                       <div class="connect-text">connect with us</div>
                       <div class="links">
                         <a
-                          href="https://facebook.com/rcj cim"
+                          href="https://www.facebook.com/rcjcim"
                           target="_blank"
                           rel="noopener noreferrer"
                           class="link"

@@ -165,7 +165,7 @@ export default function About() {
         <div class="footer-content">
         <div class="connect-text">connect with us</div>
         <div class="links">
-          <a href="https://facebook.com/rcj cim" target="_blank" rel="noopener noreferrer" class="link">
+          <a href="https://www.facebook.com/rcjcim" target="_blank" rel="noopener noreferrer" class="link">
             <img src={fb} alt="Facebook" class="icon" />
             <span class="link-text">/rcjcim</span>
           </a>
