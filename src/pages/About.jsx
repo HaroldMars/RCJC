@@ -169,14 +169,14 @@ export default function About() {
             <img src={fb} alt="Facebook" class="icon" />
             <span class="link-text">/rcjcim</span>
           </a>
-          <a href="mailto:rcjcm2003@gmail.com" class="link">
+          <a href="mailto:rcjcIm2003@gmail.com" class="link">
             <img src={Gmail} alt="Email" class="icon" />
-            <span class="link-text">rcjcm2003@gmail.com</span>
+            <span class="link-text">rcjcIm2003@gmail.com</span>
           </a>
         </div>
       </div>
         <div class="copyright">
-          RCJ CIM @ 2025
+          RCJCIM | 2025
         </div>
       </div>
     </div>
