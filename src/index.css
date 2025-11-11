@@ -516,9 +516,10 @@ iframe {
 /* Footer styling */
 .footer {
   background-color: #34495e; /* Dark blue background */
-  padding: 20px;
+  padding: 5px;
+  padding-top: 10px;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-Roboto);
   color: white;
 }
 
@@ -579,7 +580,7 @@ iframe {
 
 /* Copyright text */
 .copyright {
-  margin-top: 15px;
+  margin-top: 40px;
   font-size: 0.9rem;
 }
 
