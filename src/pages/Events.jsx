@@ -20,7 +20,7 @@ export default function Events() {
                 />
                 <div className="absolute inset-0 bg-white/50 flex items-center justify-center">
                   <div className=" md:text-6xl font-Roboto text-center " data-aos="fade-up" data-aos-delay="300">
-                    <h1 className="homee text-7xl">Events</h1>
+                    <h1 className="homee text-7xl font-bold">Events</h1>
                   </div>
                 </div>
               </div>

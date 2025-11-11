@@ -438,7 +438,7 @@ header {
 iframe {
   height: 450px;
   width: 500px;
-  border-radius: 20%;
+  border-radius: 5%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
 }
 
@@ -563,7 +563,7 @@ iframe {
 
 /* Icon styling */
 .icon {
-  width: 30px;    /* Icon size */
+  width: 20px;    /* Icon size */
   height: 40px;
   object-fit: contain;
   margin-right: 10px;  /* Space between icon and text */
@@ -584,3 +584,6 @@ iframe {
   font-size: 0.9rem;
 }
 
+.connect {
+  cursor: pointer;
+}

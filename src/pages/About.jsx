@@ -67,7 +67,7 @@ export default function About() {
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            <h1 className="homee text-6xl">About us</h1>
+            <h1 className="homee text-6xl font">About us</h1>
           </div>
         </div>
       </div>
