@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Background from "../assets/Locations.jpg";
 import Header from "../components/Header";
 import Logo from "../assets/logo.png";
+import fb from "../assets/facebook.png";
+import Gmail from "../assets/gmail.png";
 // import Bacagay from "./location_sections/Bacagay";
 // import Cabul_an from "./location_sections/Cabulan";
 // import Ubay from "./location_sections/Ubay";
@@ -1977,22 +1979,27 @@ export default function Locations() {
           </div> */}
         </div>
 
-        {/* Footer */}
-        <div
-          className="bg-gray-700 w-full text-black"
-          // data-aos="fade-up"
-          // data-aos-delay="300"
-        >
-          <footer className="foot text-white h-100">
-            <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-4 py-4">
-              {/* Logo */}
-              <img src={Logo} alt="Church Logo" className="w-16 h-16" />
-              <h1>Contact:</h1>
-              <h1>Hotline:</h1>
-            </div>
-            <h5 className="text-center text-[70%]">&copy; 2025 RCJCIM.</h5>
-          </footer>
-        </div>
+       <div class="footer">
+                    <div class="footer-content">
+                      <div class="connect-text">connect with us</div>
+                      <div class="links">
+                        <a
+                          href="https://facebook.com/rcj cim"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="link"
+                        >
+                          <img src={fb} alt="Facebook" class="icon" />
+                          <span class="link-text">/rcjcim</span>
+                        </a>
+                        <a href="mailto:rcjcm2003@gmail.com" class="link">
+                          <img src={Gmail} alt="Email" class="icon" />
+                          <span class="link-text">rcjcm2003@gmail.com</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="copyright">RCJ CIM @ 2025</div>
+                  </div>
       </div>
     </>
   );

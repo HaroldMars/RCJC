@@ -3,6 +3,8 @@ import Header from "../components/Header";
 import Background from "../assets/eventslogo.jpg";
 import Logo from "../assets/logo.png";
 import "aos/dist/aos.css";
+import fb from "../assets/facebook.png";
+import Gmail from "../assets/gmail.png";
 import AOS from "aos";
 AOS.init();
 
@@ -22,16 +24,27 @@ export default function Events() {
                   </div>
                 </div>
               </div>
-      <div className=" w-full text-black ">
-                <footer className="foot text-white h-100">
-                            <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-4 py-4">
-                              {/* Logo */}
-                              <img src={Logo} alt="Church Logo" className="w-16 h-16" />
-                              <h1>Contact:</h1>
-                            </div>
-                            <h5 className="text-center text-[70%]">&copy; 2025 RCJCIM.</h5>
-                          </footer>
+      <div class="footer">
+              <div class="footer-content">
+                <div class="connect-text">connect with us</div>
+                <div class="links">
+                  <a
+                    href="https://facebook.com/rcj cim"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link"
+                  >
+                    <img src={fb} alt="Facebook" class="icon" />
+                    <span class="link-text">/rcjcim</span>
+                  </a>
+                  <a href="mailto:rcjcm2003@gmail.com" class="link">
+                    <img src={Gmail} alt="Email" class="icon" />
+                    <span class="link-text">rcjcm2003@gmail.com</span>
+                  </a>
                 </div>
+              </div>
+              <div class="copyright">RCJ CIM @ 2025</div>
+            </div>
     </div>
   );
 }
