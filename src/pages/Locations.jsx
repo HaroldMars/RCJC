@@ -101,9 +101,9 @@ export default function Locations() {
   const AreaOptions = [
     { value: "", label: "Select Area" },
     { value: "bohol", label: "Bohol" },
-    { value: "cebu_north", label: "Cebu_north" },
-    { value: "cebu_area", label: "Cebu_area" },
-    { value: "cebu_south", label: "Cebu_south" },
+    { value: "cebu_north", label: "Cebu North" },
+    { value: "cebu_area", label: "Cebu Area" },
+    { value: "cebu_south", label: "Cebu South" },
     { value: "leyte", label: "Leyte" },
     { value: "mindanao", label: "Mindanao" },
     { value: "negros", label: "Negros" },
