@@ -519,6 +519,10 @@ export default function Locations() {
             </div>
           </div>
 
+          <div id="bohol-section">
+
+          </div>
+
           {/* <div className="container-half"data-aos="fade-up"
             data-aos-delay="500">
             <div>
@@ -526,7 +530,7 @@ export default function Locations() {
             </div>
           </div>  */}
 
-          <div className="font-Roboto mt-50" id="bohol-section">
+          <div className="font-Roboto mt-50" >
             <h1
               data-aos="fade-up"
               data-aos-delay="500"
@@ -678,7 +682,7 @@ export default function Locations() {
                     </p>
                   </div>
                 )}
-                <hr className="mt-2" />
+                <hr className="mt-2" id="cebu_north-section" />
               </div>
             </div>
           </div>
@@ -687,7 +691,7 @@ export default function Locations() {
             className="text-center mt-10 font-bold text-4xl"
             data-aos="fade-right"
             data-aos-delay="500"
-            id="cebu_north-section"
+            
           >
             CEBU NORTH
           </h1>
@@ -840,14 +844,14 @@ export default function Locations() {
                   </a> */}
                 </div>
               )}
-              <hr className="mt-2" />
+              <hr className="mt-2" id="cebu_area-section"/>
             </div>
               
 
               
           </div>
 
-          <div className="font-Roboto mt-10" id="cebu_area-section">
+          <div className="font-Roboto mt-10" >
             <h1 className="font-bold text-4xl text-center">CEBU AREA</h1>
             <div
               data-aos="fade-right"
@@ -1207,7 +1211,7 @@ export default function Locations() {
                     </p>
                   </div>
                 )}
-                <hr className="mt-2" />
+                <hr className="mt-2" id="cebu_south-section"/>
               </div>
             
 
@@ -1228,7 +1232,7 @@ export default function Locations() {
             className="text-center mt-10 font-bold text-4xl"
             data-aos="fade-right"
             data-aos-delay="500"
-            id="cebu_south-section"
+            
           >
             CEBU SOUTH
           </h1>
@@ -1388,7 +1392,7 @@ export default function Locations() {
                   </a> */}
                 </div>
               )}
-              <hr className="mt-2" />
+              <hr className="mt-2" id="leyte-section"/>
             </div>
           </div>
 
@@ -1398,7 +1402,7 @@ export default function Locations() {
             className="text-center font-bold text-4xl mt-10"
             data-aos="fade-right"
             data-aos-delay="500"
-            id="leyte-section"
+            
           >
             LEYTE
           </h1>
@@ -1513,7 +1517,7 @@ export default function Locations() {
                   </a> */}
                 </div>
               )}
-              <hr className="mt-2" />
+              <hr className="mt-2" id="mindanao-section"/>
             </div>
           </div>
           
@@ -1522,7 +1526,7 @@ export default function Locations() {
             className="text-center mt-10 font-bold text-4xl"
             data-aos="fade-right"
             data-aos-delay="500"
-            id="mindanao-section"
+            
           >
             MINDANAO
           </h1>
@@ -1773,7 +1777,8 @@ export default function Locations() {
                   </p>
                 </div>
               )}
-              <hr className="mt-2" />
+              <hr className="mt-2"
+              id="negros-section" />
             </div>
 
             
@@ -1783,7 +1788,7 @@ export default function Locations() {
             className="text-center mt-10 font-bold text-4xl"
             data-aos="fade-right"
             data-aos-delay="500"
-            id="negros-section"
+            
           >
             NEGROS
           </h1>
