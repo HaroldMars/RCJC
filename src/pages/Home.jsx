@@ -75,7 +75,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-white w-full py-10 px-4">
+      <div className="bg-white w-full py-10 px-4" data-aos="fade-in">
         
         <div class="home-discover text-4xl md:text-6xl font-bold mb-6">
   Discover the Good News

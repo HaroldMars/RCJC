@@ -30,7 +30,8 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="container-contact">
+      <div className="container-contact"data-aos="fade-up"
+            data-aos-delay="200">
   <div className="contact-box">
     <h1 className="contact-heading">We're Here for You!</h1>
     <p className="contact-text">
@@ -40,7 +41,7 @@ export default function Contact() {
       <h2 className="section-title">Get in touch
 </h2>
     </div>
-<div class="cards-container">
+<div class="cards-container"data-aos="fade-in">
   <div class="info-card">
     <div class="icon">📞</div>
     <h3>Phone Number</h3>
