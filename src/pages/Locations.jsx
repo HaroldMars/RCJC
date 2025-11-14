@@ -553,7 +553,7 @@ export default function Locations() {
                 />
                 <hr className="mt-2" />
                 <h1
-                  className="container"
+                  className="container font-bold"
                   onClick={() => {
                     toggleProfile("Allan");
                     toggleArrow("Allan");
@@ -567,7 +567,7 @@ export default function Locations() {
                     }`}
                   ></span>
                 </h1>
-                <p className="mt-5">Purok 6 Eastern Cabul-an Buenavista Bohol</p>
+                <p>Purok 6 Eastern Cabul-an Buenavista Bohol</p>
                 {expandedProfiles.Allan && (
                   <div className="details p-4 bg-gray-100 mt-2  shadow-inner">
                     <hr className="text-gray-400" />
@@ -600,7 +600,7 @@ export default function Locations() {
                 />
                 <hr className="mt-2" />
                 <h1
-                  className="container"
+                  className="container font-bold"
                   onClick={() => {
                     toggleProfile("Fatima");
                     toggleArrow("Fatima");
@@ -614,7 +614,7 @@ export default function Locations() {
                     }`}
                   ></span>
                 </h1>
-                <p className="mt-5"> Purok 4 Bagacay Talibon Bohol</p>
+                <p> Purok 4 Bagacay Talibon Bohol</p>
                 {expandedProfiles.Fatima && (
                   <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
                     <hr className="text-gray-400" />
@@ -647,7 +647,7 @@ export default function Locations() {
                 />
                 <hr className="mt-2" />
                 <h1
-                  className="container"
+                  className="container font-bold"
                   onClick={() => {
                     toggleProfile("Jocelyn");
                     toggleArrow("Jocelyn");
@@ -661,7 +661,7 @@ export default function Locations() {
                     }`}
                   ></span>
                 </h1>
-                <p className="mt-5">Purok 2 Poblacion Ubay Bohol</p>
+                <p>Purok 2 Poblacion Ubay Bohol</p>
                 {expandedProfiles.Jocelyn && (
                   <div className="details p-4 bg-gray-100 mt-2  shadow-inner">
                     
@@ -709,7 +709,7 @@ export default function Locations() {
                 />
                 <hr className="mt-2" />
                 <h1
-                  className="container"
+                  className="container font-bold"
                   onClick={() => {
                     toggleProfile("Lileth");
                     toggleArrow("Lileth");
@@ -723,9 +723,10 @@ export default function Locations() {
                     }`}
                   ></span>
                 </h1>
+                <p>Central 1 Cogon Bogo City</p>
                 {expandedProfiles.Lileth && (
                   <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                    <p>Central 1 Cogon Bogo City</p>
+                    
                     <hr className="text-gray-400" />
                     <p className="mt-5">Sunday Service: </p>
                     <p>8:30 am - 12:00 nn</p>
@@ -761,9 +762,10 @@ export default function Locations() {
                   }`}
                 ></span>
               </h1>
+              <p>New Medellin East, (NMES) Poblacion Medellin Cebu</p>
               {expandedProfiles.Mario && (
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  <p>New Medellin East, (NMES) Poblacion Medellin Cebu</p>
+                  
                   <hr className="text-gray-400" />
                   <p className="mt-5">Sunday Service:</p>
                   <p> 8:00 am - 12:00 nn</p>
@@ -814,9 +816,10 @@ export default function Locations() {
                   }`}
                 ></span>
               </h1>
+              <p>Sitio Capayawan, Kawit, Medellin, Cebu</p>
               {expandedProfiles.Pedro && (
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  <p>Sitio Capayawan, Kawit, Medellin, Cebu</p>
+                  
                   <hr className="text-gray-400" />
                   <p className="mt-5">Sunday Service: </p>
                   <p>8:00 pm - 12:00 nn</p>
@@ -879,9 +882,10 @@ export default function Locations() {
                     }`}
                   ></span>
                 </h1>
+                <p>Purok Pagnahian Sonog San Francisco Camotes Cebu</p>
                 {expandedProfiles.Cherilyn && (
                   <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                    <p>Purok Pagnahian Sonog San Francisco Camotes Cebu</p>
+                    
                     <hr className="text-gray-400" />
                     <p className="mt-5">Sunday Service:</p>
                     <p> 8:00 am - 12:00 nn</p>
@@ -924,12 +928,13 @@ export default function Locations() {
                   }`}
                 ></span>
               </h1>
-              {expandedProfiles.Janice && (
-                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  <p>
+              <p>
                     {" "}
                     Almers Compound entrance Suico St Tabok Mandaue City Cebu
                   </p>
+              {expandedProfiles.Janice && (
+                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
+                  
                   <hr className="text-gray-400" />
                   <p className="mt-5">Sunday Service:</p>
                   <p> 8:30 am - 12:00 nn</p>
@@ -973,11 +978,12 @@ export default function Locations() {
                   }`}
                 ></span>
               </h1>
-              {expandedProfiles.Jessa && (
-                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  <p>
+              <p>
                     Catarman 2 Cordova Cebu across Catarman Elementary School
                   </p>
+              {expandedProfiles.Jessa && (
+                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
+                  
                   <hr className="text-gray-400" />
                   <p className="mt-5">Sunday Service: </p>
                   <p>8:30 am -12:00 nn</p>
@@ -1020,9 +1026,9 @@ export default function Locations() {
                   }`}
                 ></span>
               </h1>
+              <p>Hernan Cortes St. Telecom, Casuntingan, Mandaue City</p>
               {expandedProfiles.Jinalyn && (
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  <p>Hernan Cortes St. Telecom, Casuntingan, Mandaue City</p>
                   <hr className="text-gray-400" />
                   <p className="mt-5">Sunday Service:</p>
                   <p> 8:00 am - 12:00 nn</p>
@@ -1076,12 +1082,13 @@ export default function Locations() {
                   }`}
                 ></span>
               </h1>
-              {expandedProfiles.Jinky && (
-                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  <p>
+              <p>
                     Looc, Danao Cebu (few meters away from Brgy Hall across
                     Riders Pit Stop)
                   </p>
+              {expandedProfiles.Jinky && (
+                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
+                  
                   <hr className="text-gray-400" />
                   <p className="mt-5">Sunday Service: </p>
                   <p>8:00 am - 12:00 nn</p>
@@ -1132,9 +1139,10 @@ export default function Locations() {
                   }`}
                 ></span>
               </h1>
+              <p> Purok Pagatpat 1 Suba Poblacion Liloan Cebu</p>
               {expandedProfiles.Seam && (
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  <p> Purok Pagatpat 1 Suba Poblacion Liloan Cebu</p>
+                  
                   <hr className="text-gray-400" />
                   <p className="mt-5">Sunday Service: </p>
                   <p>8:00 am -12:00 nn</p>
@@ -1184,9 +1192,9 @@ export default function Locations() {
                     }`}
                   ></span>
                 </h1>
+                <p> Currently joining with RCJCIM Liloan as we're still looking for another place in Compostela</p>
                 {expandedProfiles.Vilma && (
                   <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                    <p> Currently joining with RCJCIM Liloan as we're still looking for another place in Compostela</p>
                     <hr className="text-gray-400" />
                     <p className="mt-5">Sunday Service: </p>
                     <p className="">8:00 am -12:00 nn</p>
@@ -1256,9 +1264,10 @@ export default function Locations() {
                   }`}
                 ></span>
               </h1>
+              <p> Tangil, Dumanjug, Cebu</p>
               {expandedProfiles.Bene && (
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  <p> Tangil, Dumanjug, Cebu</p>
+                  
                   <hr className="text-gray-400" />
                   <p className="mt-5">Sunday Service: </p>
                   <p>8:00 am -12:00 nn</p>
@@ -1302,9 +1311,10 @@ export default function Locations() {
                   }`}
                 ></span>
               </h1>
+              <p>Tagunol, Basak San Nicolas, Cebu City</p>
               {expandedProfiles.Luz && (
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  <p>Tagunol, Basak San Nicolas, Cebu City</p>
+                  
                   <hr className="text-gray-400" />
                   <p className="mt-5">Sunday Service: </p>
                   <p>8:30 am -12:00 nn</p>
@@ -1355,9 +1365,9 @@ export default function Locations() {
                   }`}
                 ></span>
               </h1>
+              <p>Rabaya Street, Purok Mabini, Tabunok, Talisay City Cebu</p>
               {expandedProfiles.Rechiel && (
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  <p>Rabaya Street, Purok Mabini, Tabunok, Talisay City Cebu</p>
                   <hr className="text-gray-400" />
                   <p className="mt-5">Sunday Service:</p>
                   <p>8:30 am - 12:00 nn</p>
@@ -1424,9 +1434,10 @@ export default function Locations() {
                   }`}
                 ></span>
               </h1>
+              <p>P. Gomez St. Brgy. Riverside Matag-ob, Leyte</p>
               {expandedProfiles.Elvie && (
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  <p>P. Gomez St. Brgy. Riverside Matag-ob, Leyte</p>
+                  
                   <p className="mt-5">and</p>
                   <p className="mt-5">
                     {" "}
@@ -1483,9 +1494,10 @@ export default function Locations() {
                   }`}
                 ></span>
               </h1>
+              <p>Brgy. Tuno, San Francisco , Southern Leyte</p>
               {expandedProfiles.Oliver && (
                 <div className="details p-4 bg-gray-100 mt-2 rounded-lg shadow-inner">
-                  <p>Brgy. Tuno, San Francisco , Southern Leyte</p>
+                  
                   <hr className="text-gray-400" />
                   <p className="mt-5">
                     Here's an early look at the current progress. Final details
@@ -1546,9 +1558,10 @@ export default function Locations() {
                   }`}
                 ></span>
               </h1>
+              <p>P-5 Alegria San Francisco Agusan del Sur</p>
               {expandedProfiles.Anabel && (
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  <p>P-5 Alegria San Francisco Agusan del Sur</p>
+                  
                   <hr className="text-gray-400" />
                   <p className="mt-5">Sunday Service:</p>
                   <p> 8:00 am - 12:00 nn</p>
@@ -1599,9 +1612,10 @@ export default function Locations() {
                   }`}
                 ></span>
               </h1>
+              <p>Unidad, Barobo, Surigao del Sur</p>
               {expandedProfiles.Jeashin && (
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  <p>Unidad, Barobo, Surigao del Sur</p>
+                  
                   <hr className="text-gray-400" />
                   <p className="mt-5">Sunday Service: </p>
                   <p>8:30 am - 12:00 nn</p>
@@ -1637,9 +1651,10 @@ export default function Locations() {
                   }`}
                 ></span>
               </h1>
+              <p>Cambagang, Barobo, Agusan del Sur</p>
               {expandedProfiles.Mary && (
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  <p>Cambagang, Barobo, Agusan del Sur</p>
+                  
                   <hr className="text-gray-400" />
                   <p className="mt-5">
                     Here's an early look at the current progress. Final details
@@ -1692,9 +1707,10 @@ export default function Locations() {
                   }`}
                 ></span>
               </h1>
+              <p>Brgy. Pasta Agusan del Sur</p>
               {expandedProfiles.Merciely && (
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  <p>Brgy. Pasta Agusan del Sur</p>
+                  
                   <hr className="text-gray-400" />
                   <p className="mt-5">Sunday Service:</p>
                   <p> 8:00 am - 12:00 nn</p>
@@ -1745,9 +1761,10 @@ export default function Locations() {
                   }`}
                 ></span>
               </h1>
+              <p>P-16 Bahbah Prosperidad Agusan Del Sur</p>
               {expandedProfiles.Susan && (
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  <p>P-16 Bahbah Prosperidad Agusan Del Sur</p>
+                  
                   <hr className="text-gray-400" />
                   <p className="mt-5">
                     Here's an early look at the current progress. Final details
@@ -1802,9 +1819,10 @@ export default function Locations() {
                   }`}
                 ></span>
               </h1>
+              <p>Proper Biak na Bato La Castellana Negros Occidental</p>
               {expandedProfiles.Gene && (
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  <p>Proper Biak na Bato La Castellana Negros Occidental</p>
+                  
                   <hr className="text-gray-400" />
                   <p className="mt-5">Sunday Service: 8:30 am - 12:00 nn</p>
                   <p className="mt-5">

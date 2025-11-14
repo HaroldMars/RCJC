@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Give from './pages/Give';
 
 function App() {
+
   return (
     <>
     <BrowserRouter>

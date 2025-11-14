@@ -9,6 +9,7 @@ import AOS from "aos";
 AOS.init();
 
 export default function Events() {
+  
   return (
     <div className="nav-text bg-white w-screen h-fit font-Roboto text-black">
       <Header />

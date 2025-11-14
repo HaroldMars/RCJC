@@ -16,6 +16,10 @@ function Header({ className }) {
 
   // Close menu on route change or window resize
   useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 2);
+
     const handleResize = () => {
       if (window.innerWidth >= 768) setMenuOpen(false);
     };

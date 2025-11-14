@@ -9,6 +9,7 @@ import AOS from "aos";
 AOS.init();
 
 export default function Contact() {
+  
   return (
     <div className="nav-text bg-white w-screen font-Roboto h-fit text-black">
       <Header />

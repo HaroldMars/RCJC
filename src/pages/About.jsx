@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Background from "../assets/footerpic.jpg";
 import ExpandableSection from "../components/ExpandableSection";
@@ -67,7 +67,7 @@ export default function About() {
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            <h1 className="homee text-6xl font">About us</h1>
+            <h1 className="homee text-6xl font-bold font">About us</h1>
           </div>
         </div>
       </div>
