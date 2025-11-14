@@ -101,7 +101,9 @@ export default function Locations() {
   const AreaOptions = [
     { value: "", label: "Select Area" },
     { value: "bohol", label: "Bohol" },
-    { value: "cebu", label: "Cebu" },
+    { value: "cebu_north", label: "Cebu_north" },
+    { value: "cebu_area", label: "Cebu_area" },
+    { value: "cebu_south", label: "Cebu_south" },
     { value: "leyte", label: "Leyte" },
     { value: "mindanao", label: "Mindanao" },
     { value: "negros", label: "Negros" },
@@ -115,7 +117,9 @@ export default function Locations() {
   };
 
   const locationToSectionId = {
-    cebu: "cebu-section",
+    cebu_north: "cebu_north-section",
+    cebu_area: "cebu_area-section",
+    cebu_south: "cebu_south-section",
     mindanao: "mindanao-section",
     leyte: "leyte-section",
     bohol: "bohol-section",
@@ -683,7 +687,7 @@ export default function Locations() {
             className="text-center mt-10 font-bold text-4xl"
             data-aos="fade-right"
             data-aos-delay="500"
-            id="mindanao-section"
+            id="cebu_north-section"
           >
             CEBU NORTH
           </h1>
@@ -840,7 +844,7 @@ export default function Locations() {
               
           </div>
 
-          <div className="font-Roboto mt-10" id="cebu-section">
+          <div className="font-Roboto mt-10" id="cebu_area-section">
             <h1 className="font-bold text-4xl text-center">CEBU AREA</h1>
             <div
               data-aos="fade-right"
@@ -1216,7 +1220,7 @@ export default function Locations() {
             className="text-center mt-10 font-bold text-4xl"
             data-aos="fade-right"
             data-aos-delay="500"
-            id="mindanao-section"
+            id="cebu_south-section"
           >
             CEBU SOUTH
           </h1>
@@ -1571,11 +1575,11 @@ export default function Locations() {
             <div className="profilee">
               <img
                 className="pic"
-                src={Susan}
-                alt="Susan"
+                src={Jeashin}
+                alt="Jeashin"
                 onClick={() => {
-                  toggleProfile("Susan");
-                  toggleArrow("Susan");
+                  toggleProfile("Jeashin");
+                  toggleArrow("Jeashin");
                 }}
                 style={{ cursor: "pointer" }}
               />
@@ -1583,27 +1587,24 @@ export default function Locations() {
               <h1
                 className="container"
                 onClick={() => {
-                  toggleProfile("Susan");
-                  toggleArrow("Susan");
+                  toggleProfile("Jeashin");
+                  toggleArrow("Jeashin");
                 }}
                 style={{ cursor: "pointer" }}
               >
-                Pastor Susan Alabado
+                Pastor Jeashin Alabado
                 <span
                   className={`arrow-down ${
-                    arrowRotations.Susan ? "rotated" : ""
+                    arrowRotations.Jeashin ? "rotated" : ""
                   }`}
                 ></span>
               </h1>
-              {expandedProfiles.Susan && (
+              {expandedProfiles.Jeashin && (
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  <p>P-16 Bahbah Prosperidad Agusan Del Sur</p>
+                  <p>Unidad, Barobo, Surigao del Sur</p>
                   <hr className="text-gray-400" />
-                  <p className="mt-5">
-                    Here's an early look at the current progress. Final details
-                    are pending your instructions, and I will update
-                    accordingly.
-                  </p>
+                  <p className="mt-5">Sunday Service: </p>
+                  <p>8:30 am - 12:00 nn</p>
                 </div>
               )}
               <hr className="mt-2" />
@@ -1720,11 +1721,11 @@ export default function Locations() {
             <div className="profilee">
               <img
                 className="pic"
-                src={Jeashin}
-                alt="Jeashin"
+                src={Susan}
+                alt="Susan"
                 onClick={() => {
-                  toggleProfile("Jeashin");
-                  toggleArrow("Jeashin");
+                  toggleProfile("Susan");
+                  toggleArrow("Susan");
                 }}
                 style={{ cursor: "pointer" }}
               />
@@ -1732,28 +1733,33 @@ export default function Locations() {
               <h1
                 className="container"
                 onClick={() => {
-                  toggleProfile("Jeashin");
-                  toggleArrow("Jeashin");
+                  toggleProfile("Susan");
+                  toggleArrow("Susan");
                 }}
                 style={{ cursor: "pointer" }}
               >
-                Pastor Jeashin Alabado
+                Pastor Susan Alabado
                 <span
                   className={`arrow-down ${
-                    arrowRotations.Jeashin ? "rotated" : ""
+                    arrowRotations.Susan ? "rotated" : ""
                   }`}
                 ></span>
               </h1>
-              {expandedProfiles.Jeashin && (
+              {expandedProfiles.Susan && (
                 <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  <p>Unidad, Barobo, Surigao del Sur</p>
+                  <p>P-16 Bahbah Prosperidad Agusan Del Sur</p>
                   <hr className="text-gray-400" />
-                  <p className="mt-5">Sunday Service: </p>
-                  <p>8:30 am - 12:00 nn</p>
+                  <p className="mt-5">
+                    Here's an early look at the current progress. Final details
+                    are pending your instructions, and I will update
+                    accordingly.
+                  </p>
                 </div>
               )}
               <hr className="mt-2" />
             </div>
+
+            
           </div>
 
           <h1
