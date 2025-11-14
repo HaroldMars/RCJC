@@ -604,3 +604,54 @@ iframe {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(213, 231, 255);
 } */
+.event-container {
+  height: 100vh;
+  background-color: #A9D0D8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.child {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: center;
+  width: 90%; /* Keep some margin on sides */
+}
+
+.content-child {
+  border: black solid 5px;
+  border-radius: 20px;
+  margin: 2%;
+  flex: 1 1 30%; /* Flex-grow, flex-shrink, basis */
+  max-width: 30%;
+  min-width: 200px; /* Prevent too small on small screens */
+  height: auto; /* Let content determine height */
+  text-align: center;
+  font-weight: bold;
+  font-size: 4vw; /* Responsive font size */
+}
+
+.context {
+  border: black solid 5px;
+  border-radius: 20px;
+  margin: 2%;
+  flex: 1 1 50%;
+  max-width: 50%;
+  min-width: 300px;
+  height: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5vw; /* Responsive font size */
+}
+
+/* Optional: media query for very small screens */
+@media (max-width: 600px) {
+  .content-child {
+    font-size: 9vw;
+  }
+  .context {
+    font-size: 4vw;
+  }
+}
