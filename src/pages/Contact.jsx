@@ -37,7 +37,7 @@ export default function Contact() {
       We are delighted you stopped by. If you have a prayer request, want to learn more about our ministries, or reaching out as a first-time visitor, we are here to listen and respond. We look forward to connecting with you.
     </p>
     <div className="contact-info">
-      <h2 className="section-title">Get in touch!
+      <h2 className="section-title">Get in touch
 </h2>
     </div>
 <div class="cards-container">

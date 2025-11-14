@@ -77,7 +77,7 @@ export default function Home() {
 
       <div className="bg-white w-full py-10 px-4">
         
-        <div class="home-discover">
+        <div class="home-discover text-4xl md:text-6xl font-bold mb-6">
   Discover the Good News
 </div>
 <div class="home-hope">
