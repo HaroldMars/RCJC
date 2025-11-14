@@ -76,16 +76,14 @@ export default function Home() {
       </div>
 
       <div className="bg-white w-full py-10 px-4">
-        {/*
-        <div className="text-blue-300 text-center p-5 pb-2 font-sans text-base md:text-lg">
-          LOOKING FOR ANSWER? THINK YOUR VISITING THIS SITE IS A COINCIDENCE?
-          <br />
-          YOUR BEING HERE TODAY IS NO COINCIDENT!
-        </div>
-        <div className=" text-2xl md:text-4xl text-center p-5 pt-2 font-sans font-bold text-blue-700">
-          God Brought you here for His purpose.
-        </div> 
-        */}
+        
+        <div class="home-discover">
+  Discover the Good News
+</div>
+<div class="home-hope">
+  Feeling lost or seeking something more? Watch this short message to understand God's simple plan for your life and experience genuine hope and a new beginning today.
+</div>
+       
 
         {/* Responsive YouTube Video */}
         <div

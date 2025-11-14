@@ -655,3 +655,184 @@ iframe {
     font-size: 4vw;
   }
 }
+
+.container-give {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Adjust height as needed */
+  background-color: #A9D0D8;
+}
+
+.give-parent {
+  border: black solid 5px hidden;
+  background: #6d89ad;
+  border-radius: 20px;
+  width: 300px;
+}
+
+.give-child {
+  border-radius: 20px;
+  border: white solid 1px;
+  text-align: center;
+  font-family: var(--font-Roboto);
+  font-size: 2rem; /* Adjust font size as needed */
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .give-paren {
+    font-size: 9vw;
+  }
+  .context {
+    font-size: 4vw;
+  }
+}
+
+/* Container for overall layout and centering */
+.container-contact {
+  font-family: var(--font-Roboto);
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* The main card box */
+.contact-box {
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* Main header style */
+.contact-heading {
+  font-family: 'Arial', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #222;
+}
+
+/* Intro paragraph style */
+.contact-text {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Section titles */
+.section-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Address paragraph style */
+.address {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Contact method styles */
+.contact-method {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1rem;
+  gap: 10px;
+}
+
+/* Icon and text styling */
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Icons size */
+.icon {
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+/* Links styling */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.home-discover {
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-family: var(--font-Roboto);
+  font-size: 1.75em;
+  color: #60a5fa; 
+}
+
+.home-hope {
+  text-align: center;
+  font-family: var(--font-Roboto);
+  padding: 20px;
+  padding-top: 10px; 
+  font-family: Arial, sans-serif;
+  font-size: 1.25em; 
+  color: #1e40af; 
+  max-width: 800px; 
+  margin: 0 auto; 
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+p {
+  margin: 0;
+  line-height: 1.5;
+}

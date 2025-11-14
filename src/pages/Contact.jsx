@@ -29,6 +29,38 @@ export default function Contact() {
           </div>
         </div>
       </div>
+
+      <div className="container-contact">
+  <div className="contact-box">
+    <h1 className="contact-heading">We're Here for You!</h1>
+    <p className="contact-text">
+      We are delighted you stopped by. If you have a prayer request, want to learn more about our ministries, or reaching out as a first-time visitor, we are here to listen and respond. We look forward to connecting with you.
+    </p>
+    <div className="contact-info">
+      <h2 className="section-title">How you can reach us!
+</h2>
+    </div>
+<div class="cards-container">
+  <div class="info-card">
+    <div class="icon">📞</div>
+    <h3>Phone Number</h3>
+    <p>+63 905 825 0594</p>
+  </div>
+  <div class="info-card">
+    <div class="icon">✉️</div>
+    <h3>Email Address</h3>
+    <p>rcjcim2003@gmail.com</p>
+  </div>
+  <div class="info-card">
+    <div class="icon">📍</div>
+    <h3>Main Church Address</h3>
+    <p>A.C. Cortes Ave. (Interior), Looc, Mandaue City, Cebu, Philippines, 6014
+    </p>
+  </div>
+</div>
+  </div>
+</div>
+
       {/* <div className="footer-container">
         <footer className="footer">
           <div className="container-footer-media">
