@@ -837,3 +837,38 @@ p {
   margin: 0;
   line-height: 1.5;
 }
+
+/* Style for the container div */
+.container-contactt {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto; /* Center horizontally if needed */
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Style the heading inside the container, if any */
+.container-contactt h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+/* Style for the option buttons */
+.option {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  margin: 10px 0;
+  background-color: #e0e0e0; /* Light gray background */
+  border-radius: 25px; /* Rounded edges for pill shape */
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for buttons */
+.option:hover {
+  background-color: #d0d0d0;
+}

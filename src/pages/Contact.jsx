@@ -40,8 +40,14 @@ export default function Contact() {
     <div className="contact-info">
       <h2 className="section-title">Get in touch
 </h2>
+<div class="container-contactt">
+  <button class="option">I'd like more information about the church.</button>
+  <button class="option">I have questions about how to get involved.</button>
+  <button class="option">I need prayer.</button>
+  <button class="option">Other...</button>
+</div>
     </div>
-<div class="cards-container"data-aos="fade-in">
+<div class="cards-container mt-5"data-aos="fade-in">
   <div class="info-card">
     <div class="icon">📞</div>
     <h3>Phone Number</h3>

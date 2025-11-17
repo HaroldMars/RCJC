@@ -28,17 +28,17 @@ export default function Events() {
           </div>
         </div>
       </div>
-      {/* Container */}
+      {/* Container
       <div>
         <div class="event-container">
-          <div className="child">
+          <div className="child"> */}
             {/* Left side */}
-            <div className="content-child">
+            {/* <div className="content-child">
               <h2 class="event-title">Upcoming Events</h2>
               <p>Photo or Vid</p>
-            </div>
+            </div> */}
             {/* Right side */}
-            <div className="context">
+            {/* <div className="context">
               <h2 class="event-title">Event Details</h2>
               <p className="text-[20px]">
                 This is the content area where event details will be displayed.
@@ -46,7 +46,15 @@ export default function Events() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
+      <div className="container-give">
+          <div className="give-parent">
+            <div className="give-child">
+              <h1>Launching Soon</h1>
+            </div>
+          </div>
+        </div>
 
       <div class="footer">
         <div class="footer-content">
