@@ -35,7 +35,7 @@ export default function Contact() {
   <div className="contact-box">
     <h1 className="contact-heading">We're Here for You!</h1>
     <p className="contact-text">
-      We are delighted you stopped by. If you have a prayer request, want to learn more about our ministries, or reaching out as a first-time visitor, we are here to listen and respond. We look forward to connecting with you.
+      We are delighted you stopped by. If you have a prayer request, want to learn more about our ministries, or reaching out as a first-time visitor, we are here to listen and respond. We look forward to connecting with you. 
     </p>
     <div className="contact-info">
       <h2 className="section-title">Get in touch

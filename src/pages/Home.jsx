@@ -81,7 +81,9 @@ export default function Home() {
   Discover the Good News
 </div>
 <div class="home-hope">
-  Feeling lost or seeking something more? Watch this short message to understand God's simple plan for your life and experience genuine hope and a new beginning today.
+  
+Feeling lost or seeking something more?
+Watch this short message to understand God's simple plan for your life and experience genuine hope and a new beginning today.
 </div>
        
 
