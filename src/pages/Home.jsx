@@ -77,13 +77,14 @@ export default function Home() {
 
       <div className="bg-white w-full py-10 px-4" data-aos="fade-in">
         
-        <div class="home-discover text-4xl md:text-6xl font-bold mb-6">
-  Discover the Good News
-</div>
+        
 <div class="home-hope">
   
-Feeling lost or seeking something more?
+Feeling lost or seeking something more? <br /><br />
 Watch this short message to understand God's simple plan for your life and experience genuine hope and a new beginning today.
+</div>
+<div class="home-discover text-4xl md:text-6xl font-bold mb-6">
+  Discover the Good News
 </div>
        
 
@@ -92,7 +93,7 @@ Watch this short message to understand God's simple plan for your life and exper
           className="flex justify-center pt-10 pb-10 mb-10"
           data-aos="fade-up"
         >
-          <div className="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden ">
+          <div className="w-full max-w-full">
             <iframe
               className="w-full h-full"
               src="https://www.youtube.com/embed/0dOHXPUGAvk"

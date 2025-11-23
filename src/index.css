@@ -438,9 +438,7 @@ header {
 
 iframe {
   height: 450px;
-  width: 500px;
-  border-radius: 5%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  width: screen;
 }
 
 @media (max-width: 768px) {
@@ -778,12 +776,15 @@ a:hover {
 }
 
 .home-discover {
-  text-align: center;
-  padding: 20px;
-  font-weight: bold;
-  font-family: Arial, sans-serif;
+   text-align: center;
   font-family: var(--font-Roboto);
-  color: #A9D0D8; 
+  padding: 20px;
+  padding-top: 10px; 
+  font-family: Arial, sans-serif;
+  font-size: 1.25em; 
+  color: #2E4057; 
+  max-width: 800px; 
+  margin: 0 auto;  
 }
 
 .home-hope {
@@ -793,7 +794,7 @@ a:hover {
   padding-top: 10px; 
   font-family: Arial, sans-serif;
   font-size: 1.25em; 
-  color: #A9D0D8; 
+  color: #2E4057; 
   max-width: 800px; 
   margin: 0 auto; 
 }
@@ -871,4 +872,8 @@ p {
 /* Hover effect for buttons */
 .option:hover {
   background-color: #d0d0d0;
+}
+
+.video-home {
+  border: red solid 5px hidden;
 }
