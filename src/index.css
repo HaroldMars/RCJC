@@ -894,6 +894,7 @@ p {
   width: 300vh;
   font-size: 9em;
   transform: translate(-50%, -50%);
+  font-family: var(--font-Roboto);
 }
 
 @media (max-width: 600px) {
