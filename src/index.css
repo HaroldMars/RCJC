@@ -877,3 +877,27 @@ p {
 .video-home {
   border: red solid 5px hidden;
 }
+
+
+
+
+.text-div  {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  mix-blend-mode: multiply;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  width: 300vh;
+  font-size: 9em;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 600px) {
+  .text-div  {
+    font-size: 12vw;
+  }
+}
