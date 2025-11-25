@@ -5,7 +5,7 @@ import Logo from "../assets/logo.png";
 import "aos/dist/aos.css";
 import fb from "../assets/facebook.png";
 import Gmail from "../assets/gmail.png";
-import Youth from "../assets/youth.jfif";
+import Youth from "../assets/Youth.jfif";
 import Community from "../assets/community.jfif";
 import AOS from "aos";
 AOS.init();
