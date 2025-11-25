@@ -515,7 +515,7 @@ iframe {
 /* Footer styling */
 .footer {
   background-color: #34495e; /* Dark blue background */
-  padding: 5px;
+  padding: 0px;
   padding-top: 10px;
   text-align: center;
   font-family: var(--font-Roboto);
@@ -849,27 +849,27 @@ p {
 }
 
 /* Style the heading inside the container, if any */
-.container-contactt h1 {
+/* .container-contactt h1 {
   text-align: center;
   font-size: 2em;
   margin-bottom: 1em;
 }
 
-/* Style for the option buttons */
+
 .option {
   display: block;
   width: 100%;
   padding: 15px 20px;
   margin: 10px 0;
-  background-color: #e0e0e0; /* Light gray background */
-  border-radius: 25px; /* Rounded edges for pill shape */
+  background-color: #e0e0e0; 
+  border-radius: 25px; 
   border: none;
   font-size: 1em;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-/* Hover effect for buttons */
+
 .option:hover {
   background-color: #d0d0d0;
 }
@@ -901,4 +901,40 @@ p {
   .text-div  {
     font-size: 12vw;
   }
-}
+} */
+
+.slider {
+    position: relative;
+    height: 100vh;
+    width: 500vh;
+    max-width: 100%; /* Adjust as needed */
+    margin: auto;
+    overflow: hidden;
+  }
+
+  /* Slides */
+  .slides {
+    display: flex;
+    width: 100%; /* 3 images */
+    animation: slide 9s infinite;
+  }
+
+  /* Each image */
+  .slide {
+    width: 100%;
+    flex-shrink: 0;
+  }
+
+  /* Image styling */
+  .slide img {
+    width: 100%;
+    display: block;
+  }
+
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(0); }
+    44.44% { transform: translateX(-100%); }
+    77.77% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+  }

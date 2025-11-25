@@ -5,6 +5,8 @@ import Logo from "../assets/logo.png";
 import "aos/dist/aos.css";
 import fb from "../assets/facebook.png";
 import Gmail from "../assets/gmail.png";
+import Youth from "../assets/youth.jfif";
+import Community from "../assets/community.jfif";
 import AOS from "aos";
 AOS.init();
 
@@ -48,14 +50,25 @@ export default function Events() {
         </div>
       </div> */}
 
-      <div className="container-give">
+      <div class="slider mt-10 mb-10" data-aos="fade-in">
+         
+  <div class="slides">
+   
+    <div class="slide">
+      <img src={Youth} alt="Slide 1" />
+    </div>
+    <div class="slide">
+      <img src={Community} alt="Slide 2" />
+    </div>
+  </div>
+</div>
+<div className="container-give">
           <div className="give-parent">
             <div className="give-child">
               <h1>Launching Soon</h1>
             </div>
           </div>
         </div>
-
       <div class="footer">
         <div class="footer-content">
           <div class="connect-text">connect with us</div>
