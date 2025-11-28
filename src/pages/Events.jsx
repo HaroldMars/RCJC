@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../components/Header";
 import Background from "../assets/eventslogo.jpg";
 import Logo from "../assets/logo.png";
@@ -11,6 +11,28 @@ import AOS from "aos";
 AOS.init();
 
 export default function Events() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const slidesCount = 2;
+
+  const showSlide = (index) => {
+    if (index >= slidesCount) {
+      setCurrentIndex(0);
+    } else if (index < 0) {
+      setCurrentIndex(slidesCount - 1);
+    } else {
+      setCurrentIndex(index);
+    }
+  };
+
+  const nextSlide = () => {
+    showSlide(currentIndex + 1);
+  };
+
+  const prevSlide = () => {
+    showSlide(currentIndex - 1);
+  };
+
+
   return (
     <div className="nav-text bg-white w-screen h-fit font-Roboto text-black">
       <Header />
@@ -52,16 +74,69 @@ export default function Events() {
 
       <div class="slider mt-10 mb-10" data-aos="fade-in">
          
-  <div class="slides">
-   
-    <div class="slide">
-      <img src={Youth} alt="Slide 1" />
+  <div class="carousel-container">
+  
+  <button
+  className="arrow left"
+  onClick={nextSlide}
+  style={{
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    border: 'none',
+    borderRadius: '50%',
+    width: '40px',
+    height: '40px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    cursor: 'pointer',
+    fontSize: '20px',
+    color: '#fff',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+    transition: 'background-color 0.3s, transform 0.2s',
+  }}
+  onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'rgba(0, 0, 0, 0.7)')}
+  onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'rgba(0, 0, 0, 0.5)')}
+>
+  &#10094;
+</button>
+  
+  
+  <div className="slider mt-10 mb-10" data-aos="fade-in">
+      <div className="carousel-container" style={{ position: 'relative', width: '100%', overflow: 'hidden' }}>
+        {/* Left Arrow */}
+        <button className="arrow left" onClick={prevSlide} style={{
+          position: 'absolute', top: '50%', left: '10px', transform: 'translateY(-50%)',
+          background: 'rgba(0,0,0,0.5)', border: 'none', padding: '10px', cursor: 'pointer', zIndex: 10,
+        }}>&#10094;</button>
+        
+        {/* Slides */}
+        <div
+          className="slides"
+          style={{
+            display: 'flex',
+            transition: 'transform 0.5s ease',
+            transform: `translateX(-${currentIndex * 100}%)`,
+          }}
+        >
+          <div className="slide" style={{ minWidth: '100%' }}>
+            <img src={Youth} alt="Slide 1" style={{ width: '100%', display: 'block' }} />
+          </div>
+          <div className="slide" style={{ minWidth: '100%' }}>
+            <img src={Community} alt="Slide 2" style={{ width: '100%', display: 'block' }} />
+          </div>
+        </div>
+        {/* Right Arrow */}
+        <button className="arrow right" onClick={nextSlide} style={{
+          position: 'absolute', top: '50%', right: '10px', transform: 'translateY(-50%)',
+          background: 'rgba(0,0,0,0.5)', border: 'none', padding: '10px', cursor: 'pointer', zIndex: 10,
+        }}>&#10095;</button>
+      </div>
     </div>
-    <div class="slide">
-      <img src={Community} alt="Slide 2" />
+
+
     </div>
-  </div>
-</div>
+    </div>
+
 <div className="container-give">
           <div className="give-parent">
             <div className="give-child">

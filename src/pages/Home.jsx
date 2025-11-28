@@ -21,21 +21,31 @@ export default function Home() {
         className="relative h-screen w-full min-h-[60vh] flex items-center justify-center overflow-hidden select-none"
         data-aos="fade-in" // Animation for the hero section
       >
-        <video
-          className="absolute inset-0 w-full h-full object-cover z-0"
-          autoPlay
-          loop
-          muted
-          controls={false}
-          type="video/mp4"
-          src={videoBanner}
-        />
+        <div className="relative w-full h-full">
+  <video
+    className="absolute inset-0 w-full h-full object-cover z-0"
+    autoPlay
+    loop
+    muted
+    controls={false}
+    src={videoBanner}
+    type="video/mp4"
+  />
+  {/* Overlay div */}
+  <div className="absolute inset-0 w-full h-full bg-black/50 z-10" />
+</div>
           <div
-            className="text-div transparent-text font-Roboto text-6xl md:text-6xl font-bold mt-4 text-center"
-            data-aos="fade-up"
-          >
-            Welcome Home
-        </div>
+  className="text-div absolute font-Roboto text-6xl md:text-6xl font-bold mt-4 text-center"
+  style={{
+    color: 'transparent', 
+    WebkitBackgroundClip: 'text', 
+    backgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+  }}
+  data-aos="fade-up"
+>
+  Welcome Home
+</div>
       </div>
 
       <div
@@ -91,9 +101,9 @@ Watch this short message to understand God's simple plan for your life and exper
           className="flex justify-center pt-10 pb-10 mb-10"
           data-aos="fade-up"
         >
-          <div className="w-full max-w-full">
+          <div className="home-youtube w-full max-w-full">
             <iframe
-              className="w-full h-full"
+              className="w-full h-full home-youtube"
               src="https://www.youtube.com/embed/0dOHXPUGAvk"
               title="YouTube video player"
               frameBorder="0"
