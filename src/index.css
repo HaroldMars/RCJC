@@ -1024,6 +1024,12 @@ img {
     width: 100%;
     max-width: 100%;
   }
+
+  .text-div  {
+    font-size: 12vw; /* Adjust font size for smaller screens */
+    font-family: var(--font-Roboto);
+    font-weight: bold;
+  }
 }
 
 .text-events {
