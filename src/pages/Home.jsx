@@ -94,11 +94,15 @@ Watch this short message to understand God's simple plan for your life and exper
 <div class="home-discover text-4xl md:text-6xl font-bold mb-6">
   Discover the Good News
 </div>
+
+<div class="home-discover text-4xl md:text-6xl font-bold mb-6">
+  Gather25. (2025, March 3). Share the Gospe
+</div>
        
 
         {/* Responsive YouTube Video */}
         <div
-          className="flex justify-center pt-10 pb-10 mb-10"
+          className="flex justify-center pt-10 pb-5 mb-1"
           data-aos="fade-up"
         >
           <div className="home-youtube w-full max-w-full">
