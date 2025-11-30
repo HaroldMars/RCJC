@@ -110,9 +110,9 @@ export default function Locations() {
     { value: "", label: "Select Area" },
     { value: "bohol", label: "Bohol" },
     { value: "cebu_north", label: "Cebu North" },
-    { value: "cebu_area", label: "Metro Cebu" },
+    { value: "cebu_south", label: "Cebu South" },
     // { value: "cebu_south", label: "Cebu South" },
-    { value: "cebu_central", label: "Central Cebu" },
+    { value: "metro_cebu", label: "Metro Cebu" },
     { value: "leyte", label: "Leyte" },
     { value: "mindanao", label: "Mindanao" },
     { value: "negros", label: "Negros" },
@@ -127,9 +127,9 @@ export default function Locations() {
 
   const locationToSectionId = {
     cebu_north: "cebu_north-section",
-    cebu_area: "cebu_metro-section",
+    cebu_south: "cebu_south-section",
     // cebu_south: "cebu_south-section",
-    cebu_central: "cebu_central-section",
+    metro_cebu: "metro_cebu-section",
     mindanao: "mindanao-section",
     leyte: "leyte-section",
     bohol: "bohol-section",
@@ -716,6 +716,55 @@ export default function Locations() {
             data-aos-delay="500"
             className="profile-image mt-10"
           >
+
+            <div className="profilee">
+                <img
+                  className="pic"
+                  src={Cherilyn}
+                  alt="Cherilyn"
+                  onClick={() => {
+                    closeAllProfiles();
+                    toggleProfile("Cherilyn");
+                    toggleArrow("Cherilyn");
+                  }}
+                  style={{ cursor: "pointer" }}
+                />
+                <hr className="mt-2" />
+                <h1
+                  className="container text-[90%]"
+                  onClick={() => {
+                    closeAllProfiles();
+                    toggleProfile("Cherilyn");
+                    toggleArrow("Cherilyn");
+                  }}
+                  style={{ cursor: "pointer" }}
+                >
+                  Pastor Cherilyn Formentera
+                  <span
+                    className={`arrow-down ${
+                      arrowRotations.Cherilyn ? "rotated" : ""
+                    }`}
+                  ></span>
+                </h1>
+                <p>Purok Pagnahian Sonog San Francisco Camotes Cebu</p>
+                {expandedProfiles.Cherilyn && (
+                  <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
+                    
+                    <hr className="text-gray-400" />
+                    <p className="mt-5">Sunday Service:</p>
+                    <p> 8:00 am - 12:00 nn</p>
+                    <p className="mt-5">
+                      Wednesday Outpouring: 
+                    </p>
+                    <p>8:00 pm - 10:00 pm</p>
+                    <p className="mt-5">
+                      Friday Prayer Meeting: 8:00 pm - 10:00 pm
+                    </p>
+                  </div>
+                )}
+                <hr className="mt-2" id="cebu_south-section"/>
+              </div>
+
             <div className="profilee">
                 <img
                   className="pic"
@@ -811,9 +860,19 @@ export default function Locations() {
                 </div>
               )}
               <hr className="mt-2" />
-            </div>
-            
-            <div className="profilee">
+            </div>  
+          </div>
+
+           <div
+              data-aos="fade-right"
+              data-aos-delay="500"
+              className="profile-image"
+            >
+              
+              
+
+              
+                <div className="profilee">
               <img
                 className="pic"
                 src={Pedro}
@@ -866,68 +925,19 @@ export default function Locations() {
                   </a> */}
                 </div>
               )}
-              <hr className="mt-2" id="cebu_metro-section"/>
+              <hr className="mt-2" id="cebu_south-section"/>
             </div>
-              
-
-              
-          </div>
+            </div>
 
           <div className="font-Roboto mt-10" >
-            <h1 className="font-bold text-4xl text-center">METRO CEBU</h1>
+            <h1 className="font-bold text-4xl text-center">CEBU SOUTH</h1>
             <div
               data-aos="fade-right"
               data-aos-delay="500"
               className="profile-image"
             >
               
-              <div className="profilee">
-                <img
-                  className="pic"
-                  src={Cherilyn}
-                  alt="Cherilyn"
-                  onClick={() => {
-                    closeAllProfiles();
-                    toggleProfile("Cherilyn");
-                    toggleArrow("Cherilyn");
-                  }}
-                  style={{ cursor: "pointer" }}
-                />
-                <hr className="mt-2" />
-                <h1
-                  className="container text-[90%]"
-                  onClick={() => {
-                    closeAllProfiles();
-                    toggleProfile("Cherilyn");
-                    toggleArrow("Cherilyn");
-                  }}
-                  style={{ cursor: "pointer" }}
-                >
-                  Pastor Cherilyn Formentera
-                  <span
-                    className={`arrow-down ${
-                      arrowRotations.Cherilyn ? "rotated" : ""
-                    }`}
-                  ></span>
-                </h1>
-                <p>Purok Pagnahian Sonog San Francisco Camotes Cebu</p>
-                {expandedProfiles.Cherilyn && (
-                  <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                    
-                    <hr className="text-gray-400" />
-                    <p className="mt-5">Sunday Service:</p>
-                    <p> 8:00 am - 12:00 nn</p>
-                    <p className="mt-5">
-                      Wednesday Outpouring: 
-                    </p>
-                    <p>8:00 pm - 10:00 pm</p>
-                    <p className="mt-5">
-                      Friday Prayer Meeting: 8:00 pm - 10:00 pm
-                    </p>
-                  </div>
-                )}
-                <hr className="mt-2" id="cebu_south-section"/>
-              </div>
+              
 
               
                 <div className="profilee">
@@ -976,7 +986,7 @@ export default function Locations() {
                   <p>6:00 pm - 8:00 pm</p>
                 </div>
               )}
-              <hr className="mt-2" id="cebu_central-section" />
+              <hr className="mt-2" id="metro_cebu-section" />
             </div>
               
             </div>
@@ -1019,7 +1029,7 @@ export default function Locations() {
             data-aos-delay="500"
             
           >
-            CENTRAL CEBU
+            METRO CEBU
           </h1>
           <div
             data-aos="fade-right"
