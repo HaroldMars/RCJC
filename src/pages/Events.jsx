@@ -72,7 +72,7 @@ export default function Events() {
         </div>
       </div> */}
 
-      <div class="slider mt-10 mb-10" data-aos="fade-in">
+      <div class="slider mt-10 mb-78" data-aos="fade-in">
         
          
   <div className="pt-20 carousel-wrapper" style={{ position: 'relative', width: '100%', maxWidth: '90%', margin: '0 auto' }}>

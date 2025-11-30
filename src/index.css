@@ -142,7 +142,6 @@ header {
 }
 
 
-
 .family {
   color: #F7F4F0;
   font-family: var(--font-Montserrat);
@@ -830,6 +829,25 @@ a:hover {
   color: #2E4057; 
   max-width: 800px; 
   margin: 0 auto;  
+}
+
+.home-gather {
+   text-align: left;
+  font-family: var(--font-Roboto);
+  padding: 10px;
+  padding-top: 5px; 
+  font-family: Arial, sans-serif;
+  font-size: 1.0em; 
+  color: #2E4057; 
+  max-width: 800px; 
+  margin: 0 auto; 
+}
+
+@media (max-width: 600px) {
+  .home-gather {
+    font-size: 0.8em; 
+    padding: 5px; 
+  }
 }
 
 .home-hope {

@@ -102,6 +102,7 @@ function Header({ className }) {
           ${menuOpen ? "block" : "hidden"}
             absolute top-20 left-0 w-full  shadow-md z-40 
           md:static md:block md:bg-transparent md:shadow-none md:col-span-3
+           bg-[#A9D0D8]
         `}
       >
         <nav className="  flex flex-col md:flex-row md:items-center md:justify-end">

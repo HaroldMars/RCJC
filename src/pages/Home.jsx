@@ -22,30 +22,30 @@ export default function Home() {
         data-aos="fade-in" // Animation for the hero section
       >
         <div className="relative w-full h-full">
-  <video
-    className="absolute inset-0 w-full h-full object-cover z-0"
-    autoPlay
-    loop
-    muted
-    controls={false}
-    src={videoBanner}
-    type="video/mp4"
-  />
-  {/* Overlay div */}
-  <div className="absolute inset-0 w-full h-full bg-black/50 z-10" />
-</div>
-          <div
-  className="text-div absolute font-Roboto text-6xl md:text-6xl font-bold mt-4 text-center"
-  style={{
-    color: 'transparent', 
-    WebkitBackgroundClip: 'text', 
-    backgroundClip: 'text',
-    WebkitTextFillColor: 'transparent',
-  }}
-  data-aos="fade-up"
->
-  Welcome Home
-</div>
+          <video
+            className="absolute inset-0 w-full h-full object-cover z-0"
+            autoPlay
+            loop
+            muted
+            controls={false}
+            src={videoBanner}
+            type="video/mp4"
+          />
+          {/* Overlay div */}
+          <div className="absolute inset-0 w-full h-full bg-black/50 z-10" />
+        </div>
+        <div
+          className="text-div absolute font-Roboto text-6xl md:text-6xl font-bold mt-4 text-center"
+          style={{
+            color: "transparent",
+            WebkitBackgroundClip: "text",
+            backgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+          }}
+          data-aos="fade-up"
+        >
+          Welcome Home
+        </div>
       </div>
 
       <div
@@ -84,25 +84,18 @@ export default function Home() {
       </div>
 
       <div className="bg-white w-full py-10 px-4" data-aos="fade-in">
-        
-        
-<div class="home-hope">
-  
-Feeling lost or seeking something more? <br /><br />
-Watch this short message to understand God's simple plan for your life and experience genuine hope and a new beginning today.
-</div>
-<div class="home-discover text-4xl md:text-6xl font-bold mb-6">
-  Discover the Good News
-</div>
-
-
-       
+        <div class="home-hope">
+          Feeling lost or seeking something more? <br />
+          <br />
+          Watch this short message to understand God's simple plan for your life
+          and experience genuine hope and a new beginning today.
+        </div>
+        <div class="home-discover text-4xl md:text-6xl font-bold mb-6">
+          Discover the Good News
+        </div>
 
         {/* Responsive YouTube Video */}
-        <div
-          className="flex justify-center pt-10 pb-5 mb-1"
-          data-aos="fade-up"
-        >
+        <div className="flex justify-center pt-10 pb-5 mb-1" data-aos="fade-up">
           <div className="home-youtube w-full max-w-full">
             <iframe
               className="w-full h-full home-youtube"
@@ -114,11 +107,10 @@ Watch this short message to understand God's simple plan for your life and exper
             ></iframe>
           </div>
         </div>
-        <div class="home-discover text-4xl md:text-6xl font-bold mb-6">
-  Gather25. (2025, March 3). Share the Gospel
-</div>
+        <div class="home-gather text-2xl md:text-3xl mb-6">
+          Gather25. (2025, March 3). Share the Gospel
+        </div>
       </div>
-      
 
       <div class="footer">
         <div class="footer-content">
