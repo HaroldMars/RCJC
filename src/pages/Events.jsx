@@ -127,7 +127,8 @@ export default function Events() {
       }}
     >
       {/* Slide 1 */}
-      <div
+      
+      <div 
         style={{
           minWidth: '100%',
           display: 'flex',
@@ -135,13 +136,17 @@ export default function Events() {
           alignItems: 'center',
         }}
       >
+        <a href="https://www.facebook.com/share/v/17LXMaxfkE/" target="_blank" rel="" >
         <img
           src={Youth}
           alt="Youth"
-          style={{ maxWidth: '90%', height: 'auto', objectFit: 'contain' }}
+          style={{ maxWidth: 'full', height: 'auto', objectFit: 'contain' }}
         />
+        </a>
       </div>
+      
       {/* Slide 2 */}
+      
       <div
         style={{
           minWidth: '100%',
@@ -150,11 +155,13 @@ export default function Events() {
           alignItems: 'center',
         }}
       >
+        <a href="https://www.facebook.com/share/r/1MV3BmiaTi/" target="_blank" rel="" >
         <img
           src={Community}
           alt="Community"
-          style={{ maxWidth: '90%', height: 'auto', objectFit: 'contain' }}
+          style={{ maxWidth: 'full', height: 'auto', objectFit: 'contain' }}
         />
+        </a>
       </div>
     </div>
   </div>
@@ -193,13 +200,7 @@ export default function Events() {
 </div>
 </div>
 
-<div className="container-give">
-          <div className="give-parent">
-            <div className="give-child">
-              <h1>Launching Soon</h1>
-            </div>
-          </div>
-        </div>
+
       <div class="footer">
         <div class="footer-content">
           <div class="connect-text">connect with us</div>
