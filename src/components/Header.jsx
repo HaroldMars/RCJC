@@ -41,7 +41,7 @@ function Header({ className }) {
     {
       to: "/Locations",
       icon: "fa-map-marker-alt",
-      label: "LOCATIONS",
+      label: "CONNECT WITH US",
     },
     {
       to: "/Events",
