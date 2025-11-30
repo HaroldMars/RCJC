@@ -136,7 +136,7 @@ export default function Events() {
           alignItems: 'center',
         }}
       >
-        <a href="https://www.facebook.com/share/v/17LXMaxfkE/" target="_blank" rel="" >
+        <a href="https://www.facebook.com/share/r/17nheH3j3C/" target="_blank" rel="" >
         <img
           src={Youth}
           alt="Youth"
