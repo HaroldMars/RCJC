@@ -839,8 +839,7 @@ a:hover {
   font-family: Arial, sans-serif;
   font-size: 1.0em; 
   color: #2E4057; 
-  max-width: 800px; 
-  margin: 0 auto; 
+  max-width: 800px;  
 }
 
 @media (max-width: 600px) {

@@ -95,7 +95,7 @@ export default function Home() {
         </div>
 
         {/* Responsive YouTube Video */}
-        <div className="flex justify-center pt-10 pb-5 mb-1" data-aos="fade-up">
+        <div className="flex justify-center pt-10 " data-aos="fade-up">
           <div className="home-youtube w-full max-w-full">
             <iframe
               className="w-full h-full home-youtube"
@@ -107,7 +107,8 @@ export default function Home() {
             ></iframe>
           </div>
         </div>
-        <div class="home-gather text-2xl md:text-3xl mb-6">
+        <div class="home-gather text-2xl md:text-3xl mb-6"
+         data-aos="fade-up">
           Gather25. (2025, March 3). Share the Gospel
         </div>
       </div>
