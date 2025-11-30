@@ -556,10 +556,18 @@ iframe {
     flex-direction: column; /* Stack items vertically */
     align-items: center;    /* Center items horizontally */
     justify-content: center;
-    gap: 5px; /* Smaller gap between items on mobile */
+    gap: 1px; /* Smaller gap between items on mobile */
   }
   .connect-text {
     text-align: center;
+    justify-content: center;
+  }
+
+  .links {
+    gap: 1px;              
+    align-items: center;  
+    justify-content: center;
+    padding-left: 5%;  
   }
   
   /* Optional: center individual links text if needed */
@@ -1016,4 +1024,10 @@ img {
     width: 100%;
     max-width: 100%;
   }
+}
+
+.text-events {
+  font-family: var(--font-Montserrat);
+  color: #2E4057;
+  font-weight: bold;
 }

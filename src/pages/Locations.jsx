@@ -102,8 +102,8 @@ export default function Locations() {
     { value: "", label: "Select Area" },
     { value: "bohol", label: "Bohol" },
     { value: "cebu_north", label: "Cebu North" },
-    { value: "cebu_area", label: "Cebu Area" },
-    { value: "cebu_south", label: "Cebu South" },
+    { value: "cebu_area", label: "Metro Cebu" },
+    // { value: "cebu_south", label: "Cebu South" },
     { value: "cebu_central", label: "Central Cebu" },
     { value: "leyte", label: "Leyte" },
     { value: "mindanao", label: "Mindanao" },
@@ -119,8 +119,8 @@ export default function Locations() {
 
   const locationToSectionId = {
     cebu_north: "cebu_north-section",
-    cebu_area: "cebu_area-section",
-    cebu_south: "cebu_south-section",
+    cebu_area: "cebu_metro-section",
+    // cebu_south: "cebu_south-section",
     cebu_central: "cebu_central-section",
     mindanao: "mindanao-section",
     leyte: "leyte-section",
@@ -846,7 +846,7 @@ export default function Locations() {
                   </a> */}
                 </div>
               )}
-              <hr className="mt-2" id="cebu_area-section"/>
+              <hr className="mt-2" id="cebu_metro-section"/>
             </div>
               
 
@@ -854,7 +854,7 @@ export default function Locations() {
           </div>
 
           <div className="font-Roboto mt-10" >
-            <h1 className="font-bold text-4xl text-center">CEBU AREA</h1>
+            <h1 className="font-bold text-4xl text-center">METRO CEBU</h1>
             <div
               data-aos="fade-right"
               data-aos-delay="500"
@@ -908,33 +908,7 @@ export default function Locations() {
               </div>
 
               
-              
-              
-            </div>
-          </div>
-
-
-          
-
-            
-
-    
-          
-            
-            <h1
-            className="text-center mt-10 font-bold text-4xl"
-            data-aos="fade-right"
-            data-aos-delay="500"
-            
-          >
-            CEBU SOUTH
-          </h1>
-          <div
-            data-aos="fade-right"
-            data-aos-delay="500"
-            className="profile-image mt-10"
-          >
-              <div className="profilee">
+                <div className="profilee">
               <img
                 className="pic"
                 src={Bene}
@@ -980,11 +954,37 @@ export default function Locations() {
               )}
               <hr className="mt-2" id="cebu_central-section" />
             </div>
+              
+            </div>
+          </div>
+
+
+          
+
+            
+
+    
+          
+            
+            {/* <h1
+            className="text-center mt-10 font-bold text-4xl"
+            data-aos="fade-right"
+            data-aos-delay="500"
+            
+          >
+            CEBU SOUTH
+          </h1>
+          <div
+            data-aos="fade-right"
+            data-aos-delay="500"
+            className="profile-image mt-10"
+          >
+              
 
             
 
              
-          </div>
+          </div> */}
 
           
           {/* Cebu Central */}

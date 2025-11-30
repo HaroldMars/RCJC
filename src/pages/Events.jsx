@@ -34,9 +34,9 @@ export default function Events() {
 
 
   return (
-    <div className="nav-text bg-white w-screen h-fit font-Roboto text-black">
+    <div className="nav-text bg-blue-100 w-screen h-fit font-Roboto text-black">
       <Header />
-      <div className="relative h-220 w-screen">
+      {/* <div className="relative h-220 w-screen">
         <img
           className="absolute inset-0 object-cover w-full h-full"
           src={Background}
@@ -51,7 +51,7 @@ export default function Events() {
             <h1 className="homee text-7xl font-bold">Events</h1>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Container
       <div>
         <div class="event-container">
@@ -73,69 +73,123 @@ export default function Events() {
       </div> */}
 
       <div class="slider mt-10 mb-10" data-aos="fade-in">
-         
-  <div class="carousel-container">
-  
-  <button
-  className="arrow left"
-  onClick={nextSlide}
-  style={{
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    border: 'none',
-    borderRadius: '50%',
-    width: '40px',
-    height: '40px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    cursor: 'pointer',
-    fontSize: '20px',
-    color: '#fff',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-    transition: 'background-color 0.3s, transform 0.2s',
-  }}
-  onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'rgba(0, 0, 0, 0.7)')}
-  onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'rgba(0, 0, 0, 0.5)')}
->
-  &#10094;
-</button>
-  
-  
-  <div className="slider mt-10 mb-10" data-aos="fade-in">
-      <div className="carousel-container" style={{ position: 'relative', width: '100%', overflow: 'hidden' }}>
-        {/* Left Arrow */}
-        <button className="arrow left" onClick={prevSlide} style={{
-          position: 'absolute', top: '50%', left: '10px', transform: 'translateY(-50%)',
-          background: 'rgba(0,0,0,0.5)', border: 'none', padding: '10px', cursor: 'pointer', zIndex: 10,
-        }}>&#10094;</button>
         
-        {/* Slides */}
-        <div
-          className="slides"
-          style={{
-            display: 'flex',
-            transition: 'transform 0.5s ease',
-            transform: `translateX(-${currentIndex * 100}%)`,
-          }}
-        >
-          <div className="slide" style={{ minWidth: '100%' }}>
-            <img src={Youth} alt="Slide 1" style={{ width: '100%', display: 'block' }} />
-          </div>
-          <div className="slide" style={{ minWidth: '100%' }}>
-            <img src={Community} alt="Slide 2" style={{ width: '100%', display: 'block' }} />
-          </div>
-        </div>
-        {/* Right Arrow */}
-        <button className="arrow right" onClick={nextSlide} style={{
-          position: 'absolute', top: '50%', right: '10px', transform: 'translateY(-50%)',
-          background: 'rgba(0,0,0,0.5)', border: 'none', padding: '10px', cursor: 'pointer', zIndex: 10,
-        }}>&#10095;</button>
+         
+  <div className="pt-20 carousel-wrapper" style={{ position: 'relative', width: '100%', maxWidth: '90%', margin: '0 auto' }}>
+  {/* Horizontal lines and title */}
+  <center><hr className="mt-10 text-blue-500 w-70" style={{ width: '70%' }} /></center>
+  <h1 className="text-events font-bold text-center text-4xl md:text-6xl lg:text-8xl">EVENTS</h1>
+  <center><hr className="mb-5 text-blue-300 w-70" style={{ width: '70%' }} /></center>
+  
+  {/* Left Arrow */}
+  <button
+    className="arrow left"
+    onClick={prevSlide}
+    style={{
+      position: 'absolute',
+      top: '70%',
+      left: '2%',
+      transform: 'translateY(-50%)',
+      backgroundColor: 'rgba(0, 0, 0, 0.5)',
+      border: 'none',
+      borderRadius: '50%',
+      width: '8vw',
+      height: '8vw',
+      maxWidth: '50px',
+      maxHeight: '50px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      cursor: 'pointer',
+      fontSize: '4vw',
+      maxFontSize: '24px',
+      color: '#fff',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+      transition: 'background-color 0.3s, transform 0.2s',
+    }}
+    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'rgba(0, 0, 0, 0.7)')}
+    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'rgba(0, 0, 0, 0.5)')}
+  >
+    &#10094;
+  </button>
+
+  {/* Slider container */}
+  <div className="slider" style={{ overflow: 'hidden', borderRadius: '8px' }}>
+    {/* Slides wrapper */}
+    <div
+      className="slides"
+      style={{
+        display: 'flex',
+        transition: 'transform 0.5s ease',
+        transform: `translateX(-${currentIndex * 100}%)`,
+      }}
+    >
+      {/* Slide 1 */}
+      <div
+        style={{
+          minWidth: '100%',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        <img
+          src={Youth}
+          alt="Youth"
+          style={{ maxWidth: '90%', height: 'auto', objectFit: 'contain' }}
+        />
+      </div>
+      {/* Slide 2 */}
+      <div
+        style={{
+          minWidth: '100%',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        <img
+          src={Community}
+          alt="Community"
+          style={{ maxWidth: '90%', height: 'auto', objectFit: 'contain' }}
+        />
       </div>
     </div>
+  </div>
 
-
-    </div>
-    </div>
+  {/* Right Arrow */}
+  <button
+    className="arrow right"
+    onClick={nextSlide}
+    style={{
+      position: 'absolute',
+      top: '70%',
+      right: '2%',
+      transform: 'translateY(-50%)',
+      backgroundColor: 'rgba(0, 0, 0, 0.5)',
+      border: 'none',
+      borderRadius: '50%',
+      width: '8vw',
+      height: '8vw',
+      maxWidth: '50px',
+      maxHeight: '50px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      cursor: 'pointer',
+      fontSize: '4vw',
+      maxFontSize: '24px',
+      color: '#fff',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+      transition: 'background-color 0.3s, transform 0.2s',
+    }}
+    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'rgba(0, 0, 0, 0.7)')}
+    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'rgba(0, 0, 0, 0.5)')}
+  >
+    &#10095;
+  </button>
+</div>
+</div>
 
 <div className="container-give">
           <div className="give-parent">
