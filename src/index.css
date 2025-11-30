@@ -532,7 +532,7 @@ iframe {
 }
 
 .footer {
-  border: red solid 2px ;
+  border: red solid 2px hidden;
   background-color: #34495e;
   padding: 5px 0;
   text-align: center;
