@@ -115,7 +115,7 @@ Watch this short message to understand God's simple plan for your life and exper
           </div>
         </div>
         <div class="home-discover text-4xl md:text-6xl font-bold mb-6">
-  Gather25. (2025, March 3). Share the Gospe
+  Gather25. (2025, March 3). Share the Gospel
 </div>
       </div>
       
