@@ -91,6 +91,14 @@ export default function Locations() {
     Jessa: false,
   });
 
+  const closeAllProfiles = () => {
+    const tempProfile = { ...expandedProfiles };
+    for (const profile in expandedProfiles) {
+      tempProfile[profile] = false;
+    }
+    setExpandedProfiles(tempProfile);
+  };
+
   const toggleProfile = (name) => {
     setExpandedProfiles((prev) => ({
       ...prev,
@@ -552,6 +560,7 @@ export default function Locations() {
                   src={Allan}
                   alt="Allan"
                   onClick={() => {
+                    closeAllProfiles();
                     toggleProfile("Allan");
                     toggleArrow("Allan");
                   }}
@@ -561,6 +570,7 @@ export default function Locations() {
                 <h1
                   className="container font-bold"
                   onClick={() => {
+                    closeAllProfiles();
                     toggleProfile("Allan");
                     toggleArrow("Allan");
                   }}
@@ -599,6 +609,7 @@ export default function Locations() {
                   src={fatima}
                   alt="Fatima"
                   onClick={() => {
+                    closeAllProfiles();
                     toggleProfile("Fatima");
                     toggleArrow("Fatima");
                   }}
@@ -608,6 +619,7 @@ export default function Locations() {
                 <h1
                   className="container font-bold"
                   onClick={() => {
+                    closeAllProfiles();
                     toggleProfile("Fatima");
                     toggleArrow("Fatima");
                   }}
@@ -646,6 +658,7 @@ export default function Locations() {
                   src={Jocelyn}
                   alt="Jocelyn"
                   onClick={() => {
+                    closeAllProfiles();
                     toggleProfile("Jocelyn");
                     toggleArrow("Jocelyn");
                   }}
@@ -655,6 +668,7 @@ export default function Locations() {
                 <h1
                   className="container font-bold"
                   onClick={() => {
+                    closeAllProfiles();
                     toggleProfile("Jocelyn");
                     toggleArrow("Jocelyn");
                   }}
@@ -708,6 +722,7 @@ export default function Locations() {
                   src={Lileth}
                   alt="Lileth"
                   onClick={() => {
+                    closeAllProfiles();
                     toggleProfile("Lileth");
                     toggleArrow("Lileth");
                   }}
@@ -717,6 +732,7 @@ export default function Locations() {
                 <h1
                   className="container font-bold"
                   onClick={() => {
+                    closeAllProfiles();
                     toggleProfile("Lileth");
                     toggleArrow("Lileth");
                   }}
@@ -747,6 +763,7 @@ export default function Locations() {
                 src={Mario}
                 alt="Mario"
                 onClick={() => {
+                  closeAllProfiles();
                   toggleProfile("Mario");
                   toggleArrow("Mario");
                 }}
@@ -756,6 +773,7 @@ export default function Locations() {
               <h1
                 className="container"
                 onClick={() => {
+                  closeAllProfiles();
                   toggleProfile("Mario");
                   toggleArrow("Mario");
                 }}
@@ -801,6 +819,7 @@ export default function Locations() {
                 src={Pedro}
                 alt="Pedro"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Pedro");
                   toggleArrow("Pedro");
                 }}
@@ -810,6 +829,7 @@ export default function Locations() {
               <h1
                 className="container"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Pedro");
                   toggleArrow("Pedro");
                 }}
@@ -867,6 +887,7 @@ export default function Locations() {
                   src={Cherilyn}
                   alt="Cherilyn"
                   onClick={() => {
+                    closeAllProfiles();
                     toggleProfile("Cherilyn");
                     toggleArrow("Cherilyn");
                   }}
@@ -876,6 +897,7 @@ export default function Locations() {
                 <h1
                   className="container text-[90%]"
                   onClick={() => {
+                    closeAllProfiles();
                     toggleProfile("Cherilyn");
                     toggleArrow("Cherilyn");
                   }}
@@ -914,6 +936,7 @@ export default function Locations() {
                 src={Bene}
                 alt="Bene"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Bene");
                   toggleArrow("Bene");
                 }}
@@ -923,6 +946,7 @@ export default function Locations() {
               <h1
                 className="container"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Bene");
                   toggleArrow("Bene");
                 }}
@@ -1008,6 +1032,7 @@ export default function Locations() {
                 src={Janice}
                 alt="Janice"
                 onClick={() => {
+                  closeAllProfiles();
                   toggleProfile("Janice");
                   toggleArrow("Janice");
                 }}
@@ -1017,6 +1042,7 @@ export default function Locations() {
               <h1
                 className="container"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Janice");
                   toggleArrow("Janice");
                 }}
@@ -1059,6 +1085,7 @@ export default function Locations() {
                 src={Jessa}
                 alt="Jessa"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Jessa");
                   toggleArrow("Jessa");
                 }}
@@ -1068,6 +1095,7 @@ export default function Locations() {
               <h1
                 className="container"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Jessa");
                   toggleArrow("Jessa");
                 }}
@@ -1100,6 +1128,7 @@ export default function Locations() {
                 src={Jinalyn}
                 alt="Jinalyn"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Jinalyn");
                   toggleArrow("Jinalyn");
                 }}
@@ -1109,6 +1138,7 @@ export default function Locations() {
               <h1
                 className="container"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Jinalyn");
                   toggleArrow("Jinalyn");
                 }}
@@ -1166,6 +1196,7 @@ export default function Locations() {
                 src={Jinky}
                 alt="Jinky"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Jinky");
                   toggleArrow("Jinky");
                 }}
@@ -1175,6 +1206,7 @@ export default function Locations() {
               <h1
                 className="container"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Jinky");
                   toggleArrow("Jinky");
                 }}
@@ -1223,6 +1255,7 @@ export default function Locations() {
                 src={Luz}
                 alt="Luz"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Luz");
                   toggleArrow("Luz");
                 }}
@@ -1232,6 +1265,7 @@ export default function Locations() {
               <h1
                 className="container"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Luz");
                   toggleArrow("Luz");
                 }}
@@ -1277,6 +1311,7 @@ export default function Locations() {
                 src={Rechiel}
                 alt="Rechiel"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Rechiel");
                   toggleArrow("Rechiel");
                 }}
@@ -1286,6 +1321,7 @@ export default function Locations() {
               <h1
                 className="container text-[90%]"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Rechiel");
                   toggleArrow("Rechiel");
                 }}
@@ -1339,6 +1375,7 @@ export default function Locations() {
                 src={Seam}
                 alt="Seam"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Seam");
                   toggleArrow("Seam");
                 }}
@@ -1348,6 +1385,7 @@ export default function Locations() {
               <h1
                 className="container"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Seam");
                   toggleArrow("Seam");
                 }}
@@ -1386,6 +1424,7 @@ export default function Locations() {
                   src={Vilma}
                   alt="Vilma"
                   onClick={() => {
+                    closeAllProfiles();
                     toggleProfile("Vilma");
                     toggleArrow("Vilma");
                   }}
@@ -1395,6 +1434,7 @@ export default function Locations() {
                 <h1
                   className="container"
                   onClick={() => {
+                    closeAllProfiles();
                     toggleProfile("Vilma");
                     toggleArrow("Vilma");
                   }}
@@ -1448,6 +1488,7 @@ export default function Locations() {
                 src={Elvie}
                 alt="Elvie"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Elvie");
                   toggleArrow("Elvie");
                 }}
@@ -1457,6 +1498,7 @@ export default function Locations() {
               <h1
                 className="container"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Elvie");
                   toggleArrow("Elvie");
                 }}
@@ -1508,6 +1550,7 @@ export default function Locations() {
                 src={Oliver}
                 alt="Oliver"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Oliver");
                   toggleArrow("Oliver");
                 }}
@@ -1517,6 +1560,7 @@ export default function Locations() {
               <h1
                 className="container"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Oliver");
                   toggleArrow("Oliver");
                 }}
@@ -1572,6 +1616,7 @@ export default function Locations() {
                 src={Anabel}
                 alt="Anabel"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Anabel");
                   toggleArrow("EAnabel");
                 }}
@@ -1581,6 +1626,7 @@ export default function Locations() {
               <h1
                 className="container"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Anabel");
                   toggleArrow("Anabel");
                 }}
@@ -1626,6 +1672,7 @@ export default function Locations() {
                 src={Jeashin}
                 alt="Jeashin"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Jeashin");
                   toggleArrow("Jeashin");
                 }}
@@ -1635,6 +1682,7 @@ export default function Locations() {
               <h1
                 className="container"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Jeashin");
                   toggleArrow("Jeashin");
                 }}
@@ -1665,6 +1713,7 @@ export default function Locations() {
                 src={Mary}
                 alt="Mary"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Mary");
                   toggleArrow("Mary");
                 }}
@@ -1674,6 +1723,7 @@ export default function Locations() {
               <h1
                 className="container"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Mary");
                   toggleArrow("Mary");
                 }}
@@ -1721,6 +1771,7 @@ export default function Locations() {
                 src={Merciely}
                 alt="Merciely"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Merciely");
                   toggleArrow("Merciely");
                 }}
@@ -1730,6 +1781,7 @@ export default function Locations() {
               <h1
                 className="container"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Merciely");
                   toggleArrow("Merciely");
                 }}
@@ -1775,6 +1827,7 @@ export default function Locations() {
                 src={Susan}
                 alt="Susan"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Susan");
                   toggleArrow("Susan");
                 }}
@@ -1784,6 +1837,7 @@ export default function Locations() {
               <h1
                 className="container"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Susan");
                   toggleArrow("Susan");
                 }}
@@ -1834,6 +1888,7 @@ export default function Locations() {
                 src={Gene}
                 alt="Gene"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Gene");
                   toggleArrow("Gene");
                 }}
@@ -1843,6 +1898,7 @@ export default function Locations() {
               <h1
                 className="container"
                 onClick={() => {
+                    closeAllProfiles();
                   toggleProfile("Gene");
                   toggleArrow("Gene");
                 }}
