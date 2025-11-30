@@ -532,8 +532,9 @@ iframe {
 }
 
 .footer {
+  border: red solid 2px ;
   background-color: #34495e;
-  padding: 10px 0;
+  padding: 5px 0;
   text-align: center;
   font-family: var(--font-Roboto);
   color: white;
@@ -623,7 +624,6 @@ iframe {
 
 /* Copyright text */
 .copyright {
-  margin-top: 40px;
   font-size: 0.9rem;
 }
 
