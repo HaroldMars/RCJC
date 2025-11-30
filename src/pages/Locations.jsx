@@ -104,6 +104,7 @@ export default function Locations() {
     { value: "cebu_north", label: "Cebu North" },
     { value: "cebu_area", label: "Cebu Area" },
     { value: "cebu_south", label: "Cebu South" },
+    { value: "cebu_central", label: "Central Cebu" },
     { value: "leyte", label: "Leyte" },
     { value: "mindanao", label: "Mindanao" },
     { value: "negros", label: "Negros" },
@@ -120,6 +121,7 @@ export default function Locations() {
     cebu_north: "cebu_north-section",
     cebu_area: "cebu_area-section",
     cebu_south: "cebu_south-section",
+    cebu_central: "cebu_central-section",
     mindanao: "mindanao-section",
     leyte: "leyte-section",
     bohol: "bohol-section",
@@ -902,326 +904,17 @@ export default function Locations() {
                     </p>
                   </div>
                 )}
-                <hr className="mt-2" />
-              </div>
-
-              <div className="profilee">
-              <img
-                className="pic"
-                src={Janice}
-                alt="Janice"
-                onClick={() => {
-                  toggleProfile("Janice");
-                  toggleArrow("Janice");
-                }}
-                style={{ cursor: "pointer" }}
-              />
-              <hr className="mt-2" />
-              <h1
-                className="container"
-                onClick={() => {
-                  toggleProfile("Janice");
-                  toggleArrow("Janice");
-                }}
-                style={{ cursor: "pointer" }}
-              >
-                Pastor Janice Nuñez
-                <span
-                  className={`arrow-down ${
-                    arrowRotations.Janice ? "rotated" : ""
-                  }`}
-                ></span>
-              </h1>
-              <p>
-                    {" "}
-                    Almers Compound entrance Suico St Tabok Mandaue City Cebu
-                  </p>
-              {expandedProfiles.Janice && (
-                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  
-                  <hr className="text-gray-400" />
-                  <p className="mt-5">Sunday Service:</p>
-                  <p> 8:30 am - 12:00 nn</p>
-                  <p className="mt-5">
-                    Wednesday Outpouring: 
-                  </p>
-                  <p>6:30 pm - 9:00 pm</p>
-                  <p className="mt-5">
-                    Friday Prayer Meeting: 
-                  </p>
-                  <p>6:30 pm - 9:00 pm</p>
-                </div>
-              )}
-              <hr className="mt-2" />
-            </div>
-              
-              <div className="profilee">
-              <img
-                className="pic"
-                src={Jessa}
-                alt="Jessa"
-                onClick={() => {
-                  toggleProfile("Jessa");
-                  toggleArrow("Jessa");
-                }}
-                style={{ cursor: "pointer" }}
-              />
-              <hr className="mt-2" />
-              <h1
-                className="container"
-                onClick={() => {
-                  toggleProfile("Jessa");
-                  toggleArrow("Jessa");
-                }}
-                style={{ cursor: "pointer" }}
-              >
-                Pastor Jessa Daligdig
-                <span
-                  className={`arrow-down ${
-                    arrowRotations.Jessa ? "rotated" : ""
-                  }`}
-                ></span>
-              </h1>
-              <p>
-                    Catarman 2 Cordova Cebu across Catarman Elementary School
-                  </p>
-              {expandedProfiles.Jessa && (
-                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  
-                  <hr className="text-gray-400" />
-                  <p className="mt-5">Sunday Service: </p>
-                  <p>8:30 am -12:00 nn</p>
-                </div>
-              )}
-              <hr className="mt-2" />
-            </div>
-            </div>
-          </div>
-
-          <div
-            data-aos="fade-right"
-            data-aos-delay="500"
-            className="profile-image"
-          >
-            <div className="profilee">
-              <img
-                className="pic"
-                src={Jinalyn}
-                alt="Jinalyn"
-                onClick={() => {
-                  toggleProfile("Jinalyn");
-                  toggleArrow("Jinalyn");
-                }}
-                style={{ cursor: "pointer" }}
-              />
-              <hr className="mt-2" />
-              <h1
-                className="container"
-                onClick={() => {
-                  toggleProfile("Jinalyn");
-                  toggleArrow("Jinalyn");
-                }}
-                style={{ cursor: "pointer" }}
-              >
-                Pastor Jinalyn Fulguerinas
-                <span
-                  className={`arrow-down ${
-                    arrowRotations.Jinalyn ? "rotated" : ""
-                  }`}
-                ></span>
-              </h1>
-              <p>Hernan Cortes St. Telecom, Casuntingan, Mandaue City</p>
-              {expandedProfiles.Jinalyn && (
-                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  <hr className="text-gray-400" />
-                  <p className="mt-5">Sunday Service:</p>
-                  <p> 8:00 am - 12:00 nn</p>
-                  <p className="mt-5">
-                    Wednesday Outpouring: 
-                  </p>
-                  <p>6:30 pm - 8:30 pm</p>
-                  <p className="mt-5">
-                    Friday Prayer Meeting:
-                  </p>
-                  <p> 6:30 pm - 8:30 pm</p>
-
-                  {/* <a
-                    className="linkk mt-5"
-                    href="https://www.google.com/maps/place/Rise+of+Church+of+Jesus+Christ+Int%E2%80%99l+Ministry+Inc./@10.5116505,123.961267,13z/data=!4m10!1m2!2m1!1sharang+Rise+of+Church+of+Jesus+Christ+Int'l.+Min.+Inc.!3m6!1s0x33a9bb004ee31293:0xbd5dec52f63862cb!8m2!3d10.5116505!4d124.027185!15sCjZoYXJhbmcgUmlzZSBvZiBDaHVyY2ggb2YgSmVzdXMgQ2hyaXN0IEludCdsLiBNaW4uIEluYy6SAQZjaHVyY2iqAZUBEAEqNyIzaGFyYW5nIHJpc2Ugb2YgY2h1cmNoIG9mIGplc3VzIGNocmlzdCBpbnQgbCBtaW4gaW5jKAAyHxABIhsodpy0CN1g29n1cAg5x8EstGqKUedNCes8SzoyNxACIjNoYXJhbmcgcmlzZSBvZiBjaHVyY2ggb2YgamVzdXMgY2hyaXN0IGludCBsIG1pbiBpbmPgAQA!16s%2Fg%2F11wj2f82mt?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D"
-                  >
-                    {" "}
-                    Press to locate via Google map
-                  </a> */}
-                </div>
-              )}
-              <hr className="mt-2" />
-            </div>
-
-            
-
-            <div className="profilee">
-              <img
-                className="pic"
-                src={Jinky}
-                alt="Jinky"
-                onClick={() => {
-                  toggleProfile("Jinky");
-                  toggleArrow("Jinky");
-                }}
-                style={{ cursor: "pointer" }}
-              />
-              <hr className="mt-2" />
-              <h1
-                className="container"
-                onClick={() => {
-                  toggleProfile("Jinky");
-                  toggleArrow("Jinky");
-                }}
-                style={{ cursor: "pointer" }}
-              >
-                Pastor Jinky Casiple
-                <span
-                  className={`arrow-down ${
-                    arrowRotations.Jinky ? "rotated" : ""
-                  }`}
-                ></span>
-              </h1>
-              <p>
-                    Looc, Danao Cebu (few meters away from Brgy Hall across
-                    Riders Pit Stop)
-                  </p>
-              {expandedProfiles.Jinky && (
-                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  
-                  <hr className="text-gray-400" />
-                  <p className="mt-5">Sunday Service: </p>
-                  <p>8:00 am - 12:00 nn</p>
-                  <p className="mt-5">
-                    Wednesday Outpouring:
-                  </p>
-                  <p> 6:00 pm - 8:00 pm</p>
-                  <p className="mt-5">
-                    Friday Prayer Meeting: 
-                  </p>
-                  <p className="mb-5">6:00 pm - 8:00 pm</p>
-                  <a
-                    className="linkk mt-5"
-                    href="https://www.google.com/maps/place/Rise+of+Church+of+Jesus+Christ+Int%E2%80%99l+Ministry+Inc./@10.5116505,123.961267,13z/data=!4m10!1m2!2m1!1sharang+Rise+of+Church+of+Jesus+Christ+Int'l.+Min.+Inc.!3m6!1s0x33a9bb004ee31293:0xbd5dec52f63862cb!8m2!3d10.5116505!4d124.027185!15sCjZoYXJhbmcgUmlzZSBvZiBDaHVyY2ggb2YgSmVzdXMgQ2hyaXN0IEludCdsLiBNaW4uIEluYy6SAQZjaHVyY2iqAZUBEAEqNyIzaGFyYW5nIHJpc2Ugb2YgY2h1cmNoIG9mIGplc3VzIGNocmlzdCBpbnQgbCBtaW4gaW5jKAAyHxABIhsodpy0CN1g29n1cAg5x8EstGqKUedNCes8SzoyNxACIjNoYXJhbmcgcmlzZSBvZiBjaHVyY2ggb2YgamVzdXMgY2hyaXN0IGludCBsIG1pbiBpbmPgAQA!16s%2Fg%2F11wj2f82mt?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D"
-                  >
-                    {" "}
-                    Press to locate via Google map
-                  </a>
-                </div>
-              )}
-              <hr className="mt-2" />
-            </div>
-
-            <div className="profilee">
-              <img
-                className="pic"
-                src={Seam}
-                alt="Seam"
-                onClick={() => {
-                  toggleProfile("Seam");
-                  toggleArrow("Seam");
-                }}
-                style={{ cursor: "pointer" }}
-              />
-              <hr className="mt-2" />
-              <h1
-                className="container"
-                onClick={() => {
-                  toggleProfile("Seam");
-                  toggleArrow("Seam");
-                }}
-                style={{ cursor: "pointer" }}
-              >
-                Pastor Seam Labiaga
-                <span
-                  className={`arrow-down ${
-                    arrowRotations.Seam ? "rotated" : ""
-                  }`}
-                ></span>
-              </h1>
-              <p> Purok Pagatpat 1 Suba Poblacion Liloan Cebu</p>
-              {expandedProfiles.Seam && (
-                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                  
-                  <hr className="text-gray-400" />
-                  <p className="mt-5">Sunday Service: </p>
-                  <p>8:00 am -12:00 nn</p>
-                  <p className="mt-5">
-                    Wednesday Outpouring: 
-                  </p>
-                  <p>6:00 pm - 8:00 pm</p>
-                  <p className="mt-5">
-                    Friday Prayer Meeting: 
-                  </p>
-                  <p>6:00 pm - 8:00 pm</p>
-                </div>
-              )}
-              <hr className="mt-2" />
-            </div>
-          </div>
-
-          <div
-            data-aos="fade-right"
-            data-aos-delay="500"
-            className="profile-image"
-          >
-            <div className="profilee">
-                <img
-                  className="pic"
-                  src={Vilma}
-                  alt="Vilma"
-                  onClick={() => {
-                    toggleProfile("Vilma");
-                    toggleArrow("Vilma");
-                  }}
-                  style={{ cursor: "pointer" }}
-                />
-                <hr className="mt-2" />
-                <h1
-                  className="container"
-                  onClick={() => {
-                    toggleProfile("Vilma");
-                    toggleArrow("Vilma");
-                  }}
-                  style={{ cursor: "pointer" }}
-                >
-                  Pastor Vilma Diaz
-                  <span
-                    className={`arrow-down ${
-                      arrowRotations.Vilma ? "rotated" : ""
-                    }`}
-                  ></span>
-                </h1>
-                <p> Currently joining with RCJCIM Liloan as we're still looking for another place in Compostela</p>
-                {expandedProfiles.Vilma && (
-                  <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
-                    <hr className="text-gray-400" />
-                    <p className="mt-5">Sunday Service: </p>
-                    <p className="">8:00 am -12:00 nn</p>
-                    <p className="mt-5">
-                      Wednesday Outpouring:
-                    </p>
-                    <p> 6:00 pm - 8:00 pm</p>
-                    <p className="mt-5">
-                      Friday Prayer Meeting: 6:00 pm - 8:00 pm
-                    </p>
-                  </div>
-                )}
                 <hr className="mt-2" id="cebu_south-section"/>
               </div>
-            
 
-            
-            
-            
+              
+              
+              
+            </div>
           </div>
-          {/* sdghaysgid */}
+
+
           
-            
 
             
 
@@ -1285,6 +978,242 @@ export default function Locations() {
                   <p>6:00 pm - 8:00 pm</p>
                 </div>
               )}
+              <hr className="mt-2" id="cebu_central-section" />
+            </div>
+
+            
+
+             
+          </div>
+
+          
+          {/* Cebu Central */}
+
+          <h1
+            className="text-center mt-10 font-bold text-4xl"
+            data-aos="fade-right"
+            data-aos-delay="500"
+            
+          >
+            CENTRAL CEBU
+          </h1>
+          <div
+            data-aos="fade-right"
+            data-aos-delay="500"
+            className="profile-image mt-10"
+          >
+            <div className="profilee">
+              <img
+                className="pic"
+                src={Janice}
+                alt="Janice"
+                onClick={() => {
+                  toggleProfile("Janice");
+                  toggleArrow("Janice");
+                }}
+                style={{ cursor: "pointer" }}
+              />
+              <hr className="mt-2" />
+              <h1
+                className="container"
+                onClick={() => {
+                  toggleProfile("Janice");
+                  toggleArrow("Janice");
+                }}
+                style={{ cursor: "pointer" }}
+              >
+                Pastor Janice Nuñez
+                <span
+                  className={`arrow-down ${
+                    arrowRotations.Janice ? "rotated" : ""
+                  }`}
+                ></span>
+              </h1>
+              <p>
+                    {" "}
+                    Almers Compound entrance Suico St Tabok Mandaue City Cebu
+                  </p>
+              {expandedProfiles.Janice && (
+                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
+                  
+                  <hr className="text-gray-400" />
+                  <p className="mt-5">Sunday Service:</p>
+                  <p> 8:30 am - 12:00 nn</p>
+                  <p className="mt-5">
+                    Wednesday Outpouring: 
+                  </p>
+                  <p>6:30 pm - 9:00 pm</p>
+                  <p className="mt-5">
+                    Friday Prayer Meeting: 
+                  </p>
+                  <p>6:30 pm - 9:00 pm</p>
+                </div>
+              )}
+              <hr className="mt-2" />
+            </div>
+
+
+            <div className="profilee">
+              <img
+                className="pic"
+                src={Jessa}
+                alt="Jessa"
+                onClick={() => {
+                  toggleProfile("Jessa");
+                  toggleArrow("Jessa");
+                }}
+                style={{ cursor: "pointer" }}
+              />
+              <hr className="mt-2" />
+              <h1
+                className="container"
+                onClick={() => {
+                  toggleProfile("Jessa");
+                  toggleArrow("Jessa");
+                }}
+                style={{ cursor: "pointer" }}
+              >
+                Pastor Jessa Daligdig
+                <span
+                  className={`arrow-down ${
+                    arrowRotations.Jessa ? "rotated" : ""
+                  }`}
+                ></span>
+              </h1>
+              <p>
+                    Catarman 2 Cordova Cebu across Catarman Elementary School
+                  </p>
+              {expandedProfiles.Jessa && (
+                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
+                  
+                  <hr className="text-gray-400" />
+                  <p className="mt-5">Sunday Service: </p>
+                  <p>8:30 am -12:00 nn</p>
+                </div>
+              )}
+              <hr className="mt-2" />
+            </div>
+
+            <div className="profilee">
+              <img
+                className="pic"
+                src={Jinalyn}
+                alt="Jinalyn"
+                onClick={() => {
+                  toggleProfile("Jinalyn");
+                  toggleArrow("Jinalyn");
+                }}
+                style={{ cursor: "pointer" }}
+              />
+              <hr className="mt-2" />
+              <h1
+                className="container"
+                onClick={() => {
+                  toggleProfile("Jinalyn");
+                  toggleArrow("Jinalyn");
+                }}
+                style={{ cursor: "pointer" }}
+              >
+                Pastor Jinalyn Fulguerinas
+                <span
+                  className={`arrow-down ${
+                    arrowRotations.Jinalyn ? "rotated" : ""
+                  }`}
+                ></span>
+              </h1>
+              <p>Hernan Cortes St. Telecom, Casuntingan, Mandaue City</p>
+              {expandedProfiles.Jinalyn && (
+                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
+                  <hr className="text-gray-400" />
+                  <p className="mt-5">Sunday Service:</p>
+                  <p> 8:00 am - 12:00 nn</p>
+                  <p className="mt-5">
+                    Wednesday Outpouring: 
+                  </p>
+                  <p>6:30 pm - 8:30 pm</p>
+                  <p className="mt-5">
+                    Friday Prayer Meeting:
+                  </p>
+                  <p> 6:30 pm - 8:30 pm</p>
+
+                  {/* <a
+                    className="linkk mt-5"
+                    href="https://www.google.com/maps/place/Rise+of+Church+of+Jesus+Christ+Int%E2%80%99l+Ministry+Inc./@10.5116505,123.961267,13z/data=!4m10!1m2!2m1!1sharang+Rise+of+Church+of+Jesus+Christ+Int'l.+Min.+Inc.!3m6!1s0x33a9bb004ee31293:0xbd5dec52f63862cb!8m2!3d10.5116505!4d124.027185!15sCjZoYXJhbmcgUmlzZSBvZiBDaHVyY2ggb2YgSmVzdXMgQ2hyaXN0IEludCdsLiBNaW4uIEluYy6SAQZjaHVyY2iqAZUBEAEqNyIzaGFyYW5nIHJpc2Ugb2YgY2h1cmNoIG9mIGplc3VzIGNocmlzdCBpbnQgbCBtaW4gaW5jKAAyHxABIhsodpy0CN1g29n1cAg5x8EstGqKUedNCes8SzoyNxACIjNoYXJhbmcgcmlzZSBvZiBjaHVyY2ggb2YgamVzdXMgY2hyaXN0IGludCBsIG1pbiBpbmPgAQA!16s%2Fg%2F11wj2f82mt?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D"
+                  >
+                    {" "}
+                    Press to locate via Google map
+                  </a> */}
+                </div>
+              )}
+              <hr className="mt-2" />
+            </div>
+
+            
+          </div>
+
+          <div
+            data-aos="fade-right"
+            data-aos-delay="500"
+            className="profile-image"
+          >
+            
+
+            
+
+            <div className="profilee">
+              <img
+                className="pic"
+                src={Jinky}
+                alt="Jinky"
+                onClick={() => {
+                  toggleProfile("Jinky");
+                  toggleArrow("Jinky");
+                }}
+                style={{ cursor: "pointer" }}
+              />
+              <hr className="mt-2" />
+              <h1
+                className="container"
+                onClick={() => {
+                  toggleProfile("Jinky");
+                  toggleArrow("Jinky");
+                }}
+                style={{ cursor: "pointer" }}
+              >
+                Pastor Jinky Casiple
+                <span
+                  className={`arrow-down ${
+                    arrowRotations.Jinky ? "rotated" : ""
+                  }`}
+                ></span>
+              </h1>
+              <p>
+                    Looc, Danao Cebu (few meters away from Brgy Hall across
+                    Riders Pit Stop)
+                  </p>
+              {expandedProfiles.Jinky && (
+                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
+                  
+                  <hr className="text-gray-400" />
+                  <p className="mt-5">Sunday Service: </p>
+                  <p>8:00 am - 12:00 nn</p>
+                  <p className="mt-5">
+                    Wednesday Outpouring:
+                  </p>
+                  <p> 6:00 pm - 8:00 pm</p>
+                  <p className="mt-5">
+                    Friday Prayer Meeting: 
+                  </p>
+                  <p className="mb-5">6:00 pm - 8:00 pm</p>
+                  <a
+                    className="linkk mt-5"
+                    href="https://www.google.com/maps/place/Rise+of+Church+of+Jesus+Christ+Int%E2%80%99l+Ministry+Inc./@10.5116505,123.961267,13z/data=!4m10!1m2!2m1!1sharang+Rise+of+Church+of+Jesus+Christ+Int'l.+Min.+Inc.!3m6!1s0x33a9bb004ee31293:0xbd5dec52f63862cb!8m2!3d10.5116505!4d124.027185!15sCjZoYXJhbmcgUmlzZSBvZiBDaHVyY2ggb2YgSmVzdXMgQ2hyaXN0IEludCdsLiBNaW4uIEluYy6SAQZjaHVyY2iqAZUBEAEqNyIzaGFyYW5nIHJpc2Ugb2YgY2h1cmNoIG9mIGplc3VzIGNocmlzdCBpbnQgbCBtaW4gaW5jKAAyHxABIhsodpy0CN1g29n1cAg5x8EstGqKUedNCes8SzoyNxACIjNoYXJhbmcgcmlzZSBvZiBjaHVyY2ggb2YgamVzdXMgY2hyaXN0IGludCBsIG1pbiBpbmPgAQA!16s%2Fg%2F11wj2f82mt?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D"
+                  >
+                    {" "}
+                    Press to locate via Google map
+                  </a>
+                </div>
+              )}
               <hr className="mt-2" />
             </div>
 
@@ -1342,7 +1271,7 @@ export default function Locations() {
               <hr className="mt-2" />
             </div>
 
-             <div className="profilee">
+            <div className="profilee">
               <img
                 className="pic"
                 src={Rechiel}
@@ -1392,8 +1321,110 @@ export default function Locations() {
                   </a> */}
                 </div>
               )}
-              <hr className="mt-2" id="leyte-section"/>
+              <hr className="mt-2" id="cebu_central-section"/>
             </div>
+
+            
+          </div>
+
+          <div
+            data-aos="fade-right"
+            data-aos-delay="500"
+            className="profile-image"
+          >
+
+            <div className="profilee">
+              <img
+                className="pic"
+                src={Seam}
+                alt="Seam"
+                onClick={() => {
+                  toggleProfile("Seam");
+                  toggleArrow("Seam");
+                }}
+                style={{ cursor: "pointer" }}
+              />
+              <hr className="mt-2" />
+              <h1
+                className="container"
+                onClick={() => {
+                  toggleProfile("Seam");
+                  toggleArrow("Seam");
+                }}
+                style={{ cursor: "pointer" }}
+              >
+                Pastor Seam Labiaga
+                <span
+                  className={`arrow-down ${
+                    arrowRotations.Seam ? "rotated" : ""
+                  }`}
+                ></span>
+              </h1>
+              <p> Purok Pagatpat 1 Suba Poblacion Liloan Cebu</p>
+              {expandedProfiles.Seam && (
+                <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
+                  
+                  <hr className="text-gray-400" />
+                  <p className="mt-5">Sunday Service: </p>
+                  <p>8:00 am -12:00 nn</p>
+                  <p className="mt-5">
+                    Wednesday Outpouring: 
+                  </p>
+                  <p>6:00 pm - 8:00 pm</p>
+                  <p className="mt-5">
+                    Friday Prayer Meeting: 
+                  </p>
+                  <p>6:00 pm - 8:00 pm</p>
+                </div>
+              )}
+              <hr className="mt-2" />
+            </div>
+
+            <div className="profilee">
+                <img
+                  className="pic"
+                  src={Vilma}
+                  alt="Vilma"
+                  onClick={() => {
+                    toggleProfile("Vilma");
+                    toggleArrow("Vilma");
+                  }}
+                  style={{ cursor: "pointer" }}
+                />
+                <hr className="mt-2" />
+                <h1
+                  className="container"
+                  onClick={() => {
+                    toggleProfile("Vilma");
+                    toggleArrow("Vilma");
+                  }}
+                  style={{ cursor: "pointer" }}
+                >
+                  Pastor Vilma Diaz
+                  <span
+                    className={`arrow-down ${
+                      arrowRotations.Vilma ? "rotated" : ""
+                    }`}
+                  ></span>
+                </h1>
+                <p> Currently joining with RCJCIM Liloan as we're still looking for another place in Compostela</p>
+                {expandedProfiles.Vilma && (
+                  <div className="details p-4 bg-gray-100  mt-2 rounded-lg shadow-inner">
+                    <hr className="text-gray-400" />
+                    <p className="mt-5">Sunday Service: </p>
+                    <p className="">8:00 am -12:00 nn</p>
+                    <p className="mt-5">
+                      Wednesday Outpouring:
+                    </p>
+                    <p> 6:00 pm - 8:00 pm</p>
+                    <p className="mt-5">
+                      Friday Prayer Meeting: 6:00 pm - 8:00 pm
+                    </p>
+                  </div>
+                )}
+                
+                <hr className="mt-2" id="leyte-section"/>
+              </div>
           </div>
 
           
