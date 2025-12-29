@@ -14,7 +14,9 @@ export default function Give() {
         <div className="container-give">
           <div className="give-parent">
             <div className="give-child">
-              <h1>Launching Soon</h1>
+              {/* lesterlines: added give tab information*/}
+              <h1>Launching Soon Test</h1>
+              }
             </div>
           </div>
         </div>
