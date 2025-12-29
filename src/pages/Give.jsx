@@ -16,7 +16,6 @@ export default function Give() {
             <div className="give-child">
               {/* lesterlines: added give tab information*/}
               <h1>Launching Soon Test</h1>
-              }
             </div>
           </div>
         </div>
