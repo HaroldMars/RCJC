@@ -19,11 +19,11 @@ export default function Give() {
                 </h1>
                 
                 <div style={{ backgroundColor: '#f8f9fa', padding: '30px', borderRadius: '10px', marginBottom:  '20px' }}>
-                  <h2 style={{ fontSize: '1.3rem', fontWeight: '600', marginBottom: '0px', color: '#2c3e50' }}>
-                    You can send your tithes and offerings to support
+                  <h2 style={{ fontSize: '1.1rem', fontWeight: '550', marginBottom: '0px', color: '#2c3e50' }}>
+                    Your generosity fuels our mission to proclaim the Gospel and fulfill the Great Commission. 
                   </h2>
-                  <h2 style={{ fontSize: '1.3rem', fontWeight: '600', marginBottom: '25px', color: '#2c3e50' }}>
-                    Rise of Church of Jesus Christ International Ministries (RCJCIM) by:
+                  <h2 style={{ fontSize: '1.1rem', fontWeight: '550', marginBottom: '25px', color: '#2c3e50' }}>
+                    You can partner with Rise of Church of Jesus Christ International Ministries (RCJCIM) by sharing your tithes and offerings through:
                   </h2>
                   
                   {/* Bank Transfer Section */}
@@ -33,13 +33,16 @@ export default function Give() {
                     </h3>
                     <div style={{ lineHeight: '1.8' }}>
                       <p style={{ marginBottom: '10px' }}>
-                        <strong>Bank: </strong> Bank of the Philippine Islands (BPI)
+                        <strong>Bank Name: </strong> Bank of the Philippine Islands (BPI)
                       </p>
                       <p style={{ marginBottom:  '10px' }}>
                         <strong>Account Number:</strong> <span style={{ fontSize: '1.1rem', color: '#2980b9', fontFamily: 'monospace' }}>009113-0662-98</span>
                       </p>
-                      <p>
+                      <p style={{ marginBottom:  '10px' }}>
                         <strong>Account Name:</strong> Rise of Church of Jesus Christ International Ministries Inc. 
+                      </p>
+                      <p>
+                        <strong>Main SWIFT Code:</strong> BOPIPHMM 
                       </p>
                     </div>
                   </div>
@@ -53,8 +56,8 @@ export default function Give() {
                       <p style={{ marginBottom: '15px' }}>
                         <strong>Name:</strong> Rise of Church of Jesus Christ Intl Ministries
                       </p>
-                      <p style={{ marginBottom: '15px', color: '#555' }}>
-                        <strong>GCash QR Code: </strong> (please check the pinned photo for reference)
+                      <p style={{ marginBottom: '15px'}}>
+                        <strong>GCash QR Code: </strong>
                       </p>
                       <div style={{ textAlign: 'center', marginTop: '20px' }}>
                         {/* Replace this src with your actual GCash QR code image path */}
@@ -76,8 +79,16 @@ export default function Give() {
                   </div>
                 </div>
                 
-                <p style={{ color: '#666', fontSize: '0.9rem', marginTop: '20px' }}>
-                  Thank you for your generous support and partnership in ministry!
+                <p style={{ color: '#666', fontSize: '0.8rem', marginTop: '20px' }}>
+                  May God bless your cheerful heart. Your faithful support helps us establish house fellowships and live out His Word together.
+                </p>
+
+                <p style={{ color: '#666', fontSize: '0.8rem', marginTop: '20px' }}>
+                  'Each of you should give what you have decided in your heart to give... for God loves a cheerful giver.' - 2 Corinthians 9:7
+                </p>
+
+                <p style={{ color: '#666', fontSize: '0.8rem', marginTop: '20px' }}>
+                  To help us properly acknowledge your gift, please consider sending a screenshot of your transaction to our Facebook Messenger or at rcjcim2003@gmail.com. God bless you!
                 </p>
               </div>
       </div>
