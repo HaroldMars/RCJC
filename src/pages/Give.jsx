@@ -19,8 +19,11 @@ export default function Give() {
                 </h1>
                 
                 <div style={{ backgroundColor: '#f8f9fa', padding: '30px', borderRadius: '10px', marginBottom:  '20px' }}>
-                  <h2 style={{ fontSize: '1.5rem', fontWeight: '600', marginBottom: '25px', color: '#2c3e50' }}>
-                    UPDATED Remittance Info as of Aug 31, 2025
+                  <h2 style={{ fontSize: '1.3rem', fontWeight: '600', marginBottom: '0px', color: '#2c3e50' }}>
+                    You can send your tithes and offerings to support
+                  </h2>
+                  <h2 style={{ fontSize: '1.3rem', fontWeight: '600', marginBottom: '25px', color: '#2c3e50' }}>
+                    Rise of Church of Jesus Christ International Ministries (RCJCIM) by:
                   </h2>
                   
                   {/* Bank Transfer Section */}
