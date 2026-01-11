@@ -14,20 +14,18 @@ export default function Give() {
       
               {/* lesterlines: Updated Remittance Information */}
               <div style={{ maxWidth: '800px', margin:  '0 auto', padding: '40px 20px' }}>
-                <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '30px', color: '#1a1a1a' }}>
+                <h1 style={{ fontSize: '3rem', fontWeight: '420', marginBottom: '30px', color: '#1a1a1a' }}>
                   Give
                 </h1>
                 
                 <div style={{ backgroundColor: '#f8f9fa', padding: '30px', borderRadius: '10px', marginBottom:  '20px' }}>
-                  <h2 style={{ fontSize: '1.1rem', fontWeight: '550', marginBottom: '0px', color: '#2c3e50' }}>
+                  <h2 style={{ fontFamily: 'Roboto', fontSize: '1.1rem', fontWeight: '550', marginBottom: '0px', color: '#2c3e50' }}>
                     Your generosity fuels our mission to proclaim the Gospel and fulfill the Great Commission. 
-                  </h2>
-                  <h2 style={{ fontSize: '1.1rem', fontWeight: '550', marginBottom: '25px', color: '#2c3e50' }}>
-                    You can partner with Rise of Church of Jesus Christ International Ministries (RCJCIM) by sharing your tithes and offerings through:
+                    You can partner with Rise of Church of Jesus Christ International Ministries (RCJCIM) by sharing your tithes and offerings through: 
                   </h2>
                   
                   {/* Bank Transfer Section */}
-                  <div style={{ backgroundColor: 'white', padding: '25px', borderRadius: '8px', marginBottom: '25px', textAlign: 'left', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
+                  <div style={{ fontFamily: 'Roboto', backgroundColor: 'white', padding: '25px', borderRadius: '8px', marginBottom: '25px', textAlign: 'left', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
                     <h3 style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: '15px', color: '#2c3e50', borderBottom: '2px solid #3498db', paddingBottom: '10px' }}>
                       💳 Bank Transfer
                     </h3>
@@ -48,7 +46,7 @@ export default function Give() {
                   </div>
                   
                   {/* GCash Section */}
-                  <div style={{ backgroundColor: 'white', padding: '25px', borderRadius: '8px', textAlign: 'left', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
+                  <div style={{ fontFamily: 'Roboto', backgroundColor: 'white', padding: '25px', borderRadius: '8px', textAlign: 'left', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
                     <h3 style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: '15px', color: '#2c3e50', borderBottom: '2px solid #007dfe', paddingBottom: '10px' }}>
                       📱 GCash
                     </h3>
@@ -79,15 +77,15 @@ export default function Give() {
                   </div>
                 </div>
                 
-                <p style={{ color: '#666', fontSize: '0.8rem', marginTop: '20px' }}>
+                <p style={{ color: '#666', fontSize: '0.8rem', marginTop: '20px', fontFamily: 'Roboto' }}>
                   May God bless your cheerful heart. Your faithful support helps us establish house fellowships and live out His Word together.
                 </p>
 
-                <p style={{ color: '#666', fontSize: '0.8rem', marginTop: '20px' }}>
+                <p style={{ color: '#666', fontSize: '0.8rem', marginTop: '20px', fontFamily: 'Roboto' }}>
                   'Each of you should give what you have decided in your heart to give... for God loves a cheerful giver.' - 2 Corinthians 9:7
                 </p>
 
-                <p style={{ color: '#666', fontSize: '0.8rem', marginTop: '20px' }}>
+                <p style={{ color: '#666', fontSize: '0.8rem', marginTop: '20px', fontFamily: 'Roboto' }}>
                   To help us properly acknowledge your gift, please consider sending a screenshot of your transaction to our Facebook Messenger or at rcjcim2003@gmail.com. God bless you!
                 </p>
               </div>
